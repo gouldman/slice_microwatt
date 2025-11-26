@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               256M
+Start Address      0x00000000
+End Address        0x0FFFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00A00000    0x00F25FB7    Nov 19 15:34:02 2025    /home/pe1576su/Desktop/slice/smp/dtbImage.microwatt.elf

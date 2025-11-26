@@ -1,0 +1,25 @@
+// openrode
+
+openocd/flash-arty -f a200 images/dtbImage.microwatt.elf -t bin -a 0x00A00000
+
+
+sudo pkill -f hw_server
+
+picocom /dev/ttyUSB1 -b 115200
+
+write_cfgmem -format MCS \
+   -interface SPIx4 \
+   -size 256 \
+   -loaddata {up 0x00A00000 /home/pe1576su/Desktop/slice/linux-on-microwatt/images/dtbImage.microwatt.elf} \
+   /home/pe1576su/Desktop/slice/linux-on-microwatt/images/dtbImage.microwatt_elf.mcs
+   
+   
+   
+   #######generate elf####################
+   
+   1. 	export ARCH=powerpc
+	export CROSS_COMPILE=powerpc64le-linux-gnu-
+
+   2. make ARCH=powerpc microwatt_defconfig
+	
+   3. make menu	
