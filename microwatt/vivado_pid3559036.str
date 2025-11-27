@@ -1,0 +1,1667 @@
+/*
+
+AMD Vivado v2025.1 (64-bit) [Major: 2025, Minor: 1]
+SW Build: 6140274 on Wed May 21 22:58:25 MDT 2025
+IP Build: 6138677 on Thu May 22 03:10:11 MDT 2025
+IP Build: 6138677 on Thu May 22 03:10:11 MDT 2025
+
+Process ID (PID): 3559036
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Nov 19 17:10:40 CET 2025
+Time zone: 	Central European Standard Time (Europe/Stockholm)
+
+OS: Ubuntu
+OS Version: 6.8.0-87-generic
+OS Architecture: amd64
+Available processors (cores): 24
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: 0
+Screen size: 1920x1200
+Local screen bounds: x = 66, y = 32, width = 1854, height = 1168
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	/tools/Xilinx/2025.1/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/2025.1/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms812m, -Xmx6144m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	812 MB
+Java maximum memory (-Xmx):	 6 GB
+
+User name: 	pe1576su
+User home directory: /home/pe1576su
+User working directory: /home/pe1576su/Desktop/slice/microwatt
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/2025.1
+HDI_APPROOT: /tools/Xilinx/2025.1/Vivado
+RDI_DATADIR: /tools/Xilinx/2025.1/data
+RDI_BINDIR: /tools/Xilinx/2025.1/Vivado/bin
+
+Vivado preferences file: /home/pe1576su/.Xilinx/Vivado/2025.1/vivado.xml
+Vivado preferences directory: /home/pe1576su/.Xilinx/Vivado/2025.1/
+Vivado layouts directory: /home/pe1576su/.Xilinx/Vivado/2025.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/2025.1/Vivado/lib/classes/planAhead.jar
+Vivado log file: 	/home/pe1576su/Desktop/slice/microwatt/vivado.log
+Vivado journal file: 	/home/pe1576su/Desktop/slice/microwatt/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-3559036-exjobb35
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /tools/Xilinx/2025.1/Vivado
+RDI_BASEROOT: /tools/Xilinx/2025.1
+RDI_BINROOT: /tools/Xilinx/2025.1/Vivado/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/2025.1/Vivado/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: Vivado
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/2025.1/Vivado/lib/lnx64.o/Ubuntu/24:/tools/Xilinx/2025.1/Vivado/lib/lnx64.o/Ubuntu:/tools/Xilinx/2025.1/Vivado/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/2025.1/Vitis/bin:/tools/Xilinx/2025.1/Vivado/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/2025.1/Vivado/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/pe1576su/Desktop/slice/microwatt:exjobb35_1763568631_3558947
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/Vivado/data
+RDI_TPS_ROOT: /tools/Xilinx/2025.1/Vivado/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/2025.1/Vivado/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/2025.1/Vivado/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/2025.1/Vitis
+XILINX_PLANAHEAD: /tools/Xilinx/2025.1/Vivado
+XILINX_SDK: /tools/Xilinx/2025.1/Vitis
+XILINX_VITIS: /tools/Xilinx/2025.1/Vitis
+XILINX_VIVADO: /tools/Xilinx/2025.1/Vivado
+
+
+GUI allocated memory:	812 MB
+GUI max memory:		6,144 MB
+Engine allocated memory: 2,073 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr", 0); // b.c (PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS)
+// Opening Vivado Project: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr. Version: Vivado v2025.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 148 MB (+152319kb) [00:00:06]
+// [Engine Memory]: 2,005 MB (+1951234kb) [00:00:06]
+// Tcl Message: open_project /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'. 
+// [GUI Memory]: 157 MB (+1943kb) [00:00:06]
+// Project name: microwatt_0; location: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado; part: xc7a200tsbg484-1
+dismissDialog("Open Project"); // bk (Open Project Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,103 MB. GUI used memory: 81 MB. Current time: 11/19/25, 5:10:40 PM CET
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "1 critical warning"); // h (PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 19, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,131 MB. GUI used memory: 81 MB. Current time: 11/19/25, 5:10:55 PM CET
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,206 MB. GUI used memory: 80 MB. Current time: 11/19/25, 5:10:57 PM CET
+// [Engine Memory]: 3,206 MB (+1153588kb) [00:00:24]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 3,577 MB (+221442kb) [00:00:24]
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a200tsbg484-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 10233.801 ; gain = 0.000 ; free physical = 8767 ; free virtual = 53322 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 4236 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2025.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Read ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 10377.988 ; gain = 0.000 ; free physical = 8636 ; free virtual = 53191 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. INFO: [Designutils 20-5722] Start Reading Physical Databases. 
+// Tcl Message: Reading placement. 
+// Tcl Message: Read Netlist Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 11091.227 ; gain = 0.000 ; free physical = 8010 ; free virtual = 52566 
+// Tcl Message: Reading placer database... 
+// Tcl Message: Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 11091.227 ; gain = 0.000 ; free physical = 8010 ; free virtual = 52566 Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 11132.164 ; gain = 40.938 ; free physical = 7963 ; free virtual = 52519 Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 11132.164 ; gain = 0.000 ; free physical = 7963 ; free virtual = 52519 
+// Tcl Message: Reading routing. 
+// Tcl Message: Read RouteStorage: Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.21 . Memory (MB): peak = 11166.000 ; gain = 33.836 ; free physical = 7939 ; free virtual = 52495 Read Physdb Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 11166.000 ; gain = 74.773 ; free physical = 7939 ; free virtual = 52495 
+// Tcl Message: Restored from archive | CPU: 1.700000 secs | Memory: 83.222900 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 11166.000 ; gain = 74.773 ; free physical = 7939 ; free virtual = 52495 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 11166.000 ; gain = 0.000 ; free physical = 7939 ; free virtual = 52495 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 935 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 21 instances   IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance    RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 95 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 7 instances   RAM64X1D => RAM64X1D (RAMD64E(x2)): 800 instances   RAM64X1S => RAM64X1S (RAMS64E): 9 instances  
+// TclEventType: CURR_DESIGN_SET
+// Device view-level: 0.0
+// [GUI Memory]: 171 MB (+6734kb) [00:00:25]
+// [Engine Memory]: 3,858 MB (+106668kb) [00:00:25]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 11585.375 ; gain = 1519.840 ; free physical = 7551 ; free virtual = 52113 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.4s
+// Device view-level: 0.0
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 180 MB (+639kb) [00:00:26]
+// [GUI Memory]: 190 MB (+462kb) [00:00:26]
+// [GUI Memory]: 200 MB (+761kb) [00:00:27]
+// [GUI Memory]: 211 MB (+521kb) [00:00:27]
+// [GUI Memory]: 222 MB (+435kb) [00:00:27]
+// [Engine Memory]: 4,271 MB (+231223kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  1753 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 5,004 MB (+544699kb) [00:00:28]
+// 'dX' command handler elapsed time: 14 seconds
+// [GUI Memory]: 242 MB (+9827kb) [00:00:28]
+// Elapsed time: 14 seconds
+dismissDialog("Open Implemented Design"); // bk (Open Implemented Design Progress)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_PULSE_WIDTH_SLACK, "-0.236 ns"); // h (PAResourceAtoD.DesignTimingSumSectionPanel_WORST_PULSE_WIDTH_SLACK)
+selectTableHeader(PAResourceOtoP.PulseWidthClockChecksTablePanel_PULSE_WIDTH_CLOCK_CHECKS_TABLE, "Actual", 5); // d.a (PAResourceOtoP.PulseWidthClockChecksTablePanel_PULSE_WIDTH_CLOCK_CHECKS_TABLE)
+selectTableHeader(PAResourceOtoP.PulseWidthClockChecksTablePanel_PULSE_WIDTH_CLOCK_CHECKS_TABLE, "Actual", 5); // d.a (PAResourceOtoP.PulseWidthClockChecksTablePanel_PULSE_WIDTH_CLOCK_CHECKS_TABLE)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, main_clkout0, Pulse Width -0.236 ns]", 14, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, main_clkout0, Pulse Width -0.236 ns]", 14, false, false, false, false, false, true); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE) - Double Click
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, main_clkout0, Pulse Width -0.236 ns]", 14, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+selectTableHeader(PAResourceOtoP.PulseWidthClockChecksTablePanel_PULSE_WIDTH_CLOCK_CHECKS_TABLE, "Actual", 5); // d.a (PAResourceOtoP.PulseWidthClockChecksTablePanel_PULSE_WIDTH_CLOCK_CHECKS_TABLE)
+selectTableHeader(PAResourceOtoP.PulseWidthClockChecksTablePanel_PULSE_WIDTH_CLOCK_CHECKS_TABLE, "Actual", 5, false, false, false, false, true); // d.a (PAResourceOtoP.PulseWidthClockChecksTablePanel_PULSE_WIDTH_CLOCK_CHECKS_TABLE) - Double Click
+selectTableHeader(PAResourceOtoP.PulseWidthClockChecksTablePanel_PULSE_WIDTH_CLOCK_CHECKS_TABLE, "Actual", 5); // d.a (PAResourceOtoP.PulseWidthClockChecksTablePanel_PULSE_WIDTH_CLOCK_CHECKS_TABLE)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Methodology Violations"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Methodology Violations"); // aI (dialog0)
+dismissDialog("Critical Messages"); // J (dialog1)
+selectTab((HResource) null, (HResource) null, "Power", 7); // ab
+selectTab((HResource) null, (HResource) null, "Timing", 8); // ab
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a (PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 34, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Tcl (Dont Echo) Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+dismissDialog("Open Hardware Manager"); // bk (Open Hardware Manager Progress)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (PAResourceOtoP.ProgramDebugTab_OPEN_TARGET)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ap (PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, auto_connect_target_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2025.1   **** Build date : May  6 2025 at 15:14:51     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2025.1.0   ****** Build date   : May 13 2025-21:15:27     **** Build number : 2025.1.1747163727       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276BD26CD 
+// Tcl Message: ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210276BD26CD. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-register this hardware target. 
+// Tcl Message: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.  
+dismissDialog("Auto Connect"); // bk (Auto Connect Progress)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CD 
+// TclEventType: HW_SERVER_UPDATE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Close Hardware Target"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Close Hardware Target"); // j.a (dialog2)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // a (dialog3)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CDB (0)", 0, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (PAResourceOtoP.ProgramDebugTab_OPEN_TARGET)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ap (PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, auto_connect_target_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2025.1.0   ****** Build date   : May 13 2025-21:15:27     **** Build number : 2025.1.1747163727       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bk (Auto Connect Progress)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2, "xc7a200t_0 (1)", 0, true); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (1) ; Open", 1, "xilinx_tcf/Digilent/210276BD26CDB (1)", 0, true); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2, "xc7a200t_0 (1)", 0, true); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2, "xc7a200t_0 (1)", 0, true, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ; ", 3, "XADC", 0, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2, "xc7a200t_0 (1)", 0, true); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2, "xc7a200t_0 (1)", 0, true, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY, "Add Configuration Memory Device..."); // ap (PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY, add_config_memory_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", "s25fl256sxxx"); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+selectTable(PAResourceAtoD.CfgMemPartChooser_TABLE, "s25fl256sxxxxxx0-spi-x1_x2_x4 ; s25fl256sxxxxxx0 ; Infineon ;  ; s25flxxxs ; spi ; 256 ; x1_x2_x4", 0, "s25fl256sxxxxxx0-spi-x1_x2_x4", 0); // b.b (PAResourceAtoD.CfgMemPartChooser_TABLE)
+selectTable(PAResourceAtoD.CfgMemPartChooser_TABLE, "s25fl256sxxxxxx0-spi-x1_x2_x4 ; s25fl256sxxxxxx0 ; Infineon ;  ; s25flxxxs ; spi ; 256 ; x1_x2_x4", 0, "s25fl256sxxxxxx0-spi-x1_x2_x4", 0, false, false, false, false, true); // b.b (PAResourceAtoD.CfgMemPartChooser_TABLE) - Double Click
+selectButton(RDIResource.BaseDialog_OK, "OK", "Add Configuration Memory Device"); // f (RDIResource.BaseDialog_OK)
+// 'a' command handler elapsed time: 13 seconds
+dismissDialog("Add Configuration Memory Device"); // ac (dialog4)
+// TclEventType: HW_CFGMEM_CREATE
+// TclEventType: HW_CFGMEM_PART_CHANGE
+// Tcl Message: create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a200t_0] 0] [lindex [get_cfgmem_parts {s25fl256sxxxxxx0-spi-x1_x2_x4}] 0] 
+// Tcl Message: set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY
+selectMoreButton(PAResourceOtoP.ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE, (String) null, "Program Configuration Memory Device"); // s (PAResourceOtoP.ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify File"); // JButton (FileChooser.upFolderIcon)
+setFileChooser("/home/pe1576su/Desktop/slice/smp/dtbImage.microwatt_elf.mcs");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Program Configuration Memory Device"); // f (RDIResource.BaseDialog_OK)
+// 'U' command handler elapsed time: 14 seconds
+dismissDialog("Program Configuration Memory Device"); // T (dialog5)
+// Tcl Message: set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.FILES [list "/home/pe1576su/Desktop/slice/smp/dtbImage.microwatt_elf.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: startgroup  
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a200t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a200t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]; 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s). 
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: Mfg ID : 1   Memory Type : 2   Memory Capacity : 19   Device ID 1 : 0   Device ID 2 : 0 Performing Erase Operation... 
+// Tcl Message: Erase Operation successful. Performing Program and Verify Operations... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,887 MB. GUI used memory: 160 MB. Current time: 11/19/25, 5:13:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,887 MB. GUI used memory: 160 MB. Current time: 11/19/25, 5:13:41 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,887 MB. GUI used memory: 160 MB. Current time: 11/19/25, 5:14:11 PM CET
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: Program/Verify Operation successful. 
+// Tcl Message: INFO: [Labtoolstcl 44-377] Flash programming completed successfully 
+// Tcl Message: program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:01:52 . Memory (MB): peak = 11836.145 ; gain = 0.000 ; free physical = 7145 ; free virtual = 51729 
+// Tcl Message: endgroup 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/U.a': 01m:54s
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 118 seconds
+selectButton("OptionPane.button", "OK", "Program Flash"); // JButton (OptionPane.button)
+// Elapsed time: 37 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // f (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog7)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'E' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bk (Program Device Progress)
+// Elapsed time: 73 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMoreButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null, "Program Device"); // s (PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify Bitstream File"); // JButton (FileChooser.upFolderIcon)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify Bitstream File"); // JButton (FileChooser.upFolderIcon)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify Bitstream File"); // JButton (FileChooser.upFolderIcon)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify Bitstream File"); // JButton (FileChooser.upFolderIcon)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify Bitstream File"); // JButton (FileChooser.upFolderIcon)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify Bitstream File"); // JButton (FileChooser.upFolderIcon)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify Bitstream File"); // JButton (FileChooser.upFolderIcon)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify Bitstream File"); // JButton (FileChooser.upFolderIcon)
+// Elapsed time: 13 seconds
+setFileChooser("/home/pe1576su/Desktop/peihao_test/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // f (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog8)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/peihao_test/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'E' command handler elapsed time: 29 seconds
+dismissDialog("Program Device"); // bk (Program Device Progress)
+// Elapsed time: 20 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMoreButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null, "Program Device"); // s (PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE)
+selectButton((HResource) null, "FileChooser.homeFolderIcon", "Specify Bitstream File"); // JButton (FileChooser.homeFolderIcon)
+// Elapsed time: 15 seconds
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify Bitstream File"); // JButton (FileChooser.upFolderIcon)
+setFileChooser("/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // f (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog10)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'E' command handler elapsed time: 33 seconds
+dismissDialog("Program Device"); // bk (Program Device Progress)
+// Elapsed time: 17 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (2) ; Programmed", 2, "xc7a200t_0 (2)", 0, true, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl256sxxxxxx0-spi-x1_x2_x4 ; ", 4, "s25fl256sxxxxxx0-spi-x1_x2_x4", 0, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl256sxxxxxx0-spi-x1_x2_x4 ; ", 4, "s25fl256sxxxxxx0-spi-x1_x2_x4", 0, false, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Configuration Memory Device Properties..."); // ap (RDIResourceCommand.RDICommands_PROPERTIES, edit_properties_menu)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl256sxxxxxx0-spi-x1_x2_x4 ; ", 4, (String) null, 1, false, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY, "Program Configuration Memory Device..."); // ap (PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY, program_config_memory_menu)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY
+selectMoreButton(PAResourceOtoP.ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE, (String) null, "Program Configuration Memory Device"); // s (PAResourceOtoP.ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify File"); // JButton (FileChooser.upFolderIcon)
+setFileChooser("/home/pe1576su/Desktop/slice/linux-on-microwatt/images/dtbImage.microwatt_elf.mcs");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Program Configuration Memory Device"); // f (RDIResource.BaseDialog_OK)
+// 'U' command handler elapsed time: 11 seconds
+dismissDialog("Program Configuration Memory Device"); // T (dialog12)
+// Tcl Message: set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.FILES [list "/home/pe1576su/Desktop/slice/linux-on-microwatt/images/dtbImage.microwatt_elf.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: startgroup  
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a200t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a200t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]; 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s). 
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: Mfg ID : 1   Memory Type : 2   Memory Capacity : 19   Device ID 1 : 0   Device ID 2 : 0 Performing Erase Operation... 
+// Tcl Message: Erase Operation successful. Performing Program and Verify Operations... 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,910 MB. GUI used memory: 162 MB. Current time: 11/19/25, 5:19:09 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,910 MB. GUI used memory: 162 MB. Current time: 11/19/25, 5:19:39 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,910 MB. GUI used memory: 162 MB. Current time: 11/19/25, 5:20:09 PM CET
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: Program/Verify Operation successful. 
+// Tcl Message: INFO: [Labtoolstcl 44-377] Flash programming completed successfully 
+// Tcl Message: program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:01:39 . Memory (MB): peak = 11836.145 ; gain = 0.000 ; free physical = 7115 ; free virtual = 51719 
+// Tcl Message: endgroup 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/U.a': 01m:40s
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 111 seconds
+selectButton("OptionPane.button", "OK", "Program Flash"); // JButton (OptionPane.button)
+// Elapsed time: 14 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // f (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog14)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'E' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bk (Program Device Progress)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 163 MB. Current time: 11/19/25, 5:50:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 163 MB. Current time: 11/19/25, 6:20:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 163 MB. Current time: 11/19/25, 6:50:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/19/25, 7:20:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/19/25, 7:50:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/19/25, 8:20:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/19/25, 8:50:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/19/25, 9:20:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/19/25, 9:50:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/19/25, 10:20:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/19/25, 10:50:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/19/25, 11:20:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/19/25, 11:50:11 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 12:20:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 12:50:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 1:20:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 1:50:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 2:20:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 143 MB. Current time: 11/20/25, 2:50:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 3:20:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 3:50:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 4:20:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 4:50:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 5:20:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 5:50:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 6:20:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 6:50:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 143 MB. Current time: 11/20/25, 7:20:11 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 7:50:12 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 8:20:12 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 8:50:12 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 143 MB. Current time: 11/20/25, 9:20:12 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 9:50:12 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,911 MB. GUI used memory: 142 MB. Current time: 11/20/25, 10:20:12 AM CET
+// Elapsed time: 62666 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Close Hardware Target"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Close Hardware Target"); // j.a (dialog15)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 19, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// HMemoryUtils.trashcanNow. Engine heap size: 3,967 MB. GUI used memory: 144 MB. Current time: 11/20/25, 10:45:22 AM CET
+// Device view-level: 0.0
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 18, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// Device view-level: 0.0
+// 'a' command handler elapsed time: 4 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_INSERT_TAB, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, nexys-video.xdc]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, nexys-video.xdc]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, nexys-video.xdc]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectCodeEditor("nexys-video.xdc", 396, 381); // ae (nexys-video.xdc)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "create"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,038 MB. GUI used memory: 147 MB. Current time: 11/20/25, 11:15:22 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,038 MB. GUI used memory: 146 MB. Current time: 11/20/25, 11:45:22 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,038 MB. GUI used memory: 146 MB. Current time: 11/20/25, 12:15:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,038 MB. GUI used memory: 146 MB. Current time: 11/20/25, 12:45:22 PM CET
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 7335 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 31, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROGRAM_DEBUG
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+dismissDialog("Program Device"); // aT (dialog16)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl256sxxxxxx0-spi-x1_x2_x4 ; ", 4, "s25fl256sxxxxxx0-spi-x1_x2_x4", 0, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl256sxxxxxx0-spi-x1_x2_x4 ; ", 4, "s25fl256sxxxxxx0-spi-x1_x2_x4", 0, false, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger
+// Elapsed time: 40 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // h.b (RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE)
+// Tcl (Dont Echo) Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'write_cfgmem -format MCS \;    -interface SPIx4 \;    -size 256 \;    -loaddata {up 0x00A00000 /home/pe1576su/Desktop/slice/smp/dtbImage.microwatt_smp.elf} \;    /home/pe1576su/Desktop/slice/smp/dtbImage.microwatt_smp_elf.mcs'
+// Tcl Message: write_cfgmem -format MCS \    -interface SPIx4 \    -size 256 \    -loaddata {up 0x00A00000 /home/pe1576su/Desktop/slice/smp/dtbImage.microwatt_smp.elf} \    /home/pe1576su/Desktop/slice/smp/dtbImage.microwatt_smp_elf.mcs 
+// Elapsed time: 91 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl256sxxxxxx0-spi-x1_x2_x4 ; ", 4, "s25fl256sxxxxxx0-spi-x1_x2_x4", 0, false, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY, "Program Configuration Memory Device..."); // ap (PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY, program_config_memory_menu)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY
+selectMoreButton(PAResourceOtoP.ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE, (String) null, "Program Configuration Memory Device"); // s (PAResourceOtoP.ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify File"); // JButton (FileChooser.upFolderIcon)
+selectButton((HResource) null, "FileChooser.upFolderIcon", "Specify File"); // JButton (FileChooser.upFolderIcon)
+setFileChooser("/home/pe1576su/Desktop/slice/smp/dtbImage.microwatt_smp_elf.mcs");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Program Configuration Memory Device"); // f (RDIResource.BaseDialog_OK)
+// 'U' command handler elapsed time: 10 seconds
+dismissDialog("Program Configuration Memory Device"); // T (dialog17)
+// Tcl Message: set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.FILES [list "/home/pe1576su/Desktop/slice/smp/dtbImage.microwatt_smp_elf.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: startgroup  
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a200t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a200t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]; 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s). 
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]] 
+// Tcl Message: Mfg ID : 1   Memory Type : 2   Memory Capacity : 19   Device ID 1 : 0   Device ID 2 : 0 Performing Erase Operation... 
+// Tcl Message: Erase Operation successful. Performing Program and Verify Operations... 
+// HMemoryUtils.trashcanNow. Engine heap size: 4,049 MB. GUI used memory: 150 MB. Current time: 11/20/25, 12:50:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,049 MB. GUI used memory: 149 MB. Current time: 11/20/25, 12:51:26 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,049 MB. GUI used memory: 149 MB. Current time: 11/20/25, 12:51:56 PM CET
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: Program/Verify Operation successful. 
+// Tcl Message: INFO: [Labtoolstcl 44-377] Flash programming completed successfully 
+// Tcl Message: program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:01:57 . Memory (MB): peak = 11957.062 ; gain = 9.965 ; free physical = 2523 ; free virtual = 48839 
+// Tcl Message: endgroup 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/U.a': 01m:58s
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 226 seconds
+selectButton("OptionPane.button", "OK", "Program Flash"); // JButton (OptionPane.button)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (1) ; Open", 1, "xilinx_tcf/Digilent/210276BD26CDB (1)", 0, true); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Node
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // f (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog19)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'E' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bk (Program Device Progress)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/20/25, 1:21:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/20/25, 1:51:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/20/25, 2:21:57 PM CET
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 6211 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // f (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog20)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'E' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bk (Program Device Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/20/25, 2:51:57 PM CET
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// Elapsed time: 1767 seconds
+dismissDialog("Close Hardware Target"); // j.a (dialog21)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Close Hardware Target"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Close Hardware Target"); // j.a (dialog22)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/20/25, 3:21:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/20/25, 3:51:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/20/25, 4:21:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/20/25, 4:51:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 5:21:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/20/25, 5:51:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 6:21:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 6:51:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 7:21:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 7:51:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 8:21:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 8:51:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 9:21:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 9:51:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 10:21:58 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 10:51:58 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/20/25, 11:21:58 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/20/25, 11:51:58 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 12:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 12:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/21/25, 1:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/21/25, 1:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/21/25, 2:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 2:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 3:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/21/25, 3:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/21/25, 4:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 4:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 5:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 5:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 6:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 6:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 7:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/21/25, 7:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 8:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/21/25, 8:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 9:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 9:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 10:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 10:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 11:21:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 11:51:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 12:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 12:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 1:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/21/25, 1:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 2:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 2:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 3:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 3:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 4:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 4:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 5:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/21/25, 5:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 6:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 6:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 7:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 7:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 8:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/21/25, 8:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 9:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 9:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 10:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 10:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 11:21:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/21/25, 11:51:59 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 12:21:59 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 12:51:59 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 1:21:59 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 1:51:59 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 2:21:59 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 2:51:59 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 3:22:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 3:52:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 4:22:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 4:52:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 5:22:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 5:52:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 6:22:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 6:52:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 7:22:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 7:52:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 8:22:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 8:52:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 9:22:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 9:52:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 10:22:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 10:52:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 11:22:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 11:52:00 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 12:22:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 12:52:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 1:22:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 1:52:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 2:22:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 2:52:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 3:22:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 3:52:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 4:22:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 4:52:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 5:22:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 5:52:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 6:22:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 6:52:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 7:22:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 7:52:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 8:22:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 8:52:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 9:22:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 9:52:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 10:22:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/22/25, 10:52:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 11:22:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/22/25, 11:52:01 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 12:22:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 12:52:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 1:22:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 1:52:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 2:22:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 2:52:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 3:22:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 3:52:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 4:22:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 4:52:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 5:22:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 5:52:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 6:22:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 6:52:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 7:22:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 7:52:01 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 8:22:02 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 8:52:02 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 9:22:02 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 9:52:02 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 10:22:02 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 10:52:02 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 11:22:02 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 11:52:02 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 12:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 12:52:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 1:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 1:52:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 2:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 2:52:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 3:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 3:52:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 4:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 4:52:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 5:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 5:52:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 6:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 6:52:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 7:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 7:52:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 8:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 8:52:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 9:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 9:52:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 10:22:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/23/25, 10:52:03 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 11:22:03 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/23/25, 11:52:03 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 12:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 12:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 1:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 1:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 2:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 2:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 3:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 3:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 4:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 4:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 5:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 5:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 6:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 6:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 7:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 7:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 8:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 8:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 9:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 9:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 10:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 10:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 11:22:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 11:52:03 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 12:22:03 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 12:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 148 MB. Current time: 11/24/25, 1:22:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/24/25, 1:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 2:22:04 PM CET
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 343944 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // f (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog23)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'E' command handler elapsed time: 9 seconds
+dismissDialog("Program Device"); // bk (Program Device Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 2:52:04 PM CET
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// Elapsed time: 1431 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Close Hardware Target"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Close Hardware Target"); // j.a (dialog24)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 3:22:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 3:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 4:22:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 4:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 5:22:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 5:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/24/25, 6:22:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/24/25, 6:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 7:22:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 7:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 8:22:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 8:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 9:22:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 9:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/24/25, 10:22:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 10:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 11:22:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/24/25, 11:52:04 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 12:22:04 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 12:52:04 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/25/25, 1:22:04 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 1:52:04 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 2:22:04 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 2:52:04 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 3:22:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 3:52:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 4:22:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 4:52:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 5:22:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/25/25, 5:52:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/25/25, 6:22:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 6:52:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 7:22:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 7:52:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 8:22:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 8:52:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 9:22:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 9:52:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 10:22:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 10:52:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/25/25, 11:22:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 11:52:05 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 12:22:05 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/25/25, 12:52:05 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 1:22:05 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 149 MB. Current time: 11/25/25, 1:52:05 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 150 MB. Current time: 11/25/25, 2:22:05 PM CET
+// Elapsed time: 84632 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 18, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// Device view-level: 0.0
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 159 MB. Current time: 11/25/25, 2:34:27 PM CET
+dismissDialog("Report Timing Summary"); // ag (dialog25)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+selectButton(RDIResource.BaseDialog_YES, "Yes", "Close Design"); // f (RDIResource.BaseDialog_YES)
+dismissDialog("Close Design"); // a.a (dialog26)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,048 MB. GUI used memory: 108 MB. Current time: 11/25/25, 2:34:41 PM CET
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 4,049 MB. GUI used memory: 110 MB. Current time: 11/25/25, 2:34:41 PM CET
+// TclEventType: CURR_DESIGN_SET
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// Tcl Message: close_design 
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bk (Close Progress)
+// Elapsed time: 48 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Elaborate Design"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Elaborate Design"); // x (dialog27)
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a200tsbg484-1 Top: toplevel 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 4,077 MB. GUI used memory: 84 MB. Current time: 11/25/25, 2:35:48 PM CET
+// TclEventType: DESIGN_NEW
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes. INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes INFO: [Synth 8-7075] Helper process launched with PID 192960 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 11957.062 ; gain = 0.000 ; free physical = 774 ; free virtual = 48150 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'toplevel' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fpga/top-nexys-video.vhdl:93] 
+// Tcl Message: 	Parameter CPUS bound to: 2 - type: integer  	Parameter MEMORY_SIZE bound to: 0 - type: integer  	Parameter CLK_FREQUENCY bound to: 9000000 - type: integer  	Parameter HAS_FPU bound to: 1 - type: bool  	Parameter HAS_BTC bound to: 1 - type: bool  	Parameter USE_LITEDRAM bound to: 1 - type: bool  	Parameter NO_BRAM bound to: 1 - type: bool  	Parameter DISABLE_FLATTEN_CORE bound to: 0 - type: bool  	Parameter SPI_FLASH_OFFSET bound to: 10485760 - type: integer  	Parameter LOG_LENGTH bound to: 2048 - type: integer  	Parameter UART_IS_16550 bound to: 1 - type: bool  	Parameter USE_LITEETH bound to: 1 - type: bool  	Parameter USE_LITESDCARD bound to: 0 - type: bool  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'soc' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/soc.vhdl:151] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'core' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/core.vhdl:64] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'fetch1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fetch1.vhdl:42] 
+// Tcl Message: 	Parameter RESET_ADDRESS bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000  	Parameter ALT_RESET_ADDRESS bound to: 64'b1111111111111111111111111111111111111111000000000000000000000000  	Parameter TLB_SIZE bound to: 64 - type: integer  	Parameter HAS_BTC bound to: 1 - type: bool  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'fetch1' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fetch1.vhdl:42] INFO: [Synth 8-638] synthesizing module 'icache' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/icache.vhdl:69] 
+// Tcl Message: 	Parameter SIM bound to: 0 - type: bool  	Parameter HAS_FPU bound to: 1 - type: bool  	Parameter LINE_SIZE bound to: 64 - type: integer  	Parameter NUM_LINES bound to: 64 - type: integer  	Parameter NUM_WAYS bound to: 2 - type: integer  	Parameter LOG_LENGTH bound to: 2048 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'predecoder' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/predecode.vhdl:28] 
+// Tcl Message: 	Parameter HAS_FPU bound to: 1 - type: bool  	Parameter WIDTH bound to: 2 - type: integer  	Parameter ICODE_LEN bound to: 10 - type: integer  	Parameter IMAGE_LEN bound to: 26 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'predecoder' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/predecode.vhdl:28] INFO: [Synth 8-638] synthesizing module 'cache_ram' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/cache_ram.vhdl:27] 
+// Tcl Message: 	Parameter ROW_BITS bound to: 9 - type: integer  	Parameter WIDTH bound to: 72 - type: integer  	Parameter BYTEWID bound to: 72 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'cache_ram' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/cache_ram.vhdl:27] INFO: [Synth 8-638] synthesizing module 'plrufn' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/plrufn.vhdl:19] 
+// Tcl Message: 	Parameter BITS bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'plrufn' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/plrufn.vhdl:19] INFO: [Synth 8-256] done synthesizing module 'icache' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/icache.vhdl:69] INFO: [Synth 8-638] synthesizing module 'decode1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/decode1.vhdl:33] 
+// Tcl Message: 	Parameter HAS_FPU bound to: 1 - type: bool  	Parameter LOG_LENGTH bound to: 2048 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'decode1' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/decode1.vhdl:33] INFO: [Synth 8-638] synthesizing module 'decode2' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/decode2.vhdl:56] 
+// Tcl Message: 	Parameter EX1_BYPASS bound to: 1 - type: bool  	Parameter HAS_FPU bound to: 1 - type: bool  	Parameter LOG_LENGTH bound to: 2048 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'control' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/control.vhdl:62] 
+// Tcl Message: 	Parameter EX1_BYPASS bound to: 1 - type: bool  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'control' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/control.vhdl:62] INFO: [Synth 8-256] done synthesizing module 'decode2' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/decode2.vhdl:56] INFO: [Synth 8-638] synthesizing module 'register_file' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/register_file.vhdl:38] 
+// Tcl Message: 	Parameter SIM bound to: 0 - type: bool  	Parameter HAS_FPU bound to: 1 - type: bool  	Parameter LOG_LENGTH bound to: 2048 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'register_file' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/register_file.vhdl:38] INFO: [Synth 8-638] synthesizing module 'cr_file' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/cr_file.vhdl:30] 
+// Tcl Message: 	Parameter SIM bound to: 0 - type: bool  	Parameter LOG_LENGTH bound to: 2048 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'cr_file' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/cr_file.vhdl:30] INFO: [Synth 8-638] synthesizing module 'execute1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/execute1.vhdl:82] 
+// Tcl Message: 	Parameter SIM bound to: 0 - type: bool  	Parameter EX1_BYPASS bound to: 1 - type: bool  	Parameter HAS_FPU bound to: 1 - type: bool  	Parameter CPU_INDEX bound to: 0 - type: integer  	Parameter NCPUS bound to: 2 - type: integer  	Parameter LOG_LENGTH bound to: 2048 - type: integer  
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 0 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm00' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:48] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 1 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm01' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:106] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 0 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm02' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:163] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 1 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm03' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:221] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 0 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm10' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:278] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 1 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm11' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:336] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 0 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm12' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:393] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 1 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm13' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:451] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 0 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm20' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:508] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 1 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm21' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:566] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 0 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm22' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:623] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 1 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm23' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:681] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 0 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  	Parameter USE_MULT bound to: none - type: string  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 's0' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:749] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 0 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 1 - type: integer  	Parameter USE_MULT bound to: none - type: string  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 's1' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:808] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'p0' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:866] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'p1' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:929] INFO: [Synth 8-256] done synthesizing module 'multiply' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult.vhdl:20] INFO: [Synth 8-638] synthesizing module 'multiply_32s' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult-32s.vhdl:23] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 0 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm00' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult-32s.vhdl:44] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MREG bound to: 0 - type: integer  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm01' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult-32s.vhdl:102] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 1 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MASK bound to: 48'b111111111111111111111111111111100000000011111111  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  	Parameter USE_PATTERN_DETECT bound to: PATDET - type: string  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'm10' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xilinx-mult-32s.vhdl:159] 
+// Tcl Message: 	Parameter ACASCREG bound to: 0 - type: integer  	Parameter ALUMODEREG bound to: 0 - type: integer  	Parameter AREG bound to: 0 - type: integer  	Parameter BCASCREG bound to: 0 - type: integer  	Parameter BREG bound to: 0 - type: integer  	Parameter CARRYINREG bound to: 0 - type: integer  	Parameter CARRYINSELREG bound to: 0 - type: integer  	Parameter CREG bound to: 0 - type: integer  	Parameter INMODEREG bound to: 0 - type: integer  	Parameter MASK bound to: 48'b111111111111111111111100000000000000000000000000  	Parameter OPMODEREG bound to: 0 - type: integer  	Parameter PREG bound to: 0 - type: integer  	Parameter USE_PATTERN_DETECT bound to: PATDET - type: string  
+// Tcl Message: 	Parameter HAS_FPU bound to: 1 - type: bool  	Parameter LOG_LENGTH bound to: 2048 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'loadstore1' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/loadstore1.vhdl:48] INFO: [Synth 8-638] synthesizing module 'mmu' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/mmu.vhdl:27] INFO: [Synth 8-256] done synthesizing module 'mmu' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/mmu.vhdl:27] INFO: [Synth 8-638] synthesizing module 'dcache' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/dcache.vhdl:56] 
+// Tcl Message: 	Parameter SIM bound to: 0 - type: bool  	Parameter LINE_SIZE bound to: 64 - type: integer  	Parameter NUM_LINES bound to: 64 - type: integer  	Parameter NUM_WAYS bound to: 2 - type: integer  	Parameter TLB_SET_SIZE bound to: 64 - type: integer  	Parameter TLB_NUM_WAYS bound to: 2 - type: integer  	Parameter LOG_LENGTH bound to: 2048 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'cache_ram__parameterized0' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/cache_ram.vhdl:27] 
+// Tcl Message: 	Parameter ROW_BITS bound to: 9 - type: integer  	Parameter WIDTH bound to: 64 - type: integer  	Parameter ADD_BUF bound to: 0 - type: bool  
+// Tcl Message: 	Parameter LOG_LENGTH bound to: 2048 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'core_debug' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/core_debug.vhdl:67] INFO: [Synth 8-256] done synthesizing module 'core' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/core.vhdl:64] INFO: [Synth 8-638] synthesizing module 'core__parameterized0' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/core.vhdl:64] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'execute1__parameterized0' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/execute1.vhdl:82] 
+// Tcl Message: 	Parameter SIM bound to: 0 - type: bool  	Parameter EX1_BYPASS bound to: 1 - type: bool  	Parameter HAS_FPU bound to: 1 - type: bool  	Parameter CPU_INDEX bound to: 1 - type: integer  	Parameter NCPUS bound to: 2 - type: integer  	Parameter LOG_LENGTH bound to: 2048 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/crhelpers.vhdl:35] INFO: [Synth 8-256] done synthesizing module 'execute1__parameterized0' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/execute1.vhdl:82] INFO: [Synth 8-256] done synthesizing module 'core__parameterized0' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/core.vhdl:64] INFO: [Synth 8-638] synthesizing module 'wishbone_arbiter' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/wishbone_arbiter.vhdl:22] 
+// Tcl Message: 	Parameter NUM_MASTERS bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'wishbone_arbiter' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/wishbone_arbiter.vhdl:22] INFO: [Synth 8-638] synthesizing module 'syscon' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/syscon.vhdl:46] 
+// Tcl Message: 	Parameter NCPUS bound to: 2 - type: integer  	Parameter CLK_FREQ bound to: 9000000 - type: integer  	Parameter HAS_UART bound to: 1 - type: bool  	Parameter HAS_DRAM bound to: 1 - type: bool  	Parameter BRAM_SIZE bound to: 0 - type: integer  	Parameter DRAM_SIZE bound to: 536870912 - type: integer  	Parameter DRAM_INIT_SIZE bound to: 0 - type: integer  	Parameter HAS_SPI_FLASH bound to: 1 - type: bool  	Parameter SPI_FLASH_OFFSET bound to: 10485760 - type: integer  	Parameter HAS_LITEETH bound to: 1 - type: bool  	Parameter HAS_SD_CARD bound to: 0 - type: bool  	Parameter UART0_IS_16550 bound to: 1 - type: bool  	Parameter HAS_UART1 bound to: 0 - type: bool  
+// Tcl Message: 	Parameter SIM bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_uart16550_1.5.5-r1/uart_transmitter.v:150] 
+// Tcl Message: 	Parameter SIM bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'uart_tfifo' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_uart16550_1.5.5-r1/uart_tfifo.v:140] INFO: [Synth 8-6157] synthesizing module 'raminfr' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_uart16550_1.5.5-r1/raminfr.v:83] 
+// Tcl Message: 	Parameter addr_width bound to: 4 - type: integer  	Parameter data_width bound to: 8 - type: integer  	Parameter depth bound to: 16 - type: integer  
+// Tcl Message: 	Parameter width bound to: 1 - type: integer  	Parameter init_value bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'uart_sync_flops' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_uart16550_1.5.5-r1/uart_sync_flops.v:67] INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_uart16550_1.5.5-r1/uart_receiver.v:194] INFO: [Synth 8-6157] synthesizing module 'uart_rfifo' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_uart16550_1.5.5-r1/uart_rfifo.v:146] 
+// Tcl Message: 	Parameter fifo_width bound to: 11 - type: integer  
+// Tcl Message: 	Parameter DEF_CLK_DIV bound to: 1 - type: integer  	Parameter DEF_QUAD_READ bound to: 1 - type: bool  	Parameter BOOT_CLOCKS bound to: 1 - type: bool  	Parameter DATA_LINES bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'spi_rxtx' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/spi_rxtx.vhdl:95] 
+// Tcl Message: 	Parameter DATA_LINES bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'spi_rxtx' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/spi_rxtx.vhdl:95] INFO: [Synth 8-256] done synthesizing module 'spi_flash_ctrl' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/spi_flash_ctrl.vhdl:41] INFO: [Synth 8-638] synthesizing module 'xics_icp' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xics.vhdl:43] 
+// Tcl Message: 	Parameter NCPUS bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'xics_icp' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xics.vhdl:43] INFO: [Synth 8-638] synthesizing module 'xics_ics' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xics.vhdl:254] 
+// Tcl Message: 	Parameter NCPUS bound to: 2 - type: integer  	Parameter SRC_NUM bound to: 16 - type: integer  	Parameter PRIO_BITS bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'xics_ics' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/xics.vhdl:254] INFO: [Synth 8-638] synthesizing module 'dmi_dtm' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/dmi_dtm_xilinx.vhdl:83] 
+// Tcl Message: 	Parameter ABITS bound to: 8 - type: integer  	Parameter DBITS bound to: 64 - type: integer  	Parameter JTAG_CHAIN bound to: 2 - type: integer  
+// Tcl Message: 	Parameter PLL_RESET_BITS bound to: 18 - type: integer  	Parameter SOC_RESET_BITS bound to: 1 - type: integer  	Parameter RESET_LOW bound to: 1 - type: bool  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'soc_reset' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fpga/soc_reset.vhdl:23] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'litedram_wrapper' [/home/pe1576su/Desktop/slice/microwatt/litedram/extras/litedram-wrapper-l2.vhdl:80] 
+// Tcl Message: 	Parameter DRAM_ABITS bound to: 25 - type: integer  	Parameter DRAM_ALINES bound to: 15 - type: integer  	Parameter DRAM_DLINES bound to: 16 - type: integer  	Parameter DRAM_CKLINES bound to: 1 - type: integer  	Parameter DRAM_PORT_WIDTH bound to: 128 - type: integer  	Parameter PAYLOAD_SIZE bound to: 0 - type: integer  	Parameter PAYLOAD_FILE bound to: firmware.hex - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'dram_init_mem' [/home/pe1576su/Desktop/slice/microwatt/litedram/generated/nexys-video/litedram-initmem.vhdl:22] 
+// Tcl Message: 	Parameter EXTRA_PAYLOAD_FILE bound to: firmware.hex - type: string  	Parameter EXTRA_PAYLOAD_SIZE bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'dram_init_mem' (0#1) [/home/pe1576su/Desktop/slice/microwatt/litedram/generated/nexys-video/litedram-initmem.vhdl:22] INFO: [Synth 8-638] synthesizing module 'cache_ram__parameterized1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/cache_ram.vhdl:27] 
+// Tcl Message: 	Parameter ROW_BITS bound to: 9 - type: integer  	Parameter WIDTH bound to: 128 - type: integer  	Parameter ADD_BUF bound to: 1 - type: bool  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'cache_ram__parameterized1' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/cache_ram.vhdl:27] INFO: [Synth 8-638] synthesizing module 'plrufn__parameterized0' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/plrufn.vhdl:19] 
+// Tcl Message: 	Parameter BITS bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'plrufn__parameterized0' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/plrufn.vhdl:19] INFO: [Synth 8-638] synthesizing module 'sync_fifo' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/sync_fifo.vhdl:50] 
+// Tcl Message: 	Parameter DEPTH bound to: 8 - type: integer  	Parameter WIDTH bound to: 73 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:78964] INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:78964] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:108512] 
+// Tcl Message: 	Parameter DATA_RATE_OQ bound to: DDR - type: string  	Parameter DATA_RATE_TQ bound to: BUF - type: string  	Parameter DATA_WIDTH bound to: 8 - type: integer  	Parameter SERDES_MODE bound to: MASTER - type: string  	Parameter TRISTATE_WIDTH bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:108512] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:104275] INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:104275] 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IOBUFDS' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81451] INFO: [Synth 8-6155] done synthesizing module 'IOBUFDS' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81451] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:83998] 
+// Tcl Message: 	Parameter DATA_RATE bound to: DDR - type: string  	Parameter DATA_WIDTH bound to: 8 - type: integer  	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string  	Parameter IOBDELAY bound to: IFD - type: string  	Parameter NUM_CE bound to: 1 - type: integer  	Parameter SERDES_MODE bound to: MASTER - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:83998] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:78977] 
+// Tcl Message: 	Parameter CINVCTRL_SEL bound to: FALSE - type: string  	Parameter DELAY_SRC bound to: IDATAIN - type: string  	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string  	Parameter IDELAY_TYPE bound to: VARIABLE - type: string  	Parameter IDELAY_VALUE bound to: 0 - type: integer  	Parameter PIPE_SEL bound to: FALSE - type: string  	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double  	Parameter SIGNAL_PATTERN bound to: DATA - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:78977] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434] INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'FDCE' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44015] INFO: [Synth 8-6155] done synthesizing module 'FDCE' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44015] INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:124587] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:124587] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'FDPE' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44171] 
+// Tcl Message: 	Parameter INIT bound to: 1'b1  
+// Tcl Message: 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:107905] INFO: [Synth 8-6157] synthesizing module 'OBUF' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:104261] INFO: [Synth 8-6155] done synthesizing module 'OBUF' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:104261] INFO: [Synth 8-6157] synthesizing module 'IDELAYE2__parameterized0' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:78977] 
+// Tcl Message: 	Parameter IDELAY_TYPE bound to: FIXED - type: string  	Parameter IDELAY_VALUE bound to: 26 - type: integer  	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2__parameterized0' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:78977] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IDDR' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:78842] 
+// Tcl Message: 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:78842] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV__parameterized0' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:124587] 
+// Tcl Message: 	Parameter CLKFBOUT_MULT bound to: 12 - type: integer  	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: double  	Parameter CLKOUT0_DIVIDE bound to: 12 - type: integer  	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double  	Parameter CLKOUT1_DIVIDE bound to: 12 - type: integer  	Parameter CLKOUT1_PHASE bound to: 90.000000 - type: double  	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer  	Parameter REF_JITTER1 bound to: 0.010000 - type: double  	Parameter STARTUP_WAIT bound to: FALSE - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV__parameterized0' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:124587] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'liteeth_core' (0#1) [/home/pe1576su/Desktop/slice/microwatt/liteeth/generated/nexys-video/liteeth_core.v:21] INFO: [Synth 8-256] done synthesizing module 'toplevel' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fpga/top-nexys-video.vhdl:93] 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 11957.062 ; gain = 0.000 ; free physical = 790 ; free virtual = 48176 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 11957.062 ; gain = 0.000 ; free physical = 793 ; free virtual = 48178 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 11957.062 ; gain = 0.000 ; free physical = 793 ; free virtual = 48178 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.35 . Memory (MB): peak = 11957.062 ; gain = 0.000 ; free physical = 961 ; free virtual = 48347 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fpga/nexys-video.xdc] 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fpga/nexys-video.xdc:411] 
+// Tcl Message: Finished Parsing XDC File [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fpga/nexys-video.xdc] 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fpga/nexys-video.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/toplevel_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/toplevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 11973.906 ; gain = 0.000 ; free physical = 976 ; free virtual = 48362 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 19 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 16 instances   IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance   
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 12034.477 ; gain = 77.414 ; free physical = 931 ; free virtual = 48325 
+// Tcl Message: 195 Infos, 415 Warnings, 1 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 12034.477 ; gain = 77.414 ; free physical = 931 ; free virtual = 48325 
+// Tcl Message: INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3580.257; main = 3580.257; forked = 0.000 INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 12034.480; main = 12034.480; forked = 0.000 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/q.a': 01m:06s
+// 'dX' command handler elapsed time: 69 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Open Elaborated Design"); // bk (Open Elaborated Design Progress)
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 5,712 MB (+479609kb) [141:25:16]
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 141h:25m:10s
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // J (dialog28)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells soc0]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// Elapsed time: 43 seconds
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells soc0/processors[1].core/decode1_0]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// Elapsed time: 12 seconds
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_nets soc0/processors[1].core/decode1_to_fetch1[redirect]]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// Elapsed time: 141 seconds
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_nets soc0/processors[1].core/clk]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_nets soc0/processors[1].core/alt_reset_d]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// Elapsed time: 12 seconds
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_nets soc0/processors[1].core/fetch1_stall_in]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_nets soc0/processors[1].core/icache_stall_in]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// Elapsed time: 255 seconds
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_nets soc0/processors[1].core/dmi_wr]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_pins soc0/processors[1].core/fetch1_0/i_out[next_nia]]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells soc0/processors[1].core/fetch1_0]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,714 MB. GUI used memory: 118 MB. Current time: 11/25/25, 3:05:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 119 MB. Current time: 11/25/25, 3:35:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 118 MB. Current time: 11/25/25, 4:05:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 4:35:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 5:05:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 5:35:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 6:05:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 6:35:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 7:05:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 7:35:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 8:05:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 8:35:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 9:05:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 118 MB. Current time: 11/25/25, 9:35:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 10:05:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 118 MB. Current time: 11/25/25, 10:35:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/25/25, 11:05:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 118 MB. Current time: 11/25/25, 11:35:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 12:05:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 118 MB. Current time: 11/26/25, 12:35:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 118 MB. Current time: 11/26/25, 1:05:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 1:35:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 2:05:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 2:35:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 3:05:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 3:35:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 4:05:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 4:35:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 5:05:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 5:35:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 6:05:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 118 MB. Current time: 11/26/25, 6:35:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 7:05:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 7:35:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 8:05:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 8:35:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 9:05:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 9:35:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 118 MB. Current time: 11/26/25, 10:05:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 10:35:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 118 MB. Current time: 11/26/25, 11:05:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 11:35:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 12:05:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 12:35:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 1:05:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 1:35:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 2:05:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,156 MB. GUI used memory: 117 MB. Current time: 11/26/25, 2:35:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,157 MB. GUI used memory: 117 MB. Current time: 11/26/25, 3:05:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,157 MB. GUI used memory: 117 MB. Current time: 11/26/25, 3:35:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,157 MB. GUI used memory: 118 MB. Current time: 11/26/25, 4:05:52 PM CET
+// Elapsed time: 92542 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // ab
+// Elapsed time: 12 seconds
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells soc0/processors[1].core]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells soc0/processors[1].core]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells soc0/processors[1].core]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl)]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl)]", 12, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl), with_fpu.fpu_0 : fpu(behaviour) (fpu.vhdl)]", 20, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl)]", 12); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nexys-video.xdc", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "core.vhdl", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[1].core : core(behave) (core.vhdl)]", 13, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[1].core : core(behave) (core.vhdl), fetch1_0 : fetch1(behaviour) (fetch1.vhdl)]", 14, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[1].core : core(behave) (core.vhdl)]", 13); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[1].core : core(behave) (core.vhdl)]", 13); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 15 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // ab
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl)]", 12); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl)]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 66 seconds
+selectCodeEditor("top-nexys-video.vhdl", 241, 208); // ae (top-nexys-video.vhdl)
+selectCodeEditor("top-nexys-video.vhdl", 246, 225); // ae (top-nexys-video.vhdl)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, short_multiply(behaviour) (xilinx-mult.vhdl)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc_reset(rtl) (soc_reset.vhdl)]", 9, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc_reset(rtl) (soc_reset.vhdl)]", 9, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc_reset(rtl) (soc_reset.vhdl)]", 9, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 17 seconds
+selectCodeEditor("top-nexys-video.vhdl", 260, 308); // ae (top-nexys-video.vhdl)
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl)]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl)]", 12, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl)]", 12, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("core.vhdl", 288, 571); // ae (core.vhdl)
+selectCodeEditor("core.vhdl", 283, 575); // ae (core.vhdl)
+selectCodeEditor("core.vhdl", 197, 192); // ae (core.vhdl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("top-nexys-video.vhdl", 254, 185); // ae (top-nexys-video.vhdl)
+// Elapsed time: 11 seconds
+selectCodeEditor("top-nexys-video.vhdl", 254, 186); // ae (top-nexys-video.vhdl)
+selectCodeEditor("top-nexys-video.vhdl", 255, 179); // ae (top-nexys-video.vhdl)
+selectCodeEditor("top-nexys-video.vhdl", 250, 187); // ae (top-nexys-video.vhdl)
+selectCodeEditor("top-nexys-video.vhdl", 249, 188); // ae (top-nexys-video.vhdl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[1].core : core(behave) (core.vhdl)]", 13); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl)]", 12); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl)]", 12, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl)]", 12, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 56 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl)]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("soc.vhdl", 555, 368); // ae (soc.vhdl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl), soc0 : soc(behaviour) (soc.vhdl)]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectCodeEditor("soc.vhdl", 531, 356); // ae (soc.vhdl)
+// Elapsed time: 79 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "processor"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectCodeEditor("soc.vhdl", 220, 354); // ae (soc.vhdl)
+// Elapsed time: 134 seconds
+selectCodeEditor("soc.vhdl", 136, 384); // ae (soc.vhdl)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 122 MB. Current time: 11/26/25, 4:35:52 PM CET
+// Elapsed time: 27 seconds
+selectCodeEditor("soc.vhdl", 278, 400); // ae (soc.vhdl)
+selectCodeEditor("soc.vhdl", 277, 400); // ae (soc.vhdl)
+selectCodeEditor("soc.vhdl", 278, 406); // ae (soc.vhdl)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 123 MB. Current time: 11/26/25, 5:05:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 122 MB. Current time: 11/26/25, 5:35:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 122 MB. Current time: 11/26/25, 6:05:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 6:35:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 7:05:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 7:35:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 8:05:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 8:35:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 9:05:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 9:35:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 10:05:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 10:35:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 11:05:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/26/25, 11:35:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 12:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 12:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 1:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 1:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 2:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 2:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 3:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 3:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 4:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 4:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 5:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 5:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 6:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 6:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 7:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 7:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 8:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 8:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 9:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 9:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 10:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 10:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 11:05:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 11:35:53 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 12:05:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 12:35:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 1:05:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 1:35:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 2:05:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 2:35:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 3:05:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 3:35:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 4:05:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,323 MB. GUI used memory: 121 MB. Current time: 11/27/25, 4:35:54 PM CET

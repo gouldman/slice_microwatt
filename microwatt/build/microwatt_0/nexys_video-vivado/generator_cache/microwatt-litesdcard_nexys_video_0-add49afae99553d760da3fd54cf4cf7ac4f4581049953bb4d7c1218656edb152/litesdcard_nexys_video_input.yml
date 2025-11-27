@@ -1,0 +1,6 @@
+files_root: /home/pe1576su/Desktop/slice/microwatt
+gapi: '1.0'
+parameters:
+  vendor: xilinx
+  frequency: 100e6
+vlnv: ::microwatt-litesdcard_nexys_video:0

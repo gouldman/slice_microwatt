@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Nov 18 16:59:52 2025
+# Process ID         : 3141132
+# Current directory  : /home/pe1576su/Desktop/slice/microwatt
+# Command line       : vivado
+# Log file           : /home/pe1576su/Desktop/slice/microwatt/vivado.log
+# Journal file       : /home/pe1576su/Desktop/slice/microwatt/vivado.jou
+# Running On         : exjobb35
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency      : 5300.000 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 67151 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69299 MB
+# Available Virtual  : 58065 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]

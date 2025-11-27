@@ -1,0 +1,1367 @@
+
+*** Running vivado
+    with args -log toplevel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source toplevel.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Mon Nov 17 19:35:03 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source toplevel.tcl -notrace
+Command: synth_design -top toplevel -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2534443
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2133.234 ; gain = 441.711 ; free physical = 20706 ; free virtual = 55262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/top-generic.vhdl:31]
+	Parameter MEMORY_SIZE bound to: 16384 - type: integer 
+	Parameter RAM_INIT_FILE bound to: /home/pe1576su/Desktop/slice/microwatt/fpga/hello_world.hex - type: string 
+	Parameter CLK_INPUT bound to: 100000000 - type: integer 
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter HAS_FPU bound to: 1 - type: bool 
+	Parameter HAS_BTC bound to: 1 - type: bool 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+	Parameter DISABLE_FLATTEN_CORE bound to: 0 - type: bool 
+	Parameter UART_IS_16550 bound to: 1 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'soc_reset' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/soc_reset.vhdl:23]
+	Parameter RESET_LOW bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'soc_reset' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/soc_reset.vhdl:23]
+INFO: [Synth 8-638] synthesizing module 'clock_generator' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/clk_gen_plle2.vhd:19]
+	Parameter CLK_INPUT_HZ bound to: 100000000 - type: integer 
+	Parameter CLK_OUTPUT_HZ bound to: 100000000 - type: integer 
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 16 - type: integer 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 16 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'pll' to cell 'PLLE2_BASE' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/clk_gen_plle2.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'clock_generator' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/clk_gen_plle2.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'soc' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:151]
+	Parameter MEMORY_SIZE bound to: 16384 - type: integer 
+	Parameter RAM_INIT_FILE bound to: /home/pe1576su/Desktop/slice/microwatt/fpga/hello_world.hex - type: string 
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter SIM bound to: 0 - type: bool 
+	Parameter HAS_FPU bound to: 1 - type: bool 
+	Parameter HAS_BTC bound to: 1 - type: bool 
+	Parameter DISABLE_FLATTEN_CORE bound to: 0 - type: bool 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+	Parameter UART0_IS_16550 bound to: 1 - type: bool 
+	Parameter ICACHE_NUM_LINES bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'core' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/core.vhdl:64]
+	Parameter SIM bound to: 0 - type: bool 
+	Parameter CPU_INDEX bound to: 0 - type: integer 
+	Parameter NCPUS bound to: 1 - type: integer 
+	Parameter DISABLE_FLATTEN bound to: 0 - type: bool 
+	Parameter HAS_FPU bound to: 1 - type: bool 
+	Parameter HAS_BTC bound to: 1 - type: bool 
+	Parameter ALT_RESET_ADDRESS bound to: 64'b1111111111111111111111111111111111111111000000000000000000000000 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+	Parameter ICACHE_NUM_LINES bound to: 64 - type: integer 
+	Parameter ICACHE_NUM_WAYS bound to: 2 - type: integer 
+	Parameter ICACHE_TLB_SIZE bound to: 64 - type: integer 
+	Parameter DCACHE_NUM_LINES bound to: 64 - type: integer 
+	Parameter DCACHE_NUM_WAYS bound to: 2 - type: integer 
+	Parameter DCACHE_TLB_SET_SIZE bound to: 64 - type: integer 
+	Parameter DCACHE_TLB_NUM_WAYS bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fetch1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fetch1.vhdl:42]
+	Parameter RESET_ADDRESS bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ALT_RESET_ADDRESS bound to: 64'b1111111111111111111111111111111111111111000000000000000000000000 
+	Parameter TLB_SIZE bound to: 64 - type: integer 
+	Parameter HAS_BTC bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'fetch1' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fetch1.vhdl:42]
+INFO: [Synth 8-638] synthesizing module 'icache' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/icache.vhdl:69]
+	Parameter SIM bound to: 0 - type: bool 
+	Parameter HAS_FPU bound to: 1 - type: bool 
+	Parameter LINE_SIZE bound to: 64 - type: integer 
+	Parameter NUM_LINES bound to: 64 - type: integer 
+	Parameter NUM_WAYS bound to: 2 - type: integer 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'predecoder' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/predecode.vhdl:28]
+	Parameter HAS_FPU bound to: 1 - type: bool 
+	Parameter WIDTH bound to: 2 - type: integer 
+	Parameter ICODE_LEN bound to: 10 - type: integer 
+	Parameter IMAGE_LEN bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'predecoder' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/predecode.vhdl:28]
+INFO: [Synth 8-638] synthesizing module 'cache_ram' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/cache_ram.vhdl:27]
+	Parameter ROW_BITS bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 72 - type: integer 
+	Parameter BYTEWID bound to: 72 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cache_ram' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/cache_ram.vhdl:27]
+INFO: [Synth 8-638] synthesizing module 'plrufn' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/plrufn.vhdl:19]
+	Parameter BITS bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'plrufn' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/plrufn.vhdl:19]
+INFO: [Synth 8-256] done synthesizing module 'icache' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/icache.vhdl:69]
+INFO: [Synth 8-638] synthesizing module 'decode1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:33]
+	Parameter HAS_FPU bound to: 1 - type: bool 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'decode1' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:33]
+INFO: [Synth 8-638] synthesizing module 'decode2' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode2.vhdl:56]
+	Parameter EX1_BYPASS bound to: 1 - type: bool 
+	Parameter HAS_FPU bound to: 1 - type: bool 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'control' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/control.vhdl:62]
+	Parameter EX1_BYPASS bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'control' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/control.vhdl:62]
+INFO: [Synth 8-256] done synthesizing module 'decode2' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode2.vhdl:56]
+INFO: [Synth 8-638] synthesizing module 'register_file' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/register_file.vhdl:38]
+	Parameter SIM bound to: 0 - type: bool 
+	Parameter HAS_FPU bound to: 1 - type: bool 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_file' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/register_file.vhdl:38]
+INFO: [Synth 8-638] synthesizing module 'cr_file' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/cr_file.vhdl:30]
+	Parameter SIM bound to: 0 - type: bool 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cr_file' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/cr_file.vhdl:30]
+INFO: [Synth 8-638] synthesizing module 'execute1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:82]
+	Parameter SIM bound to: 0 - type: bool 
+	Parameter EX1_BYPASS bound to: 1 - type: bool 
+	Parameter HAS_FPU bound to: 1 - type: bool 
+	Parameter CPU_INDEX bound to: 0 - type: integer 
+	Parameter NCPUS bound to: 1 - type: integer 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'rotator' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/rotator.vhdl:24]
+INFO: [Synth 8-256] done synthesizing module 'rotator' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/rotator.vhdl:24]
+INFO: [Synth 8-638] synthesizing module 'logical' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/logical.vhdl:22]
+INFO: [Synth 8-226] default block is never used [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/logical.vhdl:116]
+INFO: [Synth 8-256] done synthesizing module 'logical' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/logical.vhdl:22]
+INFO: [Synth 8-638] synthesizing module 'bit_counter' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/countbits.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'bit_counter' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/countbits.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'multiply' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:20]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm00' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:48]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm01' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:106]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm02' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:163]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm03' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:221]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm10' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:278]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm11' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:336]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm12' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:393]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm13' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:451]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm20' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:508]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm21' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:566]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm22' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:623]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm23' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:681]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+	Parameter USE_MULT bound to: none - type: string 
+INFO: [Synth 8-113] binding component instance 's0' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:749]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter USE_MULT bound to: none - type: string 
+INFO: [Synth 8-113] binding component instance 's1' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:808]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MASK bound to: 48'b000000000000000001111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter USE_MULT bound to: none - type: string 
+	Parameter USE_PATTERN_DETECT bound to: PATDET - type: string 
+INFO: [Synth 8-113] binding component instance 'p0' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:866]
+	Parameter ACASCREG bound to: 1 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AREG bound to: 1 - type: integer 
+	Parameter BCASCREG bound to: 1 - type: integer 
+	Parameter BREG bound to: 1 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MASK bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+	Parameter USE_MULT bound to: none - type: string 
+	Parameter USE_PATTERN_DETECT bound to: PATDET - type: string 
+INFO: [Synth 8-113] binding component instance 'p1' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:929]
+INFO: [Synth 8-256] done synthesizing module 'multiply' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult.vhdl:20]
+INFO: [Synth 8-638] synthesizing module 'multiply_32s' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult-32s.vhdl:23]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm00' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult-32s.vhdl:44]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+INFO: [Synth 8-113] binding component instance 'm01' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult-32s.vhdl:102]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 1 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MASK bound to: 48'b111111111111111111111111111111100000000011111111 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+	Parameter USE_PATTERN_DETECT bound to: PATDET - type: string 
+INFO: [Synth 8-113] binding component instance 'm10' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult-32s.vhdl:159]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter MASK bound to: 48'b111111111111111111111100000000000000000000000000 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PREG bound to: 0 - type: integer 
+	Parameter USE_PATTERN_DETECT bound to: PATDET - type: string 
+INFO: [Synth 8-113] binding component instance 'm11' to cell 'DSP48E1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult-32s.vhdl:220]
+INFO: [Synth 8-256] done synthesizing module 'multiply_32s' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xilinx-mult-32s.vhdl:23]
+INFO: [Synth 8-638] synthesizing module 'bit_sorter' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/bitsort.vhdl:38]
+INFO: [Synth 8-256] done synthesizing module 'bit_sorter' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/bitsort.vhdl:38]
+INFO: [Synth 8-638] synthesizing module 'random' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/nonrandom.vhdl:16]
+INFO: [Synth 8-256] done synthesizing module 'random' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/nonrandom.vhdl:16]
+INFO: [Synth 8-638] synthesizing module 'pmu' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/pmu.vhdl:18]
+INFO: [Synth 8-256] done synthesizing module 'pmu' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/pmu.vhdl:18]
+INFO: [Synth 8-226] default block is never used [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/crhelpers.vhdl:35]
+INFO: [Synth 8-256] done synthesizing module 'execute1' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:82]
+INFO: [Synth 8-638] synthesizing module 'fpu' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:27]
+INFO: [Synth 8-226] default block is never used [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/crhelpers.vhdl:35]
+INFO: [Synth 8-256] done synthesizing module 'fpu' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:27]
+INFO: [Synth 8-638] synthesizing module 'loadstore1' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:48]
+	Parameter HAS_FPU bound to: 1 - type: bool 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'loadstore1' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:48]
+INFO: [Synth 8-638] synthesizing module 'mmu' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/mmu.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'mmu' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/mmu.vhdl:27]
+INFO: [Synth 8-638] synthesizing module 'dcache' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/dcache.vhdl:56]
+	Parameter SIM bound to: 0 - type: bool 
+	Parameter LINE_SIZE bound to: 64 - type: integer 
+	Parameter NUM_LINES bound to: 64 - type: integer 
+	Parameter NUM_WAYS bound to: 2 - type: integer 
+	Parameter TLB_SET_SIZE bound to: 64 - type: integer 
+	Parameter TLB_NUM_WAYS bound to: 2 - type: integer 
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cache_ram__parameterized0' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/cache_ram.vhdl:27]
+	Parameter ROW_BITS bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter ADD_BUF bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'cache_ram__parameterized0' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/cache_ram.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'dcache' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/dcache.vhdl:56]
+INFO: [Synth 8-638] synthesizing module 'writeback' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/writeback.vhdl:33]
+INFO: [Synth 8-256] done synthesizing module 'writeback' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/writeback.vhdl:33]
+INFO: [Synth 8-638] synthesizing module 'core_debug' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/core_debug.vhdl:67]
+	Parameter LOG_LENGTH bound to: 2048 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'core_debug' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/core_debug.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'core' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/core.vhdl:64]
+INFO: [Synth 8-638] synthesizing module 'wishbone_arbiter' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/wishbone_arbiter.vhdl:22]
+	Parameter NUM_MASTERS bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'wishbone_arbiter' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/wishbone_arbiter.vhdl:22]
+INFO: [Synth 8-638] synthesizing module 'syscon' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/syscon.vhdl:46]
+	Parameter NCPUS bound to: 1 - type: integer 
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter HAS_UART bound to: 1 - type: bool 
+	Parameter HAS_DRAM bound to: 0 - type: bool 
+	Parameter BRAM_SIZE bound to: 16384 - type: integer 
+	Parameter DRAM_SIZE bound to: 0 - type: integer 
+	Parameter DRAM_INIT_SIZE bound to: 0 - type: integer 
+	Parameter HAS_SPI_FLASH bound to: 0 - type: bool 
+	Parameter SPI_FLASH_OFFSET bound to: 0 - type: integer 
+	Parameter HAS_LITEETH bound to: 0 - type: bool 
+	Parameter HAS_SD_CARD bound to: 0 - type: bool 
+	Parameter UART0_IS_16550 bound to: 1 - type: bool 
+	Parameter HAS_UART1 bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'syscon' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/syscon.vhdl:46]
+INFO: [Synth 8-3491] module 'uart_top' declared at '/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_top.v:137' bound to instance 'uart0' of component 'uart_top' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:870]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_top.v:137]
+INFO: [Synth 8-6157] synthesizing module 'uart_wb' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_wb.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'uart_wb' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_wb.v:139]
+INFO: [Synth 8-6157] synthesizing module 'uart_regs' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_regs.v:227]
+	Parameter SIM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_transmitter.v:150]
+	Parameter SIM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_tfifo' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_tfifo.v:140]
+INFO: [Synth 8-6157] synthesizing module 'raminfr' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/raminfr.v:83]
+	Parameter addr_width bound to: 4 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter depth bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'raminfr' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/raminfr.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tfifo' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_tfifo.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_transmitter.v:150]
+INFO: [Synth 8-6157] synthesizing module 'uart_sync_flops' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_sync_flops.v:67]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_value bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'uart_sync_flops' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_sync_flops.v:67]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_receiver.v:194]
+INFO: [Synth 8-6157] synthesizing module 'uart_rfifo' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_rfifo.v:146]
+	Parameter fifo_width bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rfifo' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_rfifo.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_receiver.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'uart_regs' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_regs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_uart16550_1.5.5-r1/uart_top.v:137]
+INFO: [Synth 8-638] synthesizing module 'xics_icp' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xics.vhdl:43]
+	Parameter NCPUS bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xics_icp' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xics.vhdl:43]
+INFO: [Synth 8-638] synthesizing module 'xics_ics' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xics.vhdl:254]
+	Parameter NCPUS bound to: 1 - type: integer 
+	Parameter SRC_NUM bound to: 16 - type: integer 
+	Parameter PRIO_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xics_ics' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/xics.vhdl:254]
+INFO: [Synth 8-638] synthesizing module 'wishbone_bram_wrapper' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/wishbone_bram_wrapper.vhdl:26]
+	Parameter MEMORY_SIZE bound to: 16384 - type: integer 
+	Parameter RAM_INIT_FILE bound to: /home/pe1576su/Desktop/slice/microwatt/fpga/hello_world.hex - type: string 
+INFO: [Synth 8-638] synthesizing module 'main_bram' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/main_bram.vhdl:28]
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter HEIGHT_BITS bound to: 11 - type: integer 
+	Parameter MEMORY_SIZE bound to: 16384 - type: integer 
+	Parameter RAM_INIT_FILE bound to: /home/pe1576su/Desktop/slice/microwatt/fpga/hello_world.hex - type: string 
+INFO: [Synth 8-256] done synthesizing module 'main_bram' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/main_bram.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'wishbone_bram_wrapper' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/wishbone_bram_wrapper.vhdl:26]
+INFO: [Synth 8-638] synthesizing module 'dmi_dtm' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/dmi_dtm_xilinx.vhdl:83]
+	Parameter ABITS bound to: 8 - type: integer 
+	Parameter DBITS bound to: 64 - type: integer 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+INFO: [Synth 8-113] binding component instance 'bscan' to cell 'BSCANE2' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/dmi_dtm_xilinx.vhdl:139]
+INFO: [Synth 8-113] binding component instance 'clkbuf' to cell 'BUFG' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/dmi_dtm_xilinx.vhdl:162]
+INFO: [Synth 8-256] done synthesizing module 'dmi_dtm' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/dmi_dtm_xilinx.vhdl:83]
+INFO: [Synth 8-638] synthesizing module 'wishbone_debug_master' [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/wishbone_debug_master.vhdl:26]
+INFO: [Synth 8-226] default block is never used [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/wishbone_debug_master.vhdl:90]
+INFO: [Synth 8-256] done synthesizing module 'wishbone_debug_master' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/wishbone_debug_master.vhdl:26]
+INFO: [Synth 8-256] done synthesizing module 'soc' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:151]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (0#1) [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/top-generic.vhdl:31]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[next_nia] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fetch1.vhdl:120]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[next_rpn] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fetch1.vhdl:120]
+WARNING: [Synth 8-3936] Found unconnected internal register 'req_raddr_reg' and it is trimmed from '56' to '32' bits. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/icache.vhdl:506]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][unit] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][facility] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][insn_type] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][input_reg_a] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][input_reg_b] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][const_sel] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][input_reg_c] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][output_reg_a] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][result] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][subresult] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][input_cr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][output_cr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][invert_a] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][invert_out] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][input_carry] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][output_carry] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][length] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][byte_reverse] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][sign_extend] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][update] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][reserve] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][is_32bit] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][is_signed] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][rc] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][lr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][privileged] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][sgl_pipe] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[decode][repeat] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode1.vhdl:539]
+WARNING: [Synth 8-6014] Unused sequential element tag_regs_reg[0][wr_gpr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/control.vhdl:99]
+WARNING: [Synth 8-6014] Unused sequential element tag_regs_reg[1][wr_gpr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/control.vhdl:99]
+WARNING: [Synth 8-6014] Unused sequential element tag_regs_reg[2][wr_gpr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/control.vhdl:99]
+WARNING: [Synth 8-6014] Unused sequential element tag_regs_reg[3][wr_gpr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/control.vhdl:99]
+WARNING: [Synth 8-6014] Unused sequential element dc2_reg[repeat] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/decode2.vhdl:305]
+WARNING: [Synth 8-6014] Unused sequential element ex1_reg[se][scv_trap] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:800]
+WARNING: [Synth 8-6014] Unused sequential element ex1_reg[spr_select][valid] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:800]
+WARNING: [Synth 8-6014] Unused sequential element ex1_reg[spr_select][ispmu] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:800]
+WARNING: [Synth 8-6014] Unused sequential element ex1_reg[spr_select][ronly] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:800]
+WARNING: [Synth 8-6014] Unused sequential element ex1_reg[spr_select][wonly] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:800]
+WARNING: [Synth 8-6014] Unused sequential element ex1_reg[spr_select][noop] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:800]
+WARNING: [Synth 8-6014] Unused sequential element ex1_reg[div_in_progress] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:800]
+WARNING: [Synth 8-6014] Unused sequential element ex1_reg[xerc][ov] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:800]
+WARNING: [Synth 8-6014] Unused sequential element ex1_reg[xerc][ov32] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:800]
+WARNING: [Synth 8-6014] Unused sequential element ex1_reg[xerc][so] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:800]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_msr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_xerlow] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_dec] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_cfar] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][set_cfar] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_loga] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][inc_loga] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_pmuspr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][ramspr_write_even] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][ramspr_write_odd] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][mult_32s] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_fscr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_ic] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_lpcr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_heir] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][set_heir] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_ctrl] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_dscr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_ciabr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][enter_wait] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][scv_trap] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_tbl] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element ex2_reg[se][write_tbu] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/execute1.vhdl:801]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[op] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:743]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[a][naninf] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:743]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[a][zeroexp] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:743]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[b][naninf] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:743]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[b][zeroexp] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:743]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[c][naninf] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:743]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[c][zeroexp] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:743]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[is_arith] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:743]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[cycle_1] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpu.vhdl:743]
+WARNING: [Synth 8-6014] Unused sequential element r1_reg[req][elt_length] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:344]
+WARNING: [Synth 8-6014] Unused sequential element r1_reg[req][two_dwords] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:344]
+WARNING: [Synth 8-6014] Unused sequential element r1_reg[req][ea_valid] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:344]
+WARNING: [Synth 8-6014] Unused sequential element r2_reg[req][hashst] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element r2_reg[req][mode_32bit] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element r2_reg[req][second_bytes] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element r2_reg[req][elt_length] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element r2_reg[req][brev_mask] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element r2_reg[req][two_dwords] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element r2_reg[req][ea_valid] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element r2_reg[req][hash_addr] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element r2_reg[sprsel] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[instr_tag][tag] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[instr_tag][valid] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[write_enable] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[write_reg] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[write_data] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[rc] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[xerc][ca] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[xerc][ca32] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[xerc][ov] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[xerc][ov32] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+WARNING: [Synth 8-6014] Unused sequential element r3_reg[xerc][so] was removed.  [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/loadstore1.vhdl:376]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3936] Found unconnected internal register 'cache_tag_set_reg' and it is trimmed from '96' to '92' bits. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/dcache.vhdl:892]
+WARNING: [Synth 8-3936] Found unconnected internal register 'snoop_tag_set_reg' and it is trimmed from '96' to '92' bits. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/dcache.vhdl:912]
+WARNING: [Synth 8-3848] Net wb_gpio_out[stall] in module/entity soc does not have driver. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:218]
+WARNING: [Synth 8-3848] Net wb_gpio_out[ack] in module/entity soc does not have driver. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:218]
+WARNING: [Synth 8-3848] Net uart1_txd in module/entity soc does not have driver. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:131]
+WARNING: [Synth 8-3848] Net spi_flash_sck in module/entity soc does not have driver. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:135]
+WARNING: [Synth 8-3848] Net spi_flash_cs_n in module/entity soc does not have driver. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:136]
+WARNING: [Synth 8-3848] Net spi_flash_sdat_o in module/entity soc does not have driver. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:137]
+WARNING: [Synth 8-3848] Net spi_flash_sdat_oe in module/entity soc does not have driver. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:138]
+WARNING: [Synth 8-3848] Net gpio_out in module/entity soc does not have driver. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:142]
+WARNING: [Synth 8-3848] Net gpio_dir in module/entity soc does not have driver. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:143]
+WARNING: [Synth 8-3848] Net wb_gpio_out[dat] in module/entity soc does not have driver. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/soc.vhdl:218]
+WARNING: [Synth 8-7129] Port wishbone_in[adr][28] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][27] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][26] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][25] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][24] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][23] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][22] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][21] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][20] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][19] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][18] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][17] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][16] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][15] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][14] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][13] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][12] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wishbone_in[adr][11] in module wishbone_bram_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][29] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][28] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][27] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][26] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][25] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][24] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][23] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][22] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][21] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][20] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][19] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][18] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][17] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][16] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][15] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][14] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][13] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][12] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][11] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][10] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][15] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][14] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][13] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][12] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][11] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][10] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][9] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][8] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][7] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][6] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][5] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][4] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][3] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][2] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][1] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][0] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[sel][1] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[sel][0] in module xics_ics is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][29] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][28] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][27] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][26] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][25] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][24] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][23] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][22] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][21] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][20] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][19] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][18] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][17] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][16] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][15] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][14] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][13] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][12] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][11] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][10] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][9] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][8] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][7] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[adr][6] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][31] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][30] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][29] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][28] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][27] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][26] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][25] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][24] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][23] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][22] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][21] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][20] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][19] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][18] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][17] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][16] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][15] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][14] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][13] in module xics_icp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_in[dat][12] in module xics_icp is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2563.023 ; gain = 871.500 ; free physical = 20312 ; free virtual = 54876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2574.898 ; gain = 883.375 ; free physical = 20312 ; free virtual = 54876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2574.898 ; gain = 883.375 ; free physical = 20312 ; free virtual = 54876
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2577.867 ; gain = 0.000 ; free physical = 20321 ; free virtual = 54884
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/nexys_a7.xdc]
+Finished Parsing XDC File [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/nexys_a7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/fpga/nexys_a7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/toplevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/toplevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2694.668 ; gain = 0.000 ; free physical = 20326 ; free virtual = 54890
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "toplevel/register_file_0/registers_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[insn][17]' (FDRE) to 'execute1_0/ex1_reg[pmu_spr_num][1]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[insn][18]' (FDRE) to 'execute1_0/ex1_reg[pmu_spr_num][2]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[insn][19]' (FDRE) to 'execute1_0/ex1_reg[pmu_spr_num][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (execute1_0/multiply_0/rnot_1_reg)
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][srr1][3]' (FDE) to 'execute1_0/ex1_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][srr1][3]' (FDR) to 'execute1_0/ex2_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][srr1][5]' (FDE) to 'execute1_0/ex1_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][srr1][5]' (FDR) to 'execute1_0/ex2_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][srr1][6]' (FDE) to 'execute1_0/ex1_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][srr1][6]' (FDR) to 'execute1_0/ex2_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][srr1][7]' (FDE) to 'execute1_0/ex1_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][srr1][7]' (FDR) to 'execute1_0/ex2_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][srr1][8]' (FDE) to 'execute1_0/ex1_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][srr1][8]' (FDR) to 'execute1_0/ex2_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][srr1][9]' (FDE) to 'execute1_0/ex1_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][srr1][9]' (FDR) to 'execute1_0/ex2_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][srr1][10]' (FDE) to 'execute1_0/ex1_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][srr1][10]' (FDR) to 'execute1_0/ex2_reg[e][srr1][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (execute1_0/\ex1_reg[e][srr1][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (execute1_0/\ex1_reg[e][abs_br] )
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][abs_br]' (FDR) to 'execute1_0/ex2_reg[e][srr1][15]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][intr_vec][0]' (FDRE) to 'execute1_0/ex1_reg[e][intr_vec][1]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][intr_vec][0]' (FDR) to 'execute1_0/ex2_reg[e][intr_vec][1]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][intr_vec][1]' (FDRE) to 'execute1_0/ex1_reg[e][intr_vec][2]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][intr_vec][1]' (FDR) to 'execute1_0/ex2_reg[e][intr_vec][2]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][intr_vec][2]' (FDRE) to 'execute1_0/ex1_reg[e][intr_vec][3]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][intr_vec][2]' (FDR) to 'execute1_0/ex2_reg[e][intr_vec][3]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[e][intr_vec][3]' (FDRE) to 'execute1_0/ex1_reg[e][intr_vec][4]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex2_reg[e][intr_vec][3]' (FDR) to 'execute1_0/ex2_reg[e][intr_vec][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (execute1_0/\ex1_reg[e][intr_vec][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (execute1_0/pmu_0/\mmcra_reg[0] )
+INFO: [Synth 8-3886] merging instance 'execute1_0/pmu_0/mmcr0_reg[20]' (FDE) to 'execute1_0/pmu_0/mmcr0_reg[21]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (execute1_0/pmu_0/\mmcr0_reg[21] )
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[pmu_spr_num][4]' (FDRE) to 'execute1_0/ex1_reg[insn][20]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ctrl_reg[dexcr_pnh][2]' (FDSE) to 'execute1_0/ctrl_reg[dexcr_pnh][0]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ctrl_reg[dexcr_pnh][3]' (FDSE) to 'execute1_0/ctrl_reg[dexcr_pnh][0]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ex1_reg[pmu_spr_num][0]' (FDRE) to 'execute1_0/ex1_reg[insn][16]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ctrl_reg[dexcr_pnh][4]' (FDSE) to 'execute1_0/ctrl_reg[dexcr_pnh][0]'
+INFO: [Synth 8-3886] merging instance 'execute1_0/ctrl_reg[dexcr_pnh][1]' (FDSE) to 'execute1_0/ctrl_reg[dexcr_pnh][0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (execute1_0/\ctrl_reg[dexcr_pnh][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (execute1_0/\ex2_reg[e][srr1][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (execute1_0/\ex2_reg[e][intr_vec][4] )
+INFO: [Synth 8-5544] ROM "v[fpscr]2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][61] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][60] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][59] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][58] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][57] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][56] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][55] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][54] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][53] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][52] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][51] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][50] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][49] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][48] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][47] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][46] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][45] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][44] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][43] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][42] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][41] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][40] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][39] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][38] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][37] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][36] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][35] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][34] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][33] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][32] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][31] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][30] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][29] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][28] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][27] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][26] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][25] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][24] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][23] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][22] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][21] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][20] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][19] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][18] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][17] driven by constant 0
+WARNING: [Synth 8-3917] design core__GB2 has port f_out[intr_vec][15] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'with_fpu.fpu_0/r_reg[exec_state][6]' (FDRE) to 'with_fpu.fpu_0/r_reg[exec_state][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\with_fpu.fpu_0 /\r_reg[exec_state][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\with_fpu.fpu_0 /\r_reg[regsel][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\with_fpu.fpu_0 /\inverse_est_reg[18] )
+INFO: [Synth 8-5587] ROM size for "isram" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "raddr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "isram" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "raddr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "length_to_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "length_to_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5784] Optimized 5 bits of RAM "debug_0/maybe_log.log_array_reg" due to constant propagation. Old ram width 256 bits, new ram width 251 bits.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 4 RAM instances of RAM btc.btc_memory_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/hash_r_reg[z0][0]' (FDRE) to 'loadstore1_0/hash_r_reg[z0][3]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/hash_r_reg[z0][1]' (FDRE) to 'loadstore1_0/hash_r_reg[z0][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (loadstore1_0/\hash_r_reg[z0][3] )
+INFO: [Synth 8-3886] merging instance 'debug_0/dbg_gpr_addr_reg[0]' (FD) to 'debug_0/dbg_ls_spr_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'debug_0i_0/debug_0/maybe_log.log_array_reg_mux_sel_b_pos_0__0' (FD) to 'debug_0i_0/debug_0/maybe_log.log_array_reg_mux_sel_b_pos_0'
+INFO: [Synth 8-3886] merging instance 'debug_0/dbg_gpr_addr_reg[1]' (FD) to 'debug_0/dbg_ls_spr_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[srr1][0]' (FDE) to 'loadstore1_0/r3_reg[srr1][4]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[srr1][4]' (FDE) to 'loadstore1_0/r3_reg[srr1][5]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[srr1][5]' (FDE) to 'loadstore1_0/r3_reg[srr1][6]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[srr1][6]' (FDE) to 'loadstore1_0/r3_reg[srr1][7]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[srr1][7]' (FDE) to 'loadstore1_0/r3_reg[srr1][8]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[srr1][8]' (FDE) to 'loadstore1_0/r3_reg[srr1][9]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[srr1][9]' (FDE) to 'loadstore1_0/r3_reg[srr1][10]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[srr1][10]' (FDE) to 'loadstore1_0/r3_reg[srr1][11]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[srr1][11]' (FDE) to 'loadstore1_0/r3_reg[srr1][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (loadstore1_0/\r3_reg[srr1][15] )
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[intr_vec][0]' (FDE) to 'loadstore1_0/r3_reg[intr_vec][1]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[intr_vec][1]' (FDE) to 'loadstore1_0/r3_reg[intr_vec][2]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[intr_vec][2]' (FDE) to 'loadstore1_0/r3_reg[intr_vec][3]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[intr_vec][3]' (FDE) to 'loadstore1_0/r3_reg[intr_vec][4]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[intr_vec][4]' (FDE) to 'loadstore1_0/r3_reg[intr_vec][5]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r3_reg[intr_vec][5]' (FDE) to 'loadstore1_0/r3_reg[intr_vec][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (loadstore1_0/\r3_reg[intr_vec][6] )
+INFO: [Synth 8-3886] merging instance 'debug_0/dbg_spr_addr_reg[4]' (FDR) to 'debug_0/dbg_spr_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'debug_0/dbg_spr_addr_reg[5]' (FDR) to 'debug_0/dbg_spr_addr_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\debug_0/dbg_spr_addr_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (loadstore1_0/\hash_r_reg[z0][4] )
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/hash_r_reg[z0][8]' (FDRE) to 'loadstore1_0/hash_r_reg[z0][4]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/hash_r_reg[z0][5]' (FDRE) to 'loadstore1_0/hash_r_reg[z0][6]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/hash_r_reg[z0][9]' (FDRE) to 'loadstore1_0/hash_r_reg[z0][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (loadstore1_0/\hash_r_reg[z0][4] )
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/hash_r_reg[z0][7]' (FDRE) to 'loadstore1_0/hash_r_reg[z0][12]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/hash_r_reg[z0][11]' (FDRE) to 'loadstore1_0/hash_r_reg[z0][16]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/hash_r_reg[z0][15]' (FDRE) to 'loadstore1_0/hash_r_reg[z0][20]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r2_reg[byte_index][2][0]' (FDE) to 'loadstore1_0/r2_reg[byte_index][4][0]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r2_reg[byte_index][2][1]' (FDE) to 'loadstore1_0/r2_reg[byte_index][6][1]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r2_reg[byte_index][4][0]' (FDE) to 'loadstore1_0/r2_reg[byte_index][6][0]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r2_reg[byte_index][4][1]' (FDE) to 'loadstore1_0/r2_reg[byte_index][0][1]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r2_reg[byte_index][5][0]' (FDE) to 'loadstore1_0/r2_reg[byte_index][1][0]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r2_reg[byte_index][5][1]' (FDE) to 'loadstore1_0/r2_reg[byte_index][1][1]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r2_reg[byte_index][6][0]' (FDE) to 'loadstore1_0/r2_reg[byte_index][0][0]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r2_reg[byte_index][1][0]' (FDE) to 'loadstore1_0/r2_reg[byte_index][3][0]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r2_reg[byte_index][3][0]' (FDE) to 'loadstore1_0/r2_reg[byte_index][7][0]'
+INFO: [Synth 8-3886] merging instance 'loadstore1_0/r2_reg[byte_index][3][1]' (FDE) to 'loadstore1_0/r2_reg[byte_index][7][1]'
+WARNING: [Synth 8-3936] Found unconnected internal register 'tlb_pte_way_reg' and it is trimmed from '128' to '120' bits. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/dcache.vhdl:678]
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "m" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-12589] Found 8 bits of RAM  (dcache_0/i_20) with no load. RAM width may be reduced from 128 to 120 
+INFO: [Synth 8-12589] Found 2 bits of RAM  (dcache_0/i_24) with no load. RAM width may be reduced from 96 to 94 
+INFO: [Synth 8-12589] Found 4 bits of RAM  (dcache_0/i_100) with no load. RAM width may be reduced from 96 to 92 
+INFO: [Synth 8-12589] Found 4 bits of RAM  (dcache_0/i_100) with no load. RAM width may be reduced from 96 to 92 
+INFO: [Synth 8-12589] Found 1 bits of RAM  (icache_0/i_6) with no load. RAM width may be reduced from 45 to 44 
+WARNING: [Synth 8-3936] Found unconnected internal register 'rams[0].snoop_tags_set_reg[0]' and it is trimmed from '45' to '44' bits. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/icache.vhdl:427]
+INFO: [Synth 8-3971] The signal "icache_0/rams[0].ic_tags_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-12589] Found 1 bits of RAM  (icache_0/i_7) with no load. RAM width may be reduced from 45 to 44 
+WARNING: [Synth 8-3936] Found unconnected internal register 'rams[1].snoop_tags_set_reg[1]' and it is trimmed from '45' to '44' bits. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/src/microwatt_0/icache.vhdl:427]
+INFO: [Synth 8-3971] The signal "icache_0/rams[1].ic_tags_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'dcache_0/r1_reg[tlb_hit_way][0]' (FDE) to 'dcache_0/r1_reg[tlb_hit_ways][1]'
+INFO: [Synth 8-3886] merging instance 'icache_0/r_reg[hit_ra][11]' (FDE) to 'icache_0/r_reg[hit_nia][11]'
+INFO: [Synth 8-3886] merging instance 'icache_0/r_reg[hit_ra][10]' (FDE) to 'icache_0/r_reg[hit_nia][10]'
+INFO: [Synth 8-3886] merging instance 'icache_0/r_reg[hit_ra][9]' (FDE) to 'icache_0/r_reg[hit_nia][9]'
+INFO: [Synth 8-3886] merging instance 'icache_0/r_reg[hit_ra][8]' (FDE) to 'icache_0/r_reg[hit_nia][8]'
+INFO: [Synth 8-3886] merging instance 'icache_0/r_reg[hit_ra][7]' (FDE) to 'icache_0/r_reg[hit_nia][7]'
+INFO: [Synth 8-3886] merging instance 'icache_0/r_reg[hit_ra][6]' (FDE) to 'icache_0/r_reg[hit_nia][6]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[42]' (FDRE) to 'icache_0/snoop_tag_reg[44]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[43]' (FDRE) to 'icache_0/snoop_tag_reg[44]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[44]' (FDRE) to 'icache_0/snoop_tag_reg[41]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[39]' (FDRE) to 'icache_0/snoop_tag_reg[41]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[40]' (FDRE) to 'icache_0/snoop_tag_reg[41]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[41]' (FDRE) to 'icache_0/snoop_tag_reg[38]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[36]' (FDRE) to 'icache_0/snoop_tag_reg[38]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[37]' (FDRE) to 'icache_0/snoop_tag_reg[38]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[38]' (FDRE) to 'icache_0/snoop_tag_reg[35]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[33]' (FDRE) to 'icache_0/snoop_tag_reg[35]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[34]' (FDRE) to 'icache_0/snoop_tag_reg[35]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[35]' (FDRE) to 'icache_0/snoop_tag_reg[32]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[30]' (FDRE) to 'icache_0/snoop_tag_reg[32]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[31]' (FDRE) to 'icache_0/snoop_tag_reg[32]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[32]' (FDRE) to 'icache_0/snoop_tag_reg[29]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[27]' (FDRE) to 'icache_0/snoop_tag_reg[29]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[28]' (FDRE) to 'icache_0/snoop_tag_reg[29]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[29]' (FDRE) to 'icache_0/snoop_tag_reg[26]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[24]' (FDRE) to 'icache_0/snoop_tag_reg[26]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[25]' (FDRE) to 'icache_0/snoop_tag_reg[26]'
+INFO: [Synth 8-3886] merging instance 'icache_0/snoop_tag_reg[26]' (FDRE) to 'icache_0/snoop_tag_reg[23]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache_0/\snoop_tag_reg[20] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (icache_0/\r_reg[wb][sel][7] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache_0/\r_reg[wb][dat][63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (icache_0/\icache_log.log_data_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache_0/\icache_log.log_data_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dcache_0/\dc_log.log_data_reg[6] )
+INFO: [Synth 8-5544] ROM "regs/receiver/toc_value" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regs/receiver/" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regs/receiver/toc_value" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regs/receiver/" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regs/trigger_level" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart0_16550.uart0 /\regs/delayed_modem_signals_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\wb_out_reg[dat][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (syscon0/\wishbone_out_reg[dat][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_icp/\r_reg[wb_rd_data][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (io_cycle_external_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[13][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[12][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[15][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[14][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[9][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[8][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[11][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[10][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[5][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[4][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[7][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[6][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[2][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[0][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[3][server][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\xives_reg[1][server][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xics_ics/\wb_out_reg[dat][17] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 2730.605 ; gain = 1039.082 ; free physical = 14162 ; free virtual = 48777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+--------------------------+---------------+----------------+
+|Module Name | RTL Object               | Depth x Width | Implemented As | 
++------------+--------------------------+---------------+----------------+
+|fpu         | inverse_table[0]         | 1024x18       | LUT            | 
+|decode1     | decode_reg[unit]         | 512x2         | Block RAM      | 
+|decode1     | decode_reg[insn_type]    | 512x6         | Block RAM      | 
+|decode1     | decode_reg[input_reg_b]  | 512x2         | Block RAM      | 
+|decode1     | decode_reg[output_reg_a] | 512x2         | Block RAM      | 
++------------+--------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|core__GB3    | debug_0/maybe_log.log_array_reg | 2 K x 256(READ_FIRST)  | W |   | 2 K x 256(WRITE_FIRST) |   | R | Port A and B     | 0      | 14     | 
+|fetch1_0     | btc.btc_memory_reg              | 1 K x 116(READ_FIRST)  | W |   | 1 K x 116(WRITE_FIRST) |   | R | Port A and B     | 1      | 3      | 
+|fetch1_0     | itlb_tags_reg                   | 64 x 46(READ_FIRST)    | W |   | 64 x 46(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|fetch1_0     | itlb_ptes_reg                   | 64 x 64(READ_FIRST)    | W |   | 64 x 56(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|dcache_0     | rams[0].way/ram_reg             | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|dcache_0     | rams[1].way/ram_reg             | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|icache_0     | rams[0].way/ram_reg             | 512 x 72(READ_FIRST)   | W |   | 512 x 72(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|icache_0     | rams[1].way/ram_reg             | 512 x 72(READ_FIRST)   | W |   | 512 x 72(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\bram.bram0  | ram_0/memory_reg                | 2 K x 64(READ_FIRST)   | W |   | 2 K x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++-------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------+----------------------------------------+----------------+----------------------+-----------------+
+|Module Name         | RTL Object                             | Inference      | Size (Depth x Width) | Primitives      | 
++--------------------+----------------------------------------+----------------+----------------------+-----------------+
+|execute1_0          | odd_sprs_reg                           | Implied        | 8 x 64               | RAM32M x 11     | 
+|execute1_0          | even_sprs_reg                          | Implied        | 8 x 64               | RAM32M x 11     | 
+|dcache_0            | maybe_tlb_plrus.tlb_plru_ram_reg       | Implied        | 64 x 1               | RAM64X1S x 1    | 
+|dcache_0            | maybe_plrus.plru_ram_reg               | Implied        | 64 x 1               | RAM64X1S x 1    | 
+|dcache_0            | dtlb_ptes_reg                          | User Attribute | 64 x 120             | RAM64X1D x 120  | 
+|dcache_0            | dtlb_tags_reg                          | User Attribute | 64 x 94              | RAM64X1D x 94   | 
+|dcache_0            | cache_tags_reg                         | User Attribute | 64 x 92              | RAM64X1D x 184  | 
+|icache_0            | maybe_plrus.plru_ram_reg               | Implied        | 64 x 1               | RAM64X1S x 1    | 
+|\uart0_16550.uart0  | regs/receiver/fifo_rx/rfifo/ram_reg    | Implied        | 16 x 8               | RAM32M x 2      | 
+|\uart0_16550.uart0  | regs/transmitter/fifo_tx/tfifo/ram_reg | Implied        | 16 x 8               | RAM32M x 2      | 
++--------------------+----------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:00:49 . Memory (MB): peak = 2730.605 ; gain = 1039.082 ; free physical = 15373 ; free virtual = 50028
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:04 . Memory (MB): peak = 2934.316 ; gain = 1242.793 ; free physical = 15164 ; free virtual = 49826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|fetch1_0     | btc.btc_memory_reg              | 1 K x 116(READ_FIRST)  | W |   | 1 K x 116(WRITE_FIRST) |   | R | Port A and B     | 1      | 3      | 
+|fetch1_0     | itlb_tags_reg                   | 64 x 46(READ_FIRST)    | W |   | 64 x 46(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|fetch1_0     | itlb_ptes_reg                   | 64 x 64(READ_FIRST)    | W |   | 64 x 56(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|icache_0     | rams[0].way/ram_reg             | 512 x 72(READ_FIRST)   | W |   | 512 x 72(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|icache_0     | rams[1].way/ram_reg             | 512 x 72(READ_FIRST)   | W |   | 512 x 72(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|dcache_0     | rams[0].way/ram_reg             | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|dcache_0     | rams[1].way/ram_reg             | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|core__GB3    | debug_0/maybe_log.log_array_reg | 2 K x 256(READ_FIRST)  | W |   | 2 K x 256(WRITE_FIRST) |   | R | Port A and B     | 0      | 14     | 
+|\bram.bram0  | ram_0/memory_reg                | 2 K x 64(READ_FIRST)   | W |   | 2 K x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++-------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++--------------------+----------------------------------------+----------------+----------------------+-----------------+
+|Module Name         | RTL Object                             | Inference      | Size (Depth x Width) | Primitives      | 
++--------------------+----------------------------------------+----------------+----------------------+-----------------+
+|execute1_0          | odd_sprs_reg                           | Implied        | 8 x 64               | RAM32M x 11     | 
+|execute1_0          | even_sprs_reg                          | Implied        | 8 x 64               | RAM32M x 11     | 
+|icache_0            | maybe_plrus.plru_ram_reg               | Implied        | 64 x 1               | RAM64X1S x 1    | 
+|dcache_0            | maybe_tlb_plrus.tlb_plru_ram_reg       | Implied        | 64 x 1               | RAM64X1S x 1    | 
+|dcache_0            | maybe_plrus.plru_ram_reg               | Implied        | 64 x 1               | RAM64X1S x 1    | 
+|dcache_0            | dtlb_ptes_reg                          | User Attribute | 64 x 120             | RAM64X1D x 120  | 
+|dcache_0            | dtlb_tags_reg                          | User Attribute | 64 x 94              | RAM64X1D x 94   | 
+|dcache_0            | cache_tags_reg                         | User Attribute | 64 x 92              | RAM64X1D x 184  | 
+|\uart0_16550.uart0  | regs/receiver/fifo_rx/rfifo/ram_reg    | Implied        | 16 x 8               | RAM32M x 2      | 
+|\uart0_16550.uart0  | regs/transmitter/fifo_tx/tfifo/ram_reg | Implied        | 16 x 8               | RAM32M x 2      | 
++--------------------+----------------------------------------+----------------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance soc0i_6/bram.bram0/ram_0/memory_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0i_6/bram.bram0/ram_0/memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0i_6/bram.bram0/ram_0/memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0i_6/bram.bram0/ram_0/memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/register_file_0/registers_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/register_file_0/registers_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/register_file_0/registers_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/decode1_0/decode_reg[unit] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/decode1_0/decode_reg[insn_type] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/decode1_0/decode_reg[input_reg_b] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/decode1_0/decode_reg[output_reg_a] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/fetch1_0/itlb_tags_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/fetch1_0/itlb_ptes_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/icache_0/predecoder_0/pred_reg[0][maj_predecode] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/icache_0/predecoder_0/pred_reg[0][maj_predecode] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/icache_0/predecoder_0/pred_reg[0][row_predecode] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/icache_0/predecoder_0/pred_reg[0][row_predecode] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/icache_0/rams[0].way/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/icache_0/rams[1].way/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/icache_0/rams[0].ic_tags_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/icache_0/rams[0].ic_tags_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/icache_0/rams[1].ic_tags_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/icache_0/rams[1].ic_tags_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/dcache_0/rams[0].way/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/dcache_0/rams[1].way/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance processors[0].corei_2/soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:17 ; elapsed = 00:01:11 . Memory (MB): peak = 2946.242 ; gain = 1254.719 ; free physical = 13897 ; free virtual = 48562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/register_file_0/registers_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/register_file_0/registers_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/register_file_0/registers_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/decode1_0/decode_reg[unit] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/decode1_0/decode_reg[insn_type] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/decode1_0/decode_reg[input_reg_b] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/decode1_0/decode_reg[output_reg_a] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/fetch1_0/itlb_tags_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/fetch1_0/itlb_ptes_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/icache_0/predecoder_0/pred_reg[0][maj_predecode] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/icache_0/predecoder_0/pred_reg[0][maj_predecode] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/icache_0/predecoder_0/pred_reg[0][row_predecode] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/icache_0/predecoder_0/pred_reg[0][row_predecode] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/icache_0/rams[0].way/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/icache_0/rams[1].way/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/icache_0/rams[0].ic_tags_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/icache_0/rams[0].ic_tags_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/icache_0/rams[1].ic_tags_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/icache_0/rams[1].ic_tags_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/dcache_0/rams[0].way/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/dcache_0/rams[1].way/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/bram.bram0/ram_0/memory_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/bram.bram0/ram_0/memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/bram.bram0/ram_0/memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc0/bram.bram0/ram_0/memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:01:14 . Memory (MB): peak = 2946.242 ; gain = 1254.719 ; free physical = 13902 ; free virtual = 48614
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:01:14 . Memory (MB): peak = 2946.242 ; gain = 1254.719 ; free physical = 13902 ; free virtual = 48614
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:01:15 . Memory (MB): peak = 2946.242 ; gain = 1254.719 ; free physical = 13905 ; free virtual = 48617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:01:15 . Memory (MB): peak = 2946.242 ; gain = 1254.719 ; free physical = 13905 ; free virtual = 48617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:16 . Memory (MB): peak = 2946.242 ; gain = 1254.719 ; free physical = 13905 ; free virtual = 48617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:16 . Memory (MB): peak = 2946.242 ; gain = 1254.719 ; free physical = 13905 ; free virtual = 48617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|multiply_32s | C+A*B               | 23     | 17     | 0      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|multiply_32s | PCIN>>17+A*B        | 23     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply_32s | C'+(A*B)'           | 30     | 17     | 48     | -      | 17     | 0    | 0    | 1    | -    | -     | 1    | 0    | 
+|multiply_32s | PCIN>>17+(A*B)'     | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply_2   | (C+A*B)'            | 24     | 17     | 34     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|multiply_2   | PCIN>>17+(A*B)'     | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply_2   | (C+A*B)'            | 24     | 17     | 24     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|multiply_2   | PCIN>>17+(A*B)'     | 24     | 18     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply_2   | (A*B)'              | 24     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|multiply_2   | PCIN>>17+(A*B)'     | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply_2   | (C+A*B)'            | 24     | 17     | 24     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|multiply_2   | PCIN>>17+(A*B)'     | 24     | 18     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply_2   | (A*B)'              | 30     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|multiply_2   | PCIN>>17+(A*B)'     | 30     | 17     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply_2   | (C+A*B)'            | 30     | 17     | 46     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|multiply_2   | PCIN>>17+(A*B)'     | 30     | 18     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply_2   | A:B+C               | 30     | 18     | 48     | -      | 0      | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|multiply_2   | (A:B+C+CARRYIN)'    | 30     | 18     | 48     | -      | 0      | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|multiply_2   | (PCIN+A:B+CARRYIN)' | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|multiply_2   | PCIN+A':B'+CARRYIN  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|multiply     | (C+A*B)'            | 24     | 17     | 34     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|multiply     | PCIN>>17+(A*B)'     | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply     | (C+A*B)'            | 24     | 17     | 24     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|multiply     | PCIN>>17+(A*B)'     | 24     | 13     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply     | (A*B)'              | 24     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|multiply     | PCIN>>17+(A*B)'     | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply     | (C+A*B)'            | 24     | 17     | 24     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|multiply     | PCIN>>17+(A*B)'     | 24     | 13     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply     | (A*B)'              | 16     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|multiply     | PCIN>>17+(A*B)'     | 16     | 17     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply     | (C+A*B)'            | 16     | 17     | 46     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|multiply     | PCIN>>17+(A*B)'     | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|multiply     | A:B+C               | 30     | 18     | 48     | -      | 0      | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|multiply     | (A:B+C+CARRYIN)'    | 30     | 18     | 48     | -      | 0      | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|multiply     | Dynamic             | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|multiply     | Dynamic             | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
++-------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BSCANE2    |     1|
+|2     |BUFG       |     3|
+|3     |CARRY4     |   713|
+|4     |DSP48E1    |    36|
+|13    |LUT1       |   438|
+|14    |LUT2       |  1600|
+|15    |LUT3       |  4166|
+|16    |LUT4       |  2201|
+|17    |LUT5       |  3760|
+|18    |LUT6       |  8742|
+|19    |MUXF7      |   743|
+|20    |MUXF8      |   127|
+|21    |PLLE2_BASE |     1|
+|22    |RAM32M     |    24|
+|23    |RAM32X1D   |     4|
+|24    |RAM64X1D   |   368|
+|25    |RAM64X1S   |     3|
+|26    |RAMB18E1   |     5|
+|31    |RAMB36E1   |    36|
+|39    |FDCE       |   416|
+|40    |FDPE       |    29|
+|41    |FDRE       | 10431|
+|42    |FDSE       |   108|
+|43    |IBUF       |     3|
+|44    |OBUF       |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:16 . Memory (MB): peak = 2946.242 ; gain = 1254.719 ; free physical = 13905 ; free virtual = 48617
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 477 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:17 . Memory (MB): peak = 2946.242 ; gain = 1123.027 ; free physical = 20050 ; free virtual = 54762
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:20 . Memory (MB): peak = 2946.242 ; gain = 1254.719 ; free physical = 20050 ; free virtual = 54752
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2946.242 ; gain = 0.000 ; free physical = 20052 ; free virtual = 54754
+INFO: [Netlist 29-17] Analyzing 2060 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2990.344 ; gain = 0.000 ; free physical = 20070 ; free virtual = 54772
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 400 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 24 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 368 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 3 instances
+
+Synth Design complete | Checksum: 809901ef
+INFO: [Common 17-83] Releasing license: Synthesis
+429 Infos, 270 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:25 . Memory (MB): peak = 2990.379 ; gain = 1444.035 ; free physical = 20071 ; free virtual = 54773
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8342.628; main = 2118.391; forked = 6690.409
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 17151.500; main = 2990.348; forked = 14424.809
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3014.355 ; gain = 0.000 ; free physical = 20069 ; free virtual = 54774
+INFO: [Common 17-1381] The checkpoint '/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/microwatt_0.runs/synth_1/toplevel.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file toplevel_utilization_synth.rpt -pb toplevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 17 19:36:32 2025...

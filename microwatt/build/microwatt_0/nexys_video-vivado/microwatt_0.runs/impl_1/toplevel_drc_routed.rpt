@@ -1,0 +1,1311 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Wed Nov 19 17:09:07 2025
+| Host         : exjobb35 running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_drc -file toplevel_drc_routed.rpt -pb toplevel_drc_routed.pb -rpx toplevel_drc_routed.rpx
+| Design       : toplevel
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 254
++-----------+----------+------------------------------+--------+
+| Rule      | Severity | Description                  | Checks |
++-----------+----------+------------------------------+--------+
+| BUFC-1    | Warning  | Input Buffer Connections     | 2      |
+| DPIP-1    | Warning  | Input pipelining             | 160    |
+| DPOP-1    | Warning  | PREG Output pipelining       | 52     |
+| DPOP-2    | Warning  | MREG Output pipelining       | 28     |
+| REQP-1839 | Warning  | RAMB36 async control check   | 8      |
+| REQP-29   | Advisory | enum_CREG_0_connects_CEC_GND | 4      |
++-----------+----------+------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer has_dram.dram/litedram/IOBUFDS/IBUFDS (in has_dram.dram/litedram/IOBUFDS macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer has_dram.dram/litedram/IOBUFDS_1/IBUFDS (in has_dram.dram/litedram/IOBUFDS_1 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m00 input soc0/processors[0].core/execute1_0/mult_32s_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m00 input soc0/processors[0].core/execute1_0/mult_32s_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m01 input soc0/processors[0].core/execute1_0/mult_32s_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m01 input soc0/processors[0].core/execute1_0/mult_32s_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m10 input soc0/processors[0].core/execute1_0/mult_32s_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m10 input soc0/processors[0].core/execute1_0/mult_32s_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m11 input soc0/processors[0].core/execute1_0/mult_32s_0/m11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m11 input soc0/processors[0].core/execute1_0/mult_32s_0/m11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m00 input soc0/processors[0].core/execute1_0/multiply_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m00 input soc0/processors[0].core/execute1_0/multiply_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m00 input soc0/processors[0].core/execute1_0/multiply_0/m00/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m01 input soc0/processors[0].core/execute1_0/multiply_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m01 input soc0/processors[0].core/execute1_0/multiply_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m02 input soc0/processors[0].core/execute1_0/multiply_0/m02/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m02 input soc0/processors[0].core/execute1_0/multiply_0/m02/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m02 input soc0/processors[0].core/execute1_0/multiply_0/m02/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m03 input soc0/processors[0].core/execute1_0/multiply_0/m03/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m03 input soc0/processors[0].core/execute1_0/multiply_0/m03/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m10 input soc0/processors[0].core/execute1_0/multiply_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m10 input soc0/processors[0].core/execute1_0/multiply_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m11 input soc0/processors[0].core/execute1_0/multiply_0/m11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m11 input soc0/processors[0].core/execute1_0/multiply_0/m11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m12 input soc0/processors[0].core/execute1_0/multiply_0/m12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m12 input soc0/processors[0].core/execute1_0/multiply_0/m12/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m12 input soc0/processors[0].core/execute1_0/multiply_0/m12/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m13 input soc0/processors[0].core/execute1_0/multiply_0/m13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m13 input soc0/processors[0].core/execute1_0/multiply_0/m13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m20 input soc0/processors[0].core/execute1_0/multiply_0/m20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m20 input soc0/processors[0].core/execute1_0/multiply_0/m20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m21 input soc0/processors[0].core/execute1_0/multiply_0/m21/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m21 input soc0/processors[0].core/execute1_0/multiply_0/m21/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m22 input soc0/processors[0].core/execute1_0/multiply_0/m22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m22 input soc0/processors[0].core/execute1_0/multiply_0/m22/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m22 input soc0/processors[0].core/execute1_0/multiply_0/m22/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m23 input soc0/processors[0].core/execute1_0/multiply_0/m23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m23 input soc0/processors[0].core/execute1_0/multiply_0/m23/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/p0 input soc0/processors[0].core/execute1_0/multiply_0/p0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/p0 input soc0/processors[0].core/execute1_0/multiply_0/p0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/s0 input soc0/processors[0].core/execute1_0/multiply_0/s0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/s0 input soc0/processors[0].core/execute1_0/multiply_0/s0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/s0 input soc0/processors[0].core/execute1_0/multiply_0/s0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/s1 input soc0/processors[0].core/execute1_0/multiply_0/s1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/s1 input soc0/processors[0].core/execute1_0/multiply_0/s1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/s1 input soc0/processors[0].core/execute1_0/multiply_0/s1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#49 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#50 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#51 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#52 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#53 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#54 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#55 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#56 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#57 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#58 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#59 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#60 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#61 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#62 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#63 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#64 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#65 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#66 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#67 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#68 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#69 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#70 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#71 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#72 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#73 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p0 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#74 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p0 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#75 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#76 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#77 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#78 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#79 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#80 Warning
+Input pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#81 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m00 input soc0/processors[1].core/execute1_0/mult_32s_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#82 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m00 input soc0/processors[1].core/execute1_0/mult_32s_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#83 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m01 input soc0/processors[1].core/execute1_0/mult_32s_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#84 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m01 input soc0/processors[1].core/execute1_0/mult_32s_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#85 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m10 input soc0/processors[1].core/execute1_0/mult_32s_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#86 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m10 input soc0/processors[1].core/execute1_0/mult_32s_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#87 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m11 input soc0/processors[1].core/execute1_0/mult_32s_0/m11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#88 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m11 input soc0/processors[1].core/execute1_0/mult_32s_0/m11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#89 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m00 input soc0/processors[1].core/execute1_0/multiply_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#90 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m00 input soc0/processors[1].core/execute1_0/multiply_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#91 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m00 input soc0/processors[1].core/execute1_0/multiply_0/m00/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#92 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m01 input soc0/processors[1].core/execute1_0/multiply_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#93 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m01 input soc0/processors[1].core/execute1_0/multiply_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#94 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m02 input soc0/processors[1].core/execute1_0/multiply_0/m02/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#95 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m02 input soc0/processors[1].core/execute1_0/multiply_0/m02/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#96 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m02 input soc0/processors[1].core/execute1_0/multiply_0/m02/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#97 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m03 input soc0/processors[1].core/execute1_0/multiply_0/m03/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#98 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m03 input soc0/processors[1].core/execute1_0/multiply_0/m03/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#99 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m10 input soc0/processors[1].core/execute1_0/multiply_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#100 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m10 input soc0/processors[1].core/execute1_0/multiply_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#101 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m11 input soc0/processors[1].core/execute1_0/multiply_0/m11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#102 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m11 input soc0/processors[1].core/execute1_0/multiply_0/m11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#103 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m12 input soc0/processors[1].core/execute1_0/multiply_0/m12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#104 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m12 input soc0/processors[1].core/execute1_0/multiply_0/m12/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#105 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m12 input soc0/processors[1].core/execute1_0/multiply_0/m12/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#106 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m13 input soc0/processors[1].core/execute1_0/multiply_0/m13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#107 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m13 input soc0/processors[1].core/execute1_0/multiply_0/m13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#108 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m20 input soc0/processors[1].core/execute1_0/multiply_0/m20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#109 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m20 input soc0/processors[1].core/execute1_0/multiply_0/m20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#110 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m21 input soc0/processors[1].core/execute1_0/multiply_0/m21/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#111 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m21 input soc0/processors[1].core/execute1_0/multiply_0/m21/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#112 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m22 input soc0/processors[1].core/execute1_0/multiply_0/m22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#113 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m22 input soc0/processors[1].core/execute1_0/multiply_0/m22/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#114 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m22 input soc0/processors[1].core/execute1_0/multiply_0/m22/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#115 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m23 input soc0/processors[1].core/execute1_0/multiply_0/m23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#116 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m23 input soc0/processors[1].core/execute1_0/multiply_0/m23/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#117 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/p0 input soc0/processors[1].core/execute1_0/multiply_0/p0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#118 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/p0 input soc0/processors[1].core/execute1_0/multiply_0/p0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#119 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/s0 input soc0/processors[1].core/execute1_0/multiply_0/s0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#120 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/s0 input soc0/processors[1].core/execute1_0/multiply_0/s0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#121 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/s0 input soc0/processors[1].core/execute1_0/multiply_0/s0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#122 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/s1 input soc0/processors[1].core/execute1_0/multiply_0/s1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#123 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/s1 input soc0/processors[1].core/execute1_0/multiply_0/s1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#124 Warning
+Input pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/s1 input soc0/processors[1].core/execute1_0/multiply_0/s1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#125 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m00 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#126 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m00 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#127 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m00 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m00/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#128 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m01 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#129 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m01 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#130 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m02 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m02/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#131 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m02 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m02/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#132 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m02 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m02/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#133 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m03 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m03/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#134 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m03 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m03/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#135 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m10 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#136 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m10 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#137 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m11 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#138 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m11 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#139 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m12 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#140 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m12 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m12/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#141 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m12 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m12/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#142 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m13 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#143 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m13 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#144 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m20 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#145 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m20 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#146 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m21 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m21/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#147 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m21 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m21/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#148 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m22 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#149 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m22 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m22/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#150 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m22 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m22/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#151 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m23 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#152 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m23 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m23/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#153 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/p0 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/p0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#154 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/p0 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/p0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#155 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s0 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#156 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s0 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#157 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s0 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#158 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s1 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#159 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s1 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#160 Warning
+Input pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s1 input soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m00 output soc0/processors[0].core/execute1_0/mult_32s_0/m00/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m01 output soc0/processors[0].core/execute1_0/mult_32s_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m10 output soc0/processors[0].core/execute1_0/mult_32s_0/m10/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m10 output soc0/processors[0].core/execute1_0/mult_32s_0/m10/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m10 output soc0/processors[0].core/execute1_0/mult_32s_0/m10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m11 output soc0/processors[0].core/execute1_0/mult_32s_0/m11/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m11 output soc0/processors[0].core/execute1_0/mult_32s_0/m11/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m11 output soc0/processors[0].core/execute1_0/mult_32s_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m01 output soc0/processors[0].core/execute1_0/multiply_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m03 output soc0/processors[0].core/execute1_0/multiply_0/m03/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m11 output soc0/processors[0].core/execute1_0/multiply_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m13 output soc0/processors[0].core/execute1_0/multiply_0/m13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m21 output soc0/processors[0].core/execute1_0/multiply_0/m21/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m23 output soc0/processors[0].core/execute1_0/multiply_0/m23/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/p1 output soc0/processors[0].core/execute1_0/multiply_0/p1/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/p1 output soc0/processors[0].core/execute1_0/multiply_0/p1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/p1 output soc0/processors[0].core/execute1_0/multiply_0/p1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/s0 output soc0/processors[0].core/execute1_0/multiply_0/s0/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#25 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p1 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#26 Warning
+PREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#27 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m00 output soc0/processors[1].core/execute1_0/mult_32s_0/m00/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#28 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m01 output soc0/processors[1].core/execute1_0/mult_32s_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#29 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m10 output soc0/processors[1].core/execute1_0/mult_32s_0/m10/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#30 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m10 output soc0/processors[1].core/execute1_0/mult_32s_0/m10/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#31 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m10 output soc0/processors[1].core/execute1_0/mult_32s_0/m10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#32 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m11 output soc0/processors[1].core/execute1_0/mult_32s_0/m11/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#33 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m11 output soc0/processors[1].core/execute1_0/mult_32s_0/m11/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#34 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m11 output soc0/processors[1].core/execute1_0/mult_32s_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#35 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m01 output soc0/processors[1].core/execute1_0/multiply_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#36 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m03 output soc0/processors[1].core/execute1_0/multiply_0/m03/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#37 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m11 output soc0/processors[1].core/execute1_0/multiply_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#38 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m13 output soc0/processors[1].core/execute1_0/multiply_0/m13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#39 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m21 output soc0/processors[1].core/execute1_0/multiply_0/m21/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#40 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m23 output soc0/processors[1].core/execute1_0/multiply_0/m23/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#41 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/p1 output soc0/processors[1].core/execute1_0/multiply_0/p1/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#42 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/p1 output soc0/processors[1].core/execute1_0/multiply_0/p1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#43 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/p1 output soc0/processors[1].core/execute1_0/multiply_0/p1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#44 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/s0 output soc0/processors[1].core/execute1_0/multiply_0/s0/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#45 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m01 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#46 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m03 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m03/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#47 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m11 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#48 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m13 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#49 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m21 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m21/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#50 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m23 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m23/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#51 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/p1 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/p1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#52 Warning
+PREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s0 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s0/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m00 multiplier stage soc0/processors[0].core/execute1_0/mult_32s_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/mult_32s_0/m01 multiplier stage soc0/processors[0].core/execute1_0/mult_32s_0/m01/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m00 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m02 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m02/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m10 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m12 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m20 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/execute1_0/multiply_0/m22 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m22/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m00 multiplier stage soc0/processors[1].core/execute1_0/mult_32s_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/mult_32s_0/m01 multiplier stage soc0/processors[1].core/execute1_0/mult_32s_0/m01/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m00 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m02 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m02/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m10 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m12 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m20 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/execute1_0/multiply_0/m22 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m22/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m00 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m02 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m02/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#25 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m10 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#26 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m12 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#27 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m20 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#28 Warning
+MREG Output pipelining  
+DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m22 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m22/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 soc0/processors[0].core/icache_0/rams[0].ic_tags_reg_1 has an input control pin soc0/processors[0].core/icache_0/rams[0].ic_tags_reg_1/ENARDEN (net: soc0/processors[0].core/icache_0/rams[0].snoop_tags_set_reg[0]0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 soc0/processors[0].core/icache_0/rams[0].ic_tags_reg_1 has an input control pin soc0/processors[0].core/icache_0/rams[0].ic_tags_reg_1/ENARDEN (net: soc0/processors[0].core/icache_0/rams[0].snoop_tags_set_reg[0]0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 soc0/processors[0].core/icache_0/rams[1].ic_tags_reg_1 has an input control pin soc0/processors[0].core/icache_0/rams[1].ic_tags_reg_1/ENARDEN (net: soc0/processors[0].core/icache_0/rams[0].snoop_tags_set_reg[0]0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 soc0/processors[0].core/icache_0/rams[1].ic_tags_reg_1 has an input control pin soc0/processors[0].core/icache_0/rams[1].ic_tags_reg_1/ENARDEN (net: soc0/processors[0].core/icache_0/rams[0].snoop_tags_set_reg[0]0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 soc0/processors[1].core/icache_0/rams[0].ic_tags_reg_1 has an input control pin soc0/processors[1].core/icache_0/rams[0].ic_tags_reg_1/ENARDEN (net: soc0/processors[1].core/icache_0/rams[0].snoop_tags_set_reg[0]0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 soc0/processors[1].core/icache_0/rams[0].ic_tags_reg_1 has an input control pin soc0/processors[1].core/icache_0/rams[0].ic_tags_reg_1/ENARDEN (net: soc0/processors[1].core/icache_0/rams[0].snoop_tags_set_reg[0]0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 soc0/processors[1].core/icache_0/rams[1].ic_tags_reg_1 has an input control pin soc0/processors[1].core/icache_0/rams[1].ic_tags_reg_1/ENARDEN (net: soc0/processors[1].core/icache_0/rams[0].snoop_tags_set_reg[0]0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 soc0/processors[1].core/icache_0/rams[1].ic_tags_reg_1 has an input control pin soc0/processors[1].core/icache_0/rams[1].ic_tags_reg_1/ENARDEN (net: soc0/processors[1].core/icache_0/rams[0].snoop_tags_set_reg[0]0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-29#1 Advisory
+enum_CREG_0_connects_CEC_GND  
+soc0/processors[0].core/execute1_0/multiply_0/p1: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-29#2 Advisory
+enum_CREG_0_connects_CEC_GND  
+soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p1: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-29#3 Advisory
+enum_CREG_0_connects_CEC_GND  
+soc0/processors[1].core/execute1_0/multiply_0/p1: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-29#4 Advisory
+enum_CREG_0_connects_CEC_GND  
+soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/p1: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+Related violations: <none>
+
+

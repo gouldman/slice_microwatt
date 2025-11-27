@@ -1,0 +1,2081 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Wed Nov 19 17:09:10 2025
+| Host         : exjobb35 running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_methodology -file toplevel_methodology_drc_routed.rpt -pb toplevel_methodology_drc_routed.pb -rpx toplevel_methodology_drc_routed.rpx
+| Design       : toplevel
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 343
++-----------+------------------+-------------------------------------------------+--------+
+| Rule      | Severity         | Description                                     | Checks |
++-----------+------------------+-------------------------------------------------+--------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                     | 159    |
+| LUTAR-1   | Warning          | LUT drives async reset alert                    | 2      |
+| SYNTH-6   | Warning          | Timing of a RAM block might be sub-optimal      | 80     |
+| SYNTH-15  | Warning          | Byte wide write enable not inferred             | 8      |
+| SYNTH-16  | Warning          | Address collision                               | 2      |
+| TIMING-18 | Warning          | Missing input or output delay                   | 51     |
+| XDCC-5    | Warning          | User Non-Timing constraint/property overwritten | 1      |
+| REQP-1959 | Advisory         | connects_SERDES_RST_driver_not_FF               | 16     |
+| RTGT-1    | Advisory         | RAM retargeting possibility                     | 24     |
++-----------+------------------+-------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/dmi_ack_0_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/dmi_ack_1_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/jtag_req_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[32]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[33]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[34]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[35]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[36]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[37]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[38]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[39]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[40]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[41]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[42]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[43]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[44]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[45]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[46]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[47]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[48]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[49]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[50]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[51]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[52]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[53]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[54]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[55]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[56]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[57]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[58]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[59]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[60]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#61 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[61]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#62 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[62]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#63 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[63]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#64 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[64]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#65 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[65]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[66]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[66]_rep/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[66]_rep__0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[66]_rep__1/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#70 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[67]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#71 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[67]_rep/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[67]_rep__0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[67]_rep__1/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[68]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[68]_rep/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#76 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[68]_rep__0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#77 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[69]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#78 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#79 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[70]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#80 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[71]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#81 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[72]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#82 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[73]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#83 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#84 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#85 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/request_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#86 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#87 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#88 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#89 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#90 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#91 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#92 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#93 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#94 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#95 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#96 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#97 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#98 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#99 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#100 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#101 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#102 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#103 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#104 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#105 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#106 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#107 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#108 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#109 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#110 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#111 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[32]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#112 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[33]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#113 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[34]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#114 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[35]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#115 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[36]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#116 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[37]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#117 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[38]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#118 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[39]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#119 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#120 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[40]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#121 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[41]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#122 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[42]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#123 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[43]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#124 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[44]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#125 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[45]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#126 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[46]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#127 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[47]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#128 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[48]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#129 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[49]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#130 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#131 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[50]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#132 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[51]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#133 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[52]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#134 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[53]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#135 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[54]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#136 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[55]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#137 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[56]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#138 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[57]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#139 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[58]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#140 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[59]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#141 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#142 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[60]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#143 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[61]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#144 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[62]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#145 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[63]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#146 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[64]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#147 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[65]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#148 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[66]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#149 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[67]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#150 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[68]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#151 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[69]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#152 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#153 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[70]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#154 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[71]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#155 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[72]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[73]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#158 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#159 Critical Warning
+Non-clocked sequential cell  
+The clock pin soc0/dtm/shiftr_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell has_dram.dram/litedram/OSERDESE2_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) has_dram.dram/litedram/ISERDESE2_1/RST,
+has_dram.dram/litedram/ISERDESE2_10/RST,
+has_dram.dram/litedram/ISERDESE2_11/RST,
+has_dram.dram/litedram/ISERDESE2_12/RST,
+has_dram.dram/litedram/ISERDESE2_13/RST,
+has_dram.dram/litedram/ISERDESE2_14/RST,
+has_dram.dram/litedram/ISERDESE2_15/RST,
+has_dram.dram/litedram/ISERDESE2_2/RST,
+has_dram.dram/litedram/ISERDESE2_3/RST,
+has_dram.dram/litedram/ISERDESE2_4/RST,
+has_dram.dram/litedram/ISERDESE2_5/RST,
+has_dram.dram/litedram/ISERDESE2_6/RST,
+has_dram.dram/litedram/ISERDESE2_7/RST,
+has_dram.dram/litedram/ISERDESE2_8/RST,
+has_dram.dram/litedram/ISERDESE2_9/RST (the first 15 of 16 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell soc0/dtm/request[73]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) soc0/dtm/shiftr_reg[63]/CLR, soc0/dtm/shiftr_reg[64]/CLR,
+soc0/dtm/shiftr_reg[65]/CLR, soc0/dtm/shiftr_reg[66]/CLR,
+soc0/dtm/shiftr_reg[67]/CLR, soc0/dtm/shiftr_reg[68]/CLR,
+soc0/dtm/shiftr_reg[69]/CLR, soc0/dtm/shiftr_reg[6]/CLR,
+soc0/dtm/shiftr_reg[70]/CLR, soc0/dtm/shiftr_reg[71]/CLR,
+soc0/dtm/shiftr_reg[72]/CLR, soc0/dtm/shiftr_reg[73]/CLR,
+soc0/dtm/shiftr_reg[7]/CLR, soc0/dtm/shiftr_reg[8]/CLR,
+soc0/dtm/shiftr_reg[9]/CLR (the first 15 of 157 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance has_liteeth.liteeth/mem_1_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance has_liteeth.liteeth/mem_2_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance has_liteeth.liteeth/mem_3_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance has_liteeth.liteeth/mem_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance has_liteeth.liteeth/storage_2_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance has_liteeth.liteeth/storage_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/dcache_0/rams[0].way/ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/dcache_0/rams[1].way/ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_10, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_12, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_13, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_4, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_5, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_6, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#20 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#21 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_8, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#22 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/debug_0/maybe_log.log_array_reg_bram_9, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/decode1_0/decode_reg[input_reg_b], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/decode1_0/decode_reg[insn_type], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/decode1_0/decode_reg[output_reg_a], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/decode1_0/decode_reg[unit], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#27 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#28 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#29 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#30 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/fetch1_0/btc.btc_memory_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#31 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/fetch1_0/itlb_ptes_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#32 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/fetch1_0/itlb_tags_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#33 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/icache_0/predecoder_0/pred_reg[0][maj_predecode], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#34 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/icache_0/predecoder_0/pred_reg[0][row_predecode], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#35 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/icache_0/rams[0].ic_tags_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#36 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/icache_0/rams[0].ic_tags_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#37 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/icache_0/rams[0].way/ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#38 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/icache_0/rams[1].ic_tags_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#39 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/icache_0/rams[1].ic_tags_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#40 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/icache_0/rams[1].way/ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#41 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/register_file_0/registers_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#42 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/register_file_0/registers_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#43 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[0].core/register_file_0/registers_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#44 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/dcache_0/rams[0].way/ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#45 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/dcache_0/rams[1].way/ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#46 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#47 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#48 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_10, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#49 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#50 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_12, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#51 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_13, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#52 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#53 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#54 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_4, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#55 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_5, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#56 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_6, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#57 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#58 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_8, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#59 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/debug_0/maybe_log.log_array_reg_bram_9, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#60 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/decode1_0/decode_reg[input_reg_b], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#61 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/decode1_0/decode_reg[insn_type], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#62 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/decode1_0/decode_reg[output_reg_a], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#63 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/decode1_0/decode_reg[unit], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#64 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/fetch1_0/btc.btc_memory_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#65 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/fetch1_0/btc.btc_memory_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#66 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/fetch1_0/btc.btc_memory_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#67 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/fetch1_0/btc.btc_memory_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#68 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/fetch1_0/itlb_ptes_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#69 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/fetch1_0/itlb_tags_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#70 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/icache_0/predecoder_0/pred_reg[0][maj_predecode], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#71 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/icache_0/predecoder_0/pred_reg[0][row_predecode], implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#72 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/icache_0/rams[0].ic_tags_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#73 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/icache_0/rams[0].ic_tags_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#74 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/icache_0/rams[0].way/ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#75 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/icache_0/rams[1].ic_tags_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#76 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/icache_0/rams[1].ic_tags_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#77 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/icache_0/rams[1].way/ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#78 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/register_file_0/registers_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#79 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/register_file_0/registers_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#80 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance soc0/processors[1].core/register_file_0/registers_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-15#1 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM has_dram.dram/init_ram_0/init_ram_reg_0_0 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#2 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM has_dram.dram/init_ram_0/init_ram_reg_0_1 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#3 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM has_dram.dram/init_ram_0/init_ram_reg_1_0 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#4 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM has_dram.dram/init_ram_0/init_ram_reg_1_1 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#5 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM has_dram.dram/init_ram_0/init_ram_reg_2_0 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#6 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM has_dram.dram/init_ram_0/init_ram_reg_2_1 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#7 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM has_dram.dram/init_ram_0/init_ram_reg_3_0 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#8 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM has_dram.dram/init_ram_0/init_ram_reg_3_1 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-16#1 Warning
+Address collision  
+Block RAM has_liteeth.liteeth/mem_2_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#2 Warning
+Address collision  
+Block RAM has_liteeth.liteeth/mem_3_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on eth_mdio relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on eth_rx_ctl relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on eth_rx_data[0] relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on eth_rx_data[1] relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on eth_rx_data[2] relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on eth_rx_data[3] relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on ext_rst_n relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on spi_flash_hold_n relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on spi_flash_miso relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on spi_flash_mosi relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on spi_flash_wp_n relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on uart_main_rx relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[10] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[11] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[12] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[13] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[14] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[15] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[7] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[8] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dq[9] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dqs_n[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dqs_n[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dqs_p[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on ddram_dqs_p[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on eth_clocks_tx relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on eth_mdc relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on eth_mdio relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on eth_rst_n relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_ctl relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_data[0] relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_data[1] relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_data[2] relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on eth_tx_data[3] relative to the rising and/or falling clock edge(s) of eth_clocks_rx.
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on led0 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on led1 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on led2 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An output delay is missing on led6 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An output delay is missing on spi_flash_cs_n relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An output delay is missing on spi_flash_hold_n relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An output delay is missing on spi_flash_miso relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An output delay is missing on spi_flash_mosi relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An output delay is missing on spi_flash_wp_n relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An output delay is missing on uart_main_tx relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+XDCC-5#1 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on eth_rst_n overrides a previous user property.
+New Source: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fpga/nexys-video.xdc (Line: 75)
+Previous Source: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/src/microwatt_0/fpga/nexys-video.xdc (Line: 74)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_10: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_11: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_12: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_13: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_14: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_15: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_1: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_2: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_3: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_4: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_5: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_6: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_7: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_8: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+has_dram.dram/litedram/ISERDESE2_9: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+RTGT-1#1 Advisory
+RAM retargeting possibility  
+Identified 15 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 10 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are has_dram.dram/cache_tags_reg_0_63_0_0,
+has_dram.dram/cache_tags_reg_0_63_10_10,
+has_dram.dram/cache_tags_reg_0_63_11_11,
+has_dram.dram/cache_tags_reg_0_63_12_12,
+has_dram.dram/cache_tags_reg_0_63_13_13,
+has_dram.dram/cache_tags_reg_0_63_14_14,
+has_dram.dram/cache_tags_reg_0_63_15_15,
+has_dram.dram/cache_tags_reg_0_63_1_1,
+has_dram.dram/cache_tags_reg_0_63_2_2,
+has_dram.dram/cache_tags_reg_0_63_3_3,
+has_dram.dram/cache_tags_reg_0_63_4_4,
+has_dram.dram/cache_tags_reg_0_63_5_5,
+has_dram.dram/cache_tags_reg_0_63_6_6
+has_dram.dram/cache_tags_reg_0_63_7_7
+Related violations: <none>
+
+RTGT-1#2 Advisory
+RAM retargeting possibility  
+Identified 15 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 10 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are has_dram.dram/cache_tags_reg_0_63_16_16,
+has_dram.dram/cache_tags_reg_0_63_17_17,
+has_dram.dram/cache_tags_reg_0_63_18_18,
+has_dram.dram/cache_tags_reg_0_63_19_19,
+has_dram.dram/cache_tags_reg_0_63_20_20,
+has_dram.dram/cache_tags_reg_0_63_21_21,
+has_dram.dram/cache_tags_reg_0_63_22_22,
+has_dram.dram/cache_tags_reg_0_63_23_23,
+has_dram.dram/cache_tags_reg_0_63_24_24,
+has_dram.dram/cache_tags_reg_0_63_25_25,
+has_dram.dram/cache_tags_reg_0_63_26_26,
+has_dram.dram/cache_tags_reg_0_63_27_27,
+has_dram.dram/cache_tags_reg_0_63_28_28
+has_dram.dram/cache_tags_reg_0_63_29_29
+Related violations: <none>
+
+RTGT-1#3 Advisory
+RAM retargeting possibility  
+Identified 15 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 10 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are has_dram.dram/cache_tags_reg_0_63_32_32,
+has_dram.dram/cache_tags_reg_0_63_33_33,
+has_dram.dram/cache_tags_reg_0_63_34_34,
+has_dram.dram/cache_tags_reg_0_63_35_35,
+has_dram.dram/cache_tags_reg_0_63_36_36,
+has_dram.dram/cache_tags_reg_0_63_37_37,
+has_dram.dram/cache_tags_reg_0_63_38_38,
+has_dram.dram/cache_tags_reg_0_63_39_39,
+has_dram.dram/cache_tags_reg_0_63_40_40,
+has_dram.dram/cache_tags_reg_0_63_41_41,
+has_dram.dram/cache_tags_reg_0_63_42_42,
+has_dram.dram/cache_tags_reg_0_63_43_43,
+has_dram.dram/cache_tags_reg_0_63_44_44
+has_dram.dram/cache_tags_reg_0_63_45_45
+Related violations: <none>
+
+RTGT-1#4 Advisory
+RAM retargeting possibility  
+Identified 15 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 10 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are has_dram.dram/cache_tags_reg_0_63_48_48,
+has_dram.dram/cache_tags_reg_0_63_49_49,
+has_dram.dram/cache_tags_reg_0_63_50_50,
+has_dram.dram/cache_tags_reg_0_63_51_51,
+has_dram.dram/cache_tags_reg_0_63_52_52,
+has_dram.dram/cache_tags_reg_0_63_53_53,
+has_dram.dram/cache_tags_reg_0_63_54_54,
+has_dram.dram/cache_tags_reg_0_63_55_55,
+has_dram.dram/cache_tags_reg_0_63_56_56,
+has_dram.dram/cache_tags_reg_0_63_57_57,
+has_dram.dram/cache_tags_reg_0_63_58_58,
+has_dram.dram/cache_tags_reg_0_63_59_59,
+has_dram.dram/cache_tags_reg_0_63_60_60
+has_dram.dram/cache_tags_reg_0_63_61_61
+Related violations: <none>
+
+RTGT-1#5 Advisory
+RAM retargeting possibility  
+Identified 3 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 2 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_1_1,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_2_2
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_3_3
+Related violations: <none>
+
+RTGT-1#6 Advisory
+RAM retargeting possibility  
+Identified 3 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 2 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_65_65,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_66_66
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_67_67
+Related violations: <none>
+
+RTGT-1#7 Advisory
+RAM retargeting possibility  
+Identified 3 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 2 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_1_1,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_2_2
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_3_3
+Related violations: <none>
+
+RTGT-1#8 Advisory
+RAM retargeting possibility  
+Identified 3 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 2 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_65_65,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_66_66
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_67_67
+Related violations: <none>
+
+RTGT-1#9 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_0_0,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_10_10,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_11_11,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_12_12,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_13_13,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_14_14,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_15_15,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_16_16,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_17_17,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_18_18,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_19_19,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_1_1,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_20_20,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_21_21,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_22_22
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#10 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_48_48,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_49_49,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_50_50,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_51_51,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_52_52,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_53_53,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_54_54,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_55_55,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_56_56,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_57_57,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_58_58,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_59_59,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_60_60,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_61_61,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r1_0_63_62_62
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#11 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_0_0,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_10_10,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_11_11,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_12_12,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_13_13,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_14_14,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_15_15,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_16_16,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_17_17,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_18_18,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_19_19,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_1_1,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_20_20,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_21_21,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_22_22
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#12 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_48_48,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_49_49,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_50_50,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_51_51,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_52_52,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_53_53,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_54_54,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_55_55,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_56_56,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_57_57,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_58_58,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_59_59,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_60_60,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_61_61,
+soc0/processors[0].core/dcache_0/cache_tags_reg_r2_0_63_62_62
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#13 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_100_100,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_101_101,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_102_102,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_103_103,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_104_104,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_105_105,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_106_106,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_107_107,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_108_108,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_109_109,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_110_110,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_111_111,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_112_112,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_113_113,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_114_114
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#14 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_12_12,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_13_13,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_14_14,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_15_15,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_16_16,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_17_17,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_18_18,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_19_19,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_20_20,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_21_21,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_22_22,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_23_23,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_24_24,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_25_25,
+soc0/processors[0].core/dcache_0/dtlb_ptes_reg_0_63_26_26
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#15 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_0_0,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_10_10,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_11_11,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_12_12,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_13_13,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_14_14,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_15_15,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_16_16,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_17_17,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_18_18,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_19_19,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_1_1,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_20_20,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_21_21,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_22_22
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#16 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_48_48,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_49_49,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_50_50,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_51_51,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_52_52,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_53_53,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_54_54,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_55_55,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_56_56,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_57_57,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_58_58,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_59_59,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_60_60,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_61_61,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r1_0_63_62_62
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#17 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_0_0,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_10_10,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_11_11,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_12_12,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_13_13,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_14_14,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_15_15,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_16_16,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_17_17,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_18_18,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_19_19,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_1_1,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_20_20,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_21_21,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_22_22
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#18 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_48_48,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_49_49,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_50_50,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_51_51,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_52_52,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_53_53,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_54_54,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_55_55,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_56_56,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_57_57,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_58_58,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_59_59,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_60_60,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_61_61,
+soc0/processors[1].core/dcache_0/cache_tags_reg_r2_0_63_62_62
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#19 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_100_100,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_101_101,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_102_102,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_103_103,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_104_104,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_105_105,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_106_106,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_107_107,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_108_108,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_109_109,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_110_110,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_111_111,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_112_112,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_113_113,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_114_114
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#20 Advisory
+RAM retargeting possibility  
+Identified 42 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 28 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_12_12,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_13_13,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_14_14,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_15_15,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_16_16,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_17_17,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_18_18,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_19_19,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_20_20,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_21_21,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_22_22,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_23_23,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_24_24,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_25_25,
+soc0/processors[1].core/dcache_0/dtlb_ptes_reg_0_63_26_26
+ (the first 15 of 42 listed)
+Related violations: <none>
+
+RTGT-1#21 Advisory
+RAM retargeting possibility  
+Identified 45 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 30 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_0_0,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_10_10,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_11_11,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_12_12,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_13_13,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_14_14,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_15_15,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_16_16,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_17_17,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_18_18,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_19_19,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_1_1,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_20_20,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_21_21,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_22_22
+ (the first 15 of 45 listed)
+Related violations: <none>
+
+RTGT-1#22 Advisory
+RAM retargeting possibility  
+Identified 45 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 30 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_48_48,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_49_49,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_50_50,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_51_51,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_52_52,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_53_53,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_54_54,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_55_55,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_56_56,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_57_57,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_58_58,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_59_59,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_60_60,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_61_61,
+soc0/processors[0].core/dcache_0/dtlb_tags_reg_0_63_62_62
+ (the first 15 of 45 listed)
+Related violations: <none>
+
+RTGT-1#23 Advisory
+RAM retargeting possibility  
+Identified 45 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 30 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_0_0,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_10_10,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_11_11,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_12_12,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_13_13,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_14_14,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_15_15,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_16_16,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_17_17,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_18_18,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_19_19,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_1_1,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_20_20,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_21_21,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_22_22
+ (the first 15 of 45 listed)
+Related violations: <none>
+
+RTGT-1#24 Advisory
+RAM retargeting possibility  
+Identified 45 RAM64X1D primitives that could be retargeted to RAM64M. Retargeting will save approximately 30 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_48_48,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_49_49,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_50_50,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_51_51,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_52_52,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_53_53,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_54_54,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_55_55,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_56_56,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_57_57,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_58_58,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_59_59,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_60_60,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_61_61,
+soc0/processors[1].core/dcache_0/dtlb_tags_reg_0_63_62_62
+ (the first 15 of 45 listed)
+Related violations: <none>
+
+

@@ -1,0 +1,207 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 1853929
+License: Customer
+
+Current time: 	Mon Nov 17 15:07:21 CET 2025
+Time zone: 	Central European Standard Time (Europe/Stockholm)
+
+OS: Ubuntu
+OS Version: 6.8.0-87-generic
+OS Architecture: amd64
+Available processors (cores): 24
+
+Display: :0
+Screen size: 1920x1200
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 347 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	pe1576su
+User home directory: /home/pe1576su
+User working directory: /home/pe1576su/Desktop/slice/microwatt
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/pe1576su/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/pe1576su/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/pe1576su/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/pe1576su/Desktop/slice/microwatt/vivado.log
+Vivado journal file location: 	/home/pe1576su/Desktop/slice/microwatt/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-1853929-exjobb35
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.1
+XILINX_SDK: /tools/Xilinx/SDK/2019.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	203 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 988 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 948 MB. GUI used memory: 49 MB. Current time: 11/17/25, 3:07:23 PM CET
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/pe1576su/Desktop/peihao_test/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr", 1); // q (O, cl)
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: /home/pe1576su/Desktop/peihao_test/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/pe1576su/Desktop/peihao_test/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 70 MB (+71134kb) [00:00:15]
+// [Engine Memory]: 994 MB (+890862kb) [00:00:15]
+// [GUI Memory]: 102 MB (+29846kb) [00:00:15]
+// Tcl Message: open_project /home/pe1576su/Desktop/peihao_test/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'. 
+// Project name: microwatt_0; location: /home/pe1576su/Desktop/peihao_test/build/microwatt_0/nexys_video-vivado; part: xc7a200tsbg484-1
+dismissDialog("Open Project"); // by (cl)
+// [Engine Memory]: 1,045 MB (+982kb) [00:00:17]
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cl)
+selectButton(PAResourceEtoH.FileSetPanel_RELOAD, "Reload..."); // h (cS, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (cl)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ah (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-nexys-video.vhdl)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 65 MB. Current time: 11/17/25, 3:07:43 PM CET
+// [GUI Memory]: 119 MB (+12585kb) [00:00:40]
+// Elapsed time: 16 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.xpr");
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,091 MB. GUI used memory: 61 MB. Current time: 11/17/25, 3:08:09 PM CET
+// Opening Vivado Project: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.xpr. Version: Vivado v2019.1 
+// by (cl):  Open Project : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: close_project 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'. 
+// Project name: microwatt_0; location: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado; part: xc7a100ticsg324-1L
+// 'i' command handler elapsed time: 9 seconds
+// [Engine Memory]: 1,136 MB (+41333kb) [00:00:53]
+dismissDialog("Open Project"); // by (cl)
+// [GUI Memory]: 126 MB (+781kb) [00:00:55]
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "4 critical warnings"); // h (Q, cl)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cl)
+selectButton(PAResourceEtoH.FileSetPanel_RELOAD, "Reload..."); // h (cS, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (cl)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ah (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,172 MB. GUI used memory: 69 MB. Current time: 11/17/25, 3:08:28 PM CET
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl), soc0 : soc(behaviour) (soc.vhdl)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl)]", 14, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl), cr_file_0 : cr_file(behaviour) (cr_file.vhdl)]", 20, false, false, false, false, false, true); // B (F, cl) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl), soc0 : soc(behaviour) (soc.vhdl), processors[0].core : core(behave) (core.vhdl)]", 14); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl), soc0 : soc(behaviour) (soc.vhdl)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl), soc0 : soc(behaviour) (soc.vhdl)]", 3, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,195 MB. GUI used memory: 64 MB. Current time: 11/17/25, 3:09:03 PM CET
+selectCodeEditor("soc.vhdl", 58, 158); // cl (w, cl)
+// [Engine Memory]: 1,196 MB (+2817kb) [00:02:35]
+// Elapsed time: 66 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "NCPUS"); // l (aT, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// Elapsed time: 11 seconds
+selectCodeEditor("top-arty.vhdl", 59, 183); // cl (w, cl)
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, short_multiply(behaviour) (xilinx-mult.vhdl)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, arty_a7.xdc]", 6, false); // B (F, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(behaviour) (top-arty.vhdl)]", 2); // B (F, cl)
+// Elapsed time: 633 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 181 seconds
+dismissFileChooser();
+// 'i' command handler elapsed time: 181 seconds

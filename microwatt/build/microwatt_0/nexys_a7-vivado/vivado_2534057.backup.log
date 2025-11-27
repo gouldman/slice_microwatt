@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Nov 17 19:34:35 2025
+# Process ID         : 2534057
+# Current directory  : /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado
+# Command line       : vivado -notrace -mode batch -source microwatt_0.tcl
+# Log file           : /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/vivado.log
+# Journal file       : /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_a7-vivado/vivado.jou
+# Running On         : exjobb35
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency      : 4300.000 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 67151 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69299 MB
+# Available Virtual  : 59970 MB
+#-----------------------------------------------------------
+source microwatt_0.tcl -notrace
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 17 19:34:37 2025...

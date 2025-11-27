@@ -1,0 +1,887 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 17 15:03:17 2025
+# Process ID: 1802833
+# Current directory: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/impl_1
+# Command line: vivado -log toplevel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source toplevel.tcl -notrace
+# Log file: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/impl_1/toplevel.vdi
+# Journal file: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source toplevel.tcl -notrace
+Command: link_design -top toplevel -part xc7a100ticsg324-1L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100ticsg324-1L
+INFO: [Netlist 29-17] Analyzing 4396 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~*.litesdcard/sdpads_data_i_reg*}'. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~*.litesdcard/xilinxsdrtristateimpl*_o_reg}'. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~*.litesdcard/sdcard_clk_reg}'. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~*.litesdcard/sdpads_cmd_i_reg}'. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc:561]
+INFO: [Timing 38-2] Deriving generated clocks [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc:561]
+Finished Parsing XDC File [/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/src/microwatt_0/fpga/arty_a7.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2433.723 ; gain = 0.000 ; free physical = 50751 ; free virtual = 59021
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1071 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 44 instances
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS, OBUFTDS): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 99 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 120 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 796 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+9 Infos, 4 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2433.723 ; gain = 1061.242 ; free physical = 50751 ; free virtual = 59021
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100ti'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port shield_io8 expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 1 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.87 ; elapsed = 00:00:00.53 . Memory (MB): peak = 2497.754 ; gain = 64.031 ; free physical = 50745 ; free virtual = 59015
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 2305c03ba
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.58 . Memory (MB): peak = 2497.754 ; gain = 0.000 ; free physical = 50700 ; free virtual = 58969
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 29 inverter(s) to 54 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 15cdd821a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.87 . Memory (MB): peak = 2503.738 ; gain = 1.000 ; free physical = 50695 ; free virtual = 58965
+INFO: [Opt 31-389] Phase Retarget created 23 cells and removed 311 cells
+INFO: [Opt 31-1021] In phase Retarget, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1611d9156
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2503.738 ; gain = 1.000 ; free physical = 50696 ; free virtual = 58966
+INFO: [Opt 31-389] Phase Constant propagation created 106 cells and removed 214 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 12f1c891f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2503.738 ; gain = 1.000 ; free physical = 50696 ; free virtual = 58966
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2 cells
+INFO: [Opt 31-1021] In phase Sweep, 215 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 12f1c891f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2503.738 ; gain = 1.000 ; free physical = 50696 ; free virtual = 58966
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 12f1c891f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2503.738 ; gain = 1.000 ; free physical = 50696 ; free virtual = 58966
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 12f1c891f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2503.738 ; gain = 1.000 ; free physical = 50696 ; free virtual = 58966
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              23  |             311  |                                              2  |
+|  Constant propagation         |             106  |             214  |                                              0  |
+|  Sweep                        |               0  |               2  |                                            215  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2503.738 ; gain = 0.000 ; free physical = 50696 ; free virtual = 58966
+Ending Logic Optimization Task | Checksum: 1c532d3f3
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2503.738 ; gain = 1.000 ; free physical = 50696 ; free virtual = 58966
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.203 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 92 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 14 WE to EN ports
+Number of BRAM Ports augmented: 16 newly gated: 26 Total Ports: 184
+Ending PowerOpt Patch Enables Task | Checksum: 1a4aac2b9
+
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3274.996 ; gain = 0.000 ; free physical = 50472 ; free virtual = 58742
+Ending Power Optimization Task | Checksum: 1a4aac2b9
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 3274.996 ; gain = 771.258 ; free physical = 50535 ; free virtual = 58805
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 20693d48c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3274.996 ; gain = 0.000 ; free physical = 50611 ; free virtual = 58881
+Ending Final Cleanup Task | Checksum: 20693d48c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3274.996 ; gain = 0.000 ; free physical = 50611 ; free virtual = 58881
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3274.996 ; gain = 0.000 ; free physical = 50611 ; free virtual = 58881
+Ending Netlist Obfuscation Task | Checksum: 20693d48c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3274.996 ; gain = 0.000 ; free physical = 50611 ; free virtual = 58881
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 5 Warnings, 4 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 3274.996 ; gain = 841.273 ; free physical = 50611 ; free virtual = 58881
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3274.996 ; gain = 0.000 ; free physical = 50611 ; free virtual = 58881
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3274.996 ; gain = 0.000 ; free physical = 50611 ; free virtual = 58882
+INFO: [Common 17-1381] The checkpoint '/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/impl_1/toplevel_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file toplevel_drc_opted.rpt -pb toplevel_drc_opted.pb -rpx toplevel_drc_opted.rpx
+Command: report_drc -file toplevel_drc_opted.rpt -pb toplevel_drc_opted.pb -rpx toplevel_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/impl_1/toplevel_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_1 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_1/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_1_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_1 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_1/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_1_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_1 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_1/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_3_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_1 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_1/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_3_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_2 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_2/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_4_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_2 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_2/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_4_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_2 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_2/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_2_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_2 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_2/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_2_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_3 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_3/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_1_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_3 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_3/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_1_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_3 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_3/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_3_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_3 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_3/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_3_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_4 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_4/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_4_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_4 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_4/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_4_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_4 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_4/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_2_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_4 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_4/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_2_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port shield_io8 expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 17 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50639 ; free virtual = 58919
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 11b5cabe1
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50639 ; free virtual = 58919
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50642 ; free virtual = 58923
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 14d33d2ae
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50599 ; free virtual = 58878
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 21205d3fc
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50420 ; free virtual = 58699
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 21205d3fc
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50420 ; free virtual = 58699
+Phase 1 Placer Initialization | Checksum: 21205d3fc
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50420 ; free virtual = 58699
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 245617142
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50380 ; free virtual = 58659
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-76] Pass 1. Identified 3 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net soc0/processors[0].core/decode2_0/dc2_reg[e][read_data1][63]_0[0]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net soc0/processors[0].core/decode2_0/dc2_reg[e][read_data2][63]_0[0]. Replicated 7 times.
+INFO: [Physopt 32-81] Processed net soc0/processors[0].core/decode2_0/dc2_reg[e][read_data2][63]_0[1]. Replicated 4 times.
+INFO: [Physopt 32-232] Optimized 3 nets. Created 14 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 14 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50434 ; free virtual = 58713
+INFO: [Physopt 32-117] Net soc0/processors[0].core/loadstore1_0/writeback_to_register_file[write_data][48] could not be optimized because driver soc0/processors[0].core/loadstore1_0/registers_reg_1_i_60 could not be replicated
+INFO: [Physopt 32-117] Net soc0/processors[1].core/with_fpu.fpu_0/f_to_multiply[data1][54] could not be optimized because driver soc0/processors[1].core/with_fpu.fpu_0/i___599 could not be replicated
+INFO: [Physopt 32-117] Net soc0/processors[0].core/loadstore1_0/writeback_to_register_file[write_data][40] could not be optimized because driver soc0/processors[0].core/loadstore1_0/registers_reg_1_i_68 could not be replicated
+INFO: [Physopt 32-117] Net soc0/processors[1].core/with_fpu.fpu_0/f_to_multiply[data1][62] could not be optimized because driver soc0/processors[1].core/with_fpu.fpu_0/i___591 could not be replicated
+INFO: [Physopt 32-117] Net soc0/processors[0].core/loadstore1_0/writeback_to_register_file[write_data][49] could not be optimized because driver soc0/processors[0].core/loadstore1_0/registers_reg_1_i_59 could not be replicated
+INFO: [Physopt 32-46] Identified 7 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-665] Processed cell has_dram.dram/rams[3].way/ram_reg_1. 64 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell has_dram.dram/rams[3].way/ram_reg_0. 64 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell has_dram.dram/rams[2].way/ram_reg_1. 64 registers were pushed out.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 192 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50434 ; free virtual = 58713
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50434 ; free virtual = 58713
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Fanout                        |           14  |              0  |                     3  |           0  |           1  |  00:00:00  |
+|  Critical Cell                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |          192  |              0  |                     3  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |          206  |              0  |                     6  |           0  |           7  |  00:00:01  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 22196825c
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:24 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50426 ; free virtual = 58705
+Phase 2.2 Global Placement Core | Checksum: fd80d20a
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:27 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50429 ; free virtual = 58708
+Phase 2 Global Placement | Checksum: fd80d20a
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:27 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50460 ; free virtual = 58740
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: ec6e7bdc
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:28 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50452 ; free virtual = 58731
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1bb64ee91
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:30 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50459 ; free virtual = 58738
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1ded7cb98
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:30 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50459 ; free virtual = 58738
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 19e083136
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:30 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50459 ; free virtual = 58738
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 20f523d9a
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:32 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50483 ; free virtual = 58763
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1f9693622
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:40 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50434 ; free virtual = 58713
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1eed05f50
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:42 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50440 ; free virtual = 58719
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 11b753add
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:42 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50440 ; free virtual = 58719
+Phase 3 Detail Placement | Checksum: 11b753add
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:42 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50440 ; free virtual = 58720
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: dae2ff16
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net soc0/processors[1].core/rst_fetch1, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net soc0/processors[0].core/rst_fetch1, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net has_dram.dram/litedram/FDPE_3_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net soc0/processors[1].core/mmu_0/p_0_out, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net soc0/processors[0].core/mmu_0/p_0_out, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 5 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 5, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: dae2ff16
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:44 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50459 ; free virtual = 58738
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.489. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 113f38a3f
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:54 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50449 ; free virtual = 58728
+Phase 4.1 Post Commit Optimization | Checksum: 113f38a3f
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:54 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50449 ; free virtual = 58729
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 113f38a3f
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:00:54 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50450 ; free virtual = 58729
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 113f38a3f
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:00:55 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50451 ; free virtual = 58730
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50451 ; free virtual = 58730
+Phase 4.4 Final Placement Cleanup | Checksum: 1b4cbe265
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:00:55 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50451 ; free virtual = 58730
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1b4cbe265
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:00:55 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50452 ; free virtual = 58731
+Ending Placer Task | Checksum: f0ca919f
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:00:55 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50452 ; free virtual = 58731
+INFO: [Common 17-83] Releasing license: Implementation
+88 Infos, 22 Warnings, 4 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:57 ; elapsed = 00:00:56 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50525 ; free virtual = 58805
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50525 ; free virtual = 58805
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50389 ; free virtual = 58749
+INFO: [Common 17-1381] The checkpoint '/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/impl_1/toplevel_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50458 ; free virtual = 58758
+INFO: [runtcl-4] Executing : report_io -file toplevel_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50454 ; free virtual = 58753
+INFO: [runtcl-4] Executing : report_utilization -file toplevel_utilization_placed.rpt -pb toplevel_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file toplevel_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.32 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50455 ; free virtual = 58755
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100ti'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 41b19f2f ConstDB: 0 ShapeSum: af18f270 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1273c658d
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50298 ; free virtual = 58598
+Post Restoration Checksum: NetGraph: 300aa514 NumContArr: f731c079 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1273c658d
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50268 ; free virtual = 58568
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1273c658d
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50232 ; free virtual = 58531
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1273c658d
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50232 ; free virtual = 58531
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1cdcd75bc
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50204 ; free virtual = 58504
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.479  | TNS=0.000  | WHS=-0.362 | THS=-570.819|
+
+Phase 2 Router Initialization | Checksum: 1db950dea
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50155 ; free virtual = 58455
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 64428
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 64427
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 16fc9be71
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:17 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50114 ; free virtual = 58413
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 32835
+ Number of Nodes with overlaps = 10694
+ Number of Nodes with overlaps = 4932
+ Number of Nodes with overlaps = 2008
+ Number of Nodes with overlaps = 894
+ Number of Nodes with overlaps = 236
+ Number of Nodes with overlaps = 72
+ Number of Nodes with overlaps = 35
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.002  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 14c036f7e
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:06 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50128 ; free virtual = 58428
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.002  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 151c5c9b6
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:07 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50133 ; free virtual = 58433
+Phase 4 Rip-up And Reroute | Checksum: 151c5c9b6
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:07 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50133 ; free virtual = 58433
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: f9efe3df
+
+Time (s): cpu = 00:03:13 ; elapsed = 00:01:08 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50136 ; free virtual = 58435
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.059  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: f9efe3df
+
+Time (s): cpu = 00:03:13 ; elapsed = 00:01:08 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50138 ; free virtual = 58437
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: f9efe3df
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:01:08 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50138 ; free virtual = 58437
+Phase 5 Delay and Skew Optimization | Checksum: f9efe3df
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:01:08 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50138 ; free virtual = 58437
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 145430959
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:09 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50145 ; free virtual = 58445
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.059  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: a62f6135
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:09 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50145 ; free virtual = 58445
+Phase 6 Post Hold Fix | Checksum: a62f6135
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:09 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50145 ; free virtual = 58445
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 26.5374 %
+  Global Horizontal Routing Utilization  = 31.2236 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: bbdf772d
+
+Time (s): cpu = 00:03:17 ; elapsed = 00:01:10 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50145 ; free virtual = 58445
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: bbdf772d
+
+Time (s): cpu = 00:03:17 ; elapsed = 00:01:10 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50145 ; free virtual = 58445
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: de1a6c43
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:01:12 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50154 ; free virtual = 58454
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.059  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: de1a6c43
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:01:12 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50161 ; free virtual = 58461
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:01:12 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50222 ; free virtual = 58522
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+107 Infos, 22 Warnings, 4 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:22 ; elapsed = 00:01:13 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50222 ; free virtual = 58522
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50223 ; free virtual = 58522
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50085 ; free virtual = 58490
+INFO: [Common 17-1381] The checkpoint '/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/impl_1/toplevel_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3307.012 ; gain = 0.000 ; free physical = 50185 ; free virtual = 58512
+INFO: [runtcl-4] Executing : report_drc -file toplevel_drc_routed.rpt -pb toplevel_drc_routed.pb -rpx toplevel_drc_routed.rpx
+Command: report_drc -file toplevel_drc_routed.rpt -pb toplevel_drc_routed.pb -rpx toplevel_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/impl_1/toplevel_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file toplevel_methodology_drc_routed.rpt -pb toplevel_methodology_drc_routed.pb -rpx toplevel_methodology_drc_routed.rpx
+Command: report_methodology -file toplevel_methodology_drc_routed.rpt -pb toplevel_methodology_drc_routed.pb -rpx toplevel_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/impl_1/toplevel_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file toplevel_power_routed.rpt -pb toplevel_power_summary_routed.pb -rpx toplevel_power_routed.rpx
+Command: report_power -file toplevel_power_routed.rpt -pb toplevel_power_summary_routed.pb -rpx toplevel_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+119 Infos, 23 Warnings, 4 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 3371.008 ; gain = 0.000 ; free physical = 50000 ; free virtual = 58335
+INFO: [runtcl-4] Executing : report_route_status -file toplevel_route_status.rpt -pb toplevel_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file toplevel_timing_summary_routed.rpt -pb toplevel_timing_summary_routed.pb -rpx toplevel_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file toplevel_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file toplevel_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file toplevel_bus_skew_routed.rpt -pb toplevel_bus_skew_routed.pb -rpx toplevel_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force toplevel.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100ti'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer has_dram.dram/litedram/IOBUFDS/IBUFDS has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer has_dram.dram/litedram/IOBUFDS_1/IBUFDS has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m00 input soc0/processors[0].core/execute1_0/mult_32s_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m00 input soc0/processors[0].core/execute1_0/mult_32s_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m01 input soc0/processors[0].core/execute1_0/mult_32s_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m01 input soc0/processors[0].core/execute1_0/mult_32s_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m10 input soc0/processors[0].core/execute1_0/mult_32s_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m10 input soc0/processors[0].core/execute1_0/mult_32s_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m11 input soc0/processors[0].core/execute1_0/mult_32s_0/m11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m11 input soc0/processors[0].core/execute1_0/mult_32s_0/m11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m00 input soc0/processors[0].core/execute1_0/multiply_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m00 input soc0/processors[0].core/execute1_0/multiply_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m00 input soc0/processors[0].core/execute1_0/multiply_0/m00/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m01 input soc0/processors[0].core/execute1_0/multiply_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m01 input soc0/processors[0].core/execute1_0/multiply_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m02 input soc0/processors[0].core/execute1_0/multiply_0/m02/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m02 input soc0/processors[0].core/execute1_0/multiply_0/m02/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m02 input soc0/processors[0].core/execute1_0/multiply_0/m02/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m03 input soc0/processors[0].core/execute1_0/multiply_0/m03/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m03 input soc0/processors[0].core/execute1_0/multiply_0/m03/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m10 input soc0/processors[0].core/execute1_0/multiply_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m10 input soc0/processors[0].core/execute1_0/multiply_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m11 input soc0/processors[0].core/execute1_0/multiply_0/m11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m11 input soc0/processors[0].core/execute1_0/multiply_0/m11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m12 input soc0/processors[0].core/execute1_0/multiply_0/m12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m12 input soc0/processors[0].core/execute1_0/multiply_0/m12/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m12 input soc0/processors[0].core/execute1_0/multiply_0/m12/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m13 input soc0/processors[0].core/execute1_0/multiply_0/m13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m13 input soc0/processors[0].core/execute1_0/multiply_0/m13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m20 input soc0/processors[0].core/execute1_0/multiply_0/m20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m20 input soc0/processors[0].core/execute1_0/multiply_0/m20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m21 input soc0/processors[0].core/execute1_0/multiply_0/m21/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m21 input soc0/processors[0].core/execute1_0/multiply_0/m21/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m22 input soc0/processors[0].core/execute1_0/multiply_0/m22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m22 input soc0/processors[0].core/execute1_0/multiply_0/m22/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m22 input soc0/processors[0].core/execute1_0/multiply_0/m22/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m23 input soc0/processors[0].core/execute1_0/multiply_0/m23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m23 input soc0/processors[0].core/execute1_0/multiply_0/m23/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/p0 input soc0/processors[0].core/execute1_0/multiply_0/p0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/p0 input soc0/processors[0].core/execute1_0/multiply_0/p0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/s0 input soc0/processors[0].core/execute1_0/multiply_0/s0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/s0 input soc0/processors[0].core/execute1_0/multiply_0/s0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/s0 input soc0/processors[0].core/execute1_0/multiply_0/s0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/s1 input soc0/processors[0].core/execute1_0/multiply_0/s1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/s1 input soc0/processors[0].core/execute1_0/multiply_0/s1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/s1 input soc0/processors[0].core/execute1_0/multiply_0/s1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p0 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p0 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1 input soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m00 input soc0/processors[1].core/execute1_0/mult_32s_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m00 input soc0/processors[1].core/execute1_0/mult_32s_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m01 input soc0/processors[1].core/execute1_0/mult_32s_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m01 input soc0/processors[1].core/execute1_0/mult_32s_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m10 input soc0/processors[1].core/execute1_0/mult_32s_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m10 input soc0/processors[1].core/execute1_0/mult_32s_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m11 input soc0/processors[1].core/execute1_0/mult_32s_0/m11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m11 input soc0/processors[1].core/execute1_0/mult_32s_0/m11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m00 input soc0/processors[1].core/execute1_0/multiply_0/m00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m00 input soc0/processors[1].core/execute1_0/multiply_0/m00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m00 input soc0/processors[1].core/execute1_0/multiply_0/m00/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m01 input soc0/processors[1].core/execute1_0/multiply_0/m01/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m01 input soc0/processors[1].core/execute1_0/multiply_0/m01/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m02 input soc0/processors[1].core/execute1_0/multiply_0/m02/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m02 input soc0/processors[1].core/execute1_0/multiply_0/m02/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m02 input soc0/processors[1].core/execute1_0/multiply_0/m02/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m03 input soc0/processors[1].core/execute1_0/multiply_0/m03/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m03 input soc0/processors[1].core/execute1_0/multiply_0/m03/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m10 input soc0/processors[1].core/execute1_0/multiply_0/m10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m10 input soc0/processors[1].core/execute1_0/multiply_0/m10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+INFO: [Common 17-14] Message 'DRC DPIP-1' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m00 output soc0/processors[0].core/execute1_0/mult_32s_0/m00/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m01 output soc0/processors[0].core/execute1_0/mult_32s_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m10 output soc0/processors[0].core/execute1_0/mult_32s_0/m10/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m10 output soc0/processors[0].core/execute1_0/mult_32s_0/m10/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m10 output soc0/processors[0].core/execute1_0/mult_32s_0/m10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m11 output soc0/processors[0].core/execute1_0/mult_32s_0/m11/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m11 output soc0/processors[0].core/execute1_0/mult_32s_0/m11/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m11 output soc0/processors[0].core/execute1_0/mult_32s_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m01 output soc0/processors[0].core/execute1_0/multiply_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m03 output soc0/processors[0].core/execute1_0/multiply_0/m03/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m11 output soc0/processors[0].core/execute1_0/multiply_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m13 output soc0/processors[0].core/execute1_0/multiply_0/m13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m21 output soc0/processors[0].core/execute1_0/multiply_0/m21/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m23 output soc0/processors[0].core/execute1_0/multiply_0/m23/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/p1 output soc0/processors[0].core/execute1_0/multiply_0/p1/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/p1 output soc0/processors[0].core/execute1_0/multiply_0/p1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/p1 output soc0/processors[0].core/execute1_0/multiply_0/p1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/s0 output soc0/processors[0].core/execute1_0/multiply_0/s0/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m03/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m21/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m23/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p1 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0 output soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/s0/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m00 output soc0/processors[1].core/execute1_0/mult_32s_0/m00/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m01 output soc0/processors[1].core/execute1_0/mult_32s_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m10 output soc0/processors[1].core/execute1_0/mult_32s_0/m10/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m10 output soc0/processors[1].core/execute1_0/mult_32s_0/m10/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m10 output soc0/processors[1].core/execute1_0/mult_32s_0/m10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m11 output soc0/processors[1].core/execute1_0/mult_32s_0/m11/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m11 output soc0/processors[1].core/execute1_0/mult_32s_0/m11/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m11 output soc0/processors[1].core/execute1_0/mult_32s_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m01 output soc0/processors[1].core/execute1_0/multiply_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m03 output soc0/processors[1].core/execute1_0/multiply_0/m03/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m11 output soc0/processors[1].core/execute1_0/multiply_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m13 output soc0/processors[1].core/execute1_0/multiply_0/m13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m21 output soc0/processors[1].core/execute1_0/multiply_0/m21/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m23 output soc0/processors[1].core/execute1_0/multiply_0/m23/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/p1 output soc0/processors[1].core/execute1_0/multiply_0/p1/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/p1 output soc0/processors[1].core/execute1_0/multiply_0/p1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/p1 output soc0/processors[1].core/execute1_0/multiply_0/p1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/s0 output soc0/processors[1].core/execute1_0/multiply_0/s0/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m01 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m01/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m03 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m03/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m11 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m13 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m21 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m21/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m23 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m23/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/p1 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/p1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s0 output soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/s0/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m00 multiplier stage soc0/processors[0].core/execute1_0/mult_32s_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/execute1_0/mult_32s_0/m01 multiplier stage soc0/processors[0].core/execute1_0/mult_32s_0/m01/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m00 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m02 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m02/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m10 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m12 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m20 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/execute1_0/multiply_0/m22 multiplier stage soc0/processors[0].core/execute1_0/multiply_0/m22/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m02/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22 multiplier stage soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/m22/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m00 multiplier stage soc0/processors[1].core/execute1_0/mult_32s_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/execute1_0/mult_32s_0/m01 multiplier stage soc0/processors[1].core/execute1_0/mult_32s_0/m01/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m00 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m02 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m02/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m10 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m12 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m20 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/execute1_0/multiply_0/m22 multiplier stage soc0/processors[1].core/execute1_0/multiply_0/m22/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m00 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m02 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m02/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m10 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m12 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m20 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m22 multiplier stage soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/m22/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_1 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_1/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_1_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_1 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_1/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_1_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_1 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_1/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_3_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_1 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_1/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_3_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_2 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_2/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_4_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_2 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_2/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_4_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_2 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_2/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_2_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_2 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_2/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_2_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_3 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_3/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_1_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_3 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_3/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_1_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_3 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_3/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_3_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_3 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_3/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_3_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_4 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_4/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_4_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_4 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_4/ENARDEN (net: soc0/bram.bram0/ram_0/memory_reg_bram_4_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_4 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_4/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_2_0) which is driven by a register (soc0/dtm/request_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 soc0/bram.bram0/ram_0/memory_reg_bram_4 has an input control pin soc0/bram.bram0/ram_0/memory_reg_bram_4/ENBWREN (net: soc0/bram.bram0/ram_0/memory_reg_bram_2_0) which is driven by a register (soc0/dtm/request_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [DRC REQP-29] enum_CREG_0_connects_CEC_GND: soc0/processors[0].core/execute1_0/multiply_0/p1: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+INFO: [DRC REQP-29] enum_CREG_0_connects_CEC_GND: soc0/processors[0].core/with_fpu.fpu_0/fpu_multiply_0/p1: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+INFO: [DRC REQP-29] enum_CREG_0_connects_CEC_GND: soc0/processors[1].core/execute1_0/multiply_0/p1: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+INFO: [DRC REQP-29] enum_CREG_0_connects_CEC_GND: soc0/processors[1].core/with_fpu.fpu_0/fpu_multiply_0/p1: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 258 Warnings, 4 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 5901184 bits.
+Writing bitstream ./toplevel.bit...
+Writing bitstream ./toplevel.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+143 Infos, 221 Warnings, 4 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 3646.988 ; gain = 275.980 ; free physical = 49802 ; free virtual = 58144
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 17 15:06:54 2025...

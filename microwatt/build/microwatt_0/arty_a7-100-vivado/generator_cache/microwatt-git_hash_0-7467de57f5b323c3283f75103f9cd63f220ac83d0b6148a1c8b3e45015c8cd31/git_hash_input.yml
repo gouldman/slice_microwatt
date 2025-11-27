@@ -1,0 +1,4 @@
+files_root: /home/pe1576su/Desktop/slice/microwatt
+gapi: '1.0'
+parameters: {}
+vlnv: ::microwatt-git_hash:0

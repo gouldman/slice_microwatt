@@ -1,0 +1,13 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb6aadb) [0x77b76e56aadb]
+/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(JVM_handle_linux_signal+0xbb) [0x77b76e56fe1b]
+/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb647b8) [0x77b76e5647b8]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330) [0x77b7bda45330]
+/lib/x86_64-linux-gnu/libc.so.6(+0x188064) [0x77b7bdb88064]
+/tools/Xilinx/Vivado/2019.1/lib/lnx64.o/Ubuntu/libstdc++.so.6(_ZNKSt7codecvtIwc11__mbstate_tE5do_inERS0_PKcS4_RS4_PwS6_RS6_+0x88) [0x77b7be2abb98]
+/tools/Xilinx/Vivado/2019.1/lib/lnx64.o/librdi_common.so(HI18N::Convert::Out(char const*, char const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&, std::codecvt<wchar_t, char, __mbstate_t> const&)+0xc0) [0x77b7beeda570]
+/tools/Xilinx/Vivado/2019.1/lib/lnx64.o/librdi_labtools.so(Java_ui_data_labtools_lthwdatai_HWDevice_1getName+0x3b) [0x77b778f3f26b]
+[0x77b75e8aff11]

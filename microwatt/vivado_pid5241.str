@@ -1,0 +1,1254 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 5241
+License: Customer
+
+Current time: 	Wed Nov 12 13:14:07 CET 2025
+Time zone: 	Central European Standard Time (Europe/Stockholm)
+
+OS: Ubuntu
+OS Version: 6.8.0-87-generic
+OS Architecture: amd64
+Available processors (cores): 24
+
+Display: :0
+Screen size: 1920x1200
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 348 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	pe1576su
+User home directory: /home/pe1576su
+User working directory: /home/pe1576su/Desktop/slice/microwatt
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/pe1576su/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/pe1576su/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/pe1576su/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/pe1576su/Desktop/slice/microwatt/vivado.log
+Vivado journal file location: 	/home/pe1576su/Desktop/slice/microwatt/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-5241-exjobb35
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.1
+XILINX_SDK: /tools/Xilinx/SDK/2019.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,077 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr", 0); // q (O, cl)
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 116 MB (+119519kb) [00:00:04]
+// [Engine Memory]: 1,029 MB (+927050kb) [00:00:04]
+// WARNING: HEventQueue.dispatchEvent() is taking  1124 ms.
+// Tcl Message: open_project /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'. 
+// [GUI Memory]: 127 MB (+5139kb) [00:00:05]
+// Project name: microwatt_0; location: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado; part: xc7a200tsbg484-1
+// [Engine Memory]: 1,117 MB (+38563kb) [00:00:05]
+dismissDialog("Open Project"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,102 MB. GUI used memory: 62 MB. Current time: 11/12/25, 1:14:09 PM CET
+// Elapsed time: 465 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// HMemoryUtils.trashcanNow. Engine heap size: 1,142 MB. GUI used memory: 63 MB. Current time: 11/12/25, 1:21:54 PM CET
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:06:40     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, false, true); // t (O, cl) - Double Click
+// [Engine Memory]: 1,216 MB (+44989kb) [00:08:02]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 460 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CDB (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CDB (0)", 0, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET, "Open Target"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target {localhost:3121/xilinx_tcf/Digilent/210276BD26CDB} 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,079 MB. GUI used memory: 67 MB. Current time: 11/12/25, 1:29:44 PM CET
+// by (cl):  Open Target : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 2,097 MB (+860833kb) [00:15:42]
+dismissDialog("Open Target"); // by (cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 3, "XADC", 0, false); // t (O, cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 216 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,118 MB. GUI used memory: 69 MB. Current time: 11/12/25, 1:33:44 PM CET
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 81 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// Elapsed time: 81 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server.  
+// a (cl): Critical Messages: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// Elapsed time: 48 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server.  
+// a (cl): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, false, true); // t (O, cl) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cl) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cl) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server.  
+// a (cl): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 801 seconds
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (Q, ah): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// by (cl):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (by)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,412 MB. GUI used memory: 69 MB. Current time: 11/12/25, 1:51:04 PM CET
+// TclEventType: DESIGN_CLOSE
+// [Engine Memory]: 2,412 MB (+219930kb) [00:37:02]
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a200tsbg484-1 INFO: [Common 17-41] Interrupt caught. Command should exit soon. INFO: [Netlist 29-17] Analyzing 2657 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Common 17-344] 'open_run' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// 'dR' command handler elapsed time: 3 seconds
+dismissDialog("Open Implemented Design"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (0) ; Closed", 2, "xilinx_tcf/Digilent/210276BD26CDB (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CD (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CD (0)", 0, false); // t (O, cl)
+// TclEventType: HW_SERVER_UPDATE
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenu(PAResourceOtoP.ProgramDebugTab_AVAILABLE_TARGETS_ON_SERVER, "Available Targets on Server"); // ae (an, cl)
+selectMenu(PAResourceOtoP.ProgramDebugTab_AVAILABLE_TARGETS_ON_SERVER, "Available Targets on Server"); // ae (an, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CDB (0)", 0, false); // t (O, cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 75 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 23 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,415 MB. GUI used memory: 64 MB. Current time: 11/12/25, 2:21:04 PM CET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 2110 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, raminfr.v]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, uart_receiver.v]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, uart_receiver.v]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, uart_receiver.v]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, uart_regs.v]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, uart_regs.v]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, uart_rfifo.v]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, uart_rfifo.v]", 6, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, uart_sync_flops.v]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, uart_sync_flops.v]", 7, false, false, false, false, false, true); // B (F, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,470 MB. GUI used memory: 66 MB. Current time: 11/12/25, 2:28:49 PM CET
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 16 seconds
+selectCodeEditor("uart_sync_flops.v", 42, 75); // cl (w, cl)
+selectCodeEditor("uart_sync_flops.v", 115, 97); // cl (w, cl)
+selectCodeEditor("uart_sync_flops.v", 139, 106); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_rfifo.v", 3); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_receiver.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_receiver.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_regs.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_rfifo.v", 3); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_sync_flops.v", 4); // k (j, cl)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_rfifo.v", 3); // k (j, cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 101 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bC (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bC)
+dismissDialog("Program Device"); // bC (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 3, "xc7a200t_0 (1)", 0, true); // t (O, cl) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 3, "xc7a200t_0 (1)", 0, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (1) ; Open", 2, "xilinx_tcf/Digilent/210276BD26CDB (1)", 0, true); // t (O, cl) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (1) ; Open", 2, "xilinx_tcf/Digilent/210276BD26CDB (1)", 0, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Hardware Target Properties..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (1) ; Open", 2, "xilinx_tcf/Digilent/210276BD26CDB (1)", 0, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_TARGET, "Close Target"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_TARGET
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: close_hw_target {localhost:3121/xilinx_tcf/Digilent/210276BD26CDB} 
+// Tcl Message: INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CD (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CD (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CD (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CD (0)", 0, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenu(PAResourceOtoP.ProgramDebugTab_AVAILABLE_TARGETS_ON_SERVER, "Available Targets on Server"); // ae (an, cl)
+selectMenu(PAResourceOtoP.ProgramDebugTab_AVAILABLE_TARGETS_ON_SERVER, "Available Targets on Server"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // by (cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (1) ; Open", 1, "xilinx_tcf/Digilent/210276BD26CDB (1)", 0, true); // t (O, cl) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (1) ; Open", 1, "xilinx_tcf/Digilent/210276BD26CDB (1)", 0, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u (O, cl) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u (O, cl) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 12 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 138 MB (+4382kb) [01:39:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 71 MB. Current time: 11/12/25, 2:58:49 PM CET
+// Elapsed time: 1745 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 69 MB. Current time: 11/12/25, 3:28:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 3:58:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 4:28:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 4:58:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 5:28:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 5:58:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 6:28:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 6:58:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 7:28:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 7:58:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 8:28:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 8:58:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 9:28:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 9:58:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 10:28:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 10:58:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 11:28:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/12/25, 11:58:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 12:28:50 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 12:58:50 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 1:28:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 1:58:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 2:28:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 2:58:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 3:28:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 3:58:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 4:28:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 4:58:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 5:28:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 5:58:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 6:28:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 6:58:51 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 7:28:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 7:58:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 8:28:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 8:58:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 9:28:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 9:58:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 10:28:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 69 MB. Current time: 11/13/25, 10:58:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 11:28:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 11:58:52 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 12:28:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 12:58:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 1:28:52 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 1:58:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 69 MB. Current time: 11/13/25, 2:28:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 2:58:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 3:28:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 3:58:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 4:28:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 4:58:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 69 MB. Current time: 11/13/25, 5:28:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 5:58:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 6:28:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 6:58:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 7:28:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 7:58:53 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 8:28:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 8:58:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 69 MB. Current time: 11/13/25, 9:28:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 9:58:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 10:28:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 10:58:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 11:28:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/13/25, 11:58:54 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 12:28:54 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 12:58:54 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 1:28:54 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 1:58:54 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 2:28:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 2:58:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 3:28:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 3:58:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 4:28:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 4:58:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 5:28:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 5:58:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 6:28:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 6:58:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 7:28:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 7:58:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 8:28:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 8:58:56 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 9:28:56 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 9:58:56 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 10:28:56 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 10:58:56 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 11:28:56 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 11:58:56 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 12:28:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 12:58:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 68 MB. Current time: 11/14/25, 1:28:56 PM CET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aI (cl): Feedback Request: addNotify
+// Elapsed time: 168918 seconds
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a (aI)
+dismissDialog("Feedback Request"); // aI (cl)
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// Elapsed time: 112 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server.  
+// a (cl): Critical Messages: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,474 MB. GUI used memory: 69 MB. Current time: 11/14/25, 1:58:56 PM CET
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server.  
+// a (cl): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// aN (cl): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, aN)
+// HOptionPane Error: 'A server which has the same host name is already connected. Enter a different valid remote host name or select 'Local Server' before proceeding. (Duplicate Host Name)'
+selectButton("NEXT", "Next >"); // JButton (j, aN)
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// 'H' command handler elapsed time: 7 seconds
+dismissDialog("Open New Hardware Target"); // aN (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server.  
+// a (cl): Critical Messages: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, false, true); // t (O, cl) - Double Click
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, null, -1, null, -1, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server.  
+// a (cl): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, false, true); // t (O, cl) - Double Click
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_REFRESH_SERVER, "Refresh Server"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_SERVER
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: refresh_hw_server {localhost:3121} 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server.  
+// a (cl): Critical Messages: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// Elapsed time: 48 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-Nexys Video-210276BD26CDjsn-Nexys Video-210276BD26CDB" may be locked by another hw_server.  
+// a (cl): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 112 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 13 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 3, "XADC", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 3, "XADC", 0, false, false, false, false, false, true); // t (O, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_NEW_HARDWARE_DASHBOARD
+// a (cl): New Dashboard: addNotify
+dismissDialog("New Dashboard"); // a (cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 3, "XADC", 0, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+// Elapsed time: 40 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2, "xc7a200t_0 (1)", 0, true); // t (O, cl) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2, "xc7a200t_0 (1)", 0, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (al, bC)
+dismissFileChooser();
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 12 seconds
+dismissDialog("Program Device"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// n (cl): Close Hardware Target: addNotify
+// Elapsed time: 91 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 302 seconds
+selectCodeEditor("uart_receiver.v", 291, 483); // cl (w, cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 430, 359); // dt (af, cl)
+// Elapsed time: 24 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h (cS, cl)
+selectMenuItem((HResource) null, "xc7a200t_0"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// n (cl): Close Hardware Target: addNotify
+// Elapsed time: 12 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// Elapsed time: 29 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 666, 21); // dt (af, cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// n (cl): Close Hardware Target: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 739 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 579, 99); // dt (af, cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 14 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// n (cl): Close Hardware Target: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 73 MB. Current time: 11/14/25, 2:28:56 PM CET
+// Elapsed time: 470 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CDB (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CDB (0)", 0, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Hardware Target Properties..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, cl)
+selectTreeTable(PAResourceTtoZ.TclObjectTreeTable_TREETABLE, "TID ; jsn-Nexys Video-210276BD26CDB", 8, "jsn-Nexys Video-210276BD26CDB", 1, false); // l (C, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cl): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 153 seconds
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xczu7ev-ffvf1517-2LV-e ; 1517 ; 464 ; 230400 ; 460800 ; 312 ; 96 ; 1728 ; 24 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 24 ; 0 ; 2 ; 8 ; 0 ; 100 ; 100 ; E ; 0.698 ; 0.720 ; 0.742", 908, "464", 2); // w (O, f)
+// 'g' command handler elapsed time: 180 seconds
+// Elapsed time: 21 seconds
+dismissDialog("New Project"); // f (cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CDB (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210276BD26CDB (0) ; Closed", 1, "xilinx_tcf/Digilent/210276BD26CDB (0)", 0, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_BUS_PLOT, "Show Bus Plot..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SHOW_BUS_PLOT
+// f (cl): Show Bus Plot...: addNotify
+// 'aC' command handler elapsed time: 3 seconds
+dismissDialog("Show Bus Plot..."); // f (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 16 seconds
+collapseTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2, "xc7a200t_0 (1)", 0, true, false, false, false, false, true); // t (O, cl) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_NEW_HARDWARE_DASHBOARD
+// a (cl): New Dashboard: addNotify
+dismissDialog("New Dashboard"); // a (cl)
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 3, "XADC", 0, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2, "Programmed", 1, true); // t (O, cl) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 510 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/nexys_video-vivado/microwatt_0.runs/impl_1/toplevel.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 171 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1280, 20); // dt (af, cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BD26CDB 
+// n (cl): Close Hardware Target: addNotify
+// Elapsed time: 154 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,483 MB. GUI used memory: 74 MB. Current time: 11/14/25, 2:58:56 PM CET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 1336 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// ab (cl): Specify Top Module: addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+// HOptionPane Error: 'Please specify a valid simulation top module name. (Specify Top Module)'
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ab)
+// HOptionPane Error: 'Please specify a valid simulation top module name. (Specify Top Module)'
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+selectButton("OptionPane.button", "OK"); // JButton (A, H)

@@ -1,0 +1,20 @@
+CAPI=2:
+name: ::microwatt-litedram_nexys_video:0
+filesets:
+  rtl:
+    files:
+    - /home/pe1576su/Desktop/slice/microwatt/litedram/extras/../generated/nexys-video/litedram_core.v:
+        file_type: verilogSource
+    - /home/pe1576su/Desktop/slice/microwatt/litedram/extras/../generated/nexys-video/litedram-initmem.vhdl:
+        file_type: vhdlSource-2008
+    - /home/pe1576su/Desktop/slice/microwatt/litedram/extras/../generated/nexys-video/litedram_core.init:
+        file_type: user
+    - /home/pe1576su/Desktop/slice/microwatt/litedram/extras/../extras/litedram-wrapper-l2.vhdl:
+        file_type: vhdlSource-2008
+    file_type: ''
+    logical_name: ''
+parameters: {}
+targets:
+  default:
+    filesets:
+    - rtl
