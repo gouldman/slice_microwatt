@@ -1,0 +1,14 @@
+CAPI=2:
+name: ::microwatt-litesdcard_arty:0
+filesets:
+  rtl:
+    files:
+    - /home/pe1576su/Desktop/slice/microwatt/litesdcard/generated/xilinx.100e6/litesdcard_core.v:
+        file_type: verilogSource
+    file_type: ''
+    logical_name: ''
+parameters: {}
+targets:
+  default:
+    filesets:
+    - rtl

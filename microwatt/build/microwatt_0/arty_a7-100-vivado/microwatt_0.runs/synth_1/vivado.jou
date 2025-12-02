@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 17 15:01:17 2025
+# Process ID: 1802289
+# Current directory: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/synth_1
+# Command line: vivado -log toplevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source toplevel.tcl
+# Log file: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/synth_1/toplevel.vds
+# Journal file: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/microwatt_0.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source toplevel.tcl -notrace

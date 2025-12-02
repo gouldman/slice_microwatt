@@ -1,0 +1,5 @@
+files_root: /home/pe1576su/Desktop/slice/microwatt
+gapi: '1.0'
+parameters:
+  board: nexys-video
+vlnv: ::microwatt-liteeth_nexys_video:0

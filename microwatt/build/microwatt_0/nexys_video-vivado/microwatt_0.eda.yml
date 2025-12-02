@@ -1,0 +1,350 @@
+version: 0.2.1
+name: microwatt_0
+toplevel: toplevel
+dependencies:
+  :microwatt:litedram:0: []
+  :microwatt:liteeth:0: []
+  :microwatt:litesdcard:0: []
+  :microwatt:uart16550:1.5.5-r1: []
+  ::microwatt:0:
+  - :microwatt:litedram:0
+  - :microwatt:liteeth:0
+  - :microwatt:litesdcard:0
+  - :microwatt:uart16550:1.5.5-r1
+  - ::microwatt-litedram_nexys_video:0
+  - ::microwatt-liteeth_nexys_video:0
+  - ::microwatt-litesdcard_nexys_video:0
+  ::microwatt-litedram_nexys_video:0: []
+  ::microwatt-liteeth_nexys_video:0: []
+  ::microwatt-litesdcard_nexys_video:0: []
+cores:
+  :microwatt:litedram:0:
+    core_file: ../../../litedram/litedram.core
+    dependencies: []
+  :microwatt:liteeth:0:
+    core_file: ../../../liteeth/liteeth.core
+    dependencies: []
+  :microwatt:litesdcard:0:
+    core_file: ../../../litesdcard/litesdcard.core
+    dependencies: []
+  :microwatt:uart16550:1.5.5-r1:
+    core_file: ../../../uart16550/uart16550.core
+    dependencies: []
+  ::microwatt:0:
+    core_file: ../../../microwatt.core
+    dependencies:
+    - :microwatt:litedram:0
+    - :microwatt:liteeth:0
+    - :microwatt:litesdcard:0
+    - :microwatt:uart16550:1.5.5-r1
+    - ::microwatt-litedram_nexys_video:0
+    - ::microwatt-liteeth_nexys_video:0
+    - ::microwatt-litesdcard_nexys_video:0
+  ::microwatt-litedram_nexys_video:0:
+    core_file: generator_cache/microwatt-litedram_nexys_video_0-47c3c31ebd93b8be194176fd388c51cf8e1fc1ceebe72ea5fa2ea52272a05395/microwatt-litedram_nexys_video.core
+    dependencies: []
+  ::microwatt-liteeth_nexys_video:0:
+    core_file: generator_cache/microwatt-liteeth_nexys_video_0-6fc07ab6748eeac4c69fa5b6d64dd657ee0046c5973fb0af73a5effbd7f32857/microwatt-liteeth_nexys_video.core
+    dependencies: []
+  ::microwatt-litesdcard_nexys_video:0:
+    core_file: generator_cache/microwatt-litesdcard_nexys_video_0-add49afae99553d760da3fd54cf4cf7ac4f4581049953bb4d7c1218656edb152/microwatt-litesdcard_nexys_video.core
+    dependencies: []
+parameters:
+  memory_size:
+    datatype: int
+    paramtype: generic
+    description: On-chip memory size (bytes). If no_bram is set, this is the size
+      carved out for the DRAM payload
+    default: 0
+  cpus:
+    datatype: int
+    paramtype: generic
+    description: Number of CPU cores to include in the SoC.
+    default: 2
+  clk_frequency:
+    datatype: int
+    paramtype: generic
+    description: Generated system clock frequency in HZ (for top-generic based boards)
+    default: 9000000
+  ram_init_file:
+    datatype: file
+    paramtype: generic
+    description: Initial on-chip RAM contents
+  use_litedram:
+    datatype: bool
+    paramtype: generic
+    description: Use liteDRAM
+    default: true
+  use_liteeth:
+    datatype: bool
+    paramtype: generic
+    description: Use liteEth
+    default: true
+  use_litesdcard:
+    datatype: bool
+    paramtype: generic
+    description: Use LiteSDCard
+    default: false
+  disable_flatten_core:
+    datatype: bool
+    paramtype: generic
+    description: Prevent Vivado from flattening the main core components
+    default: false
+  no_bram:
+    datatype: bool
+    paramtype: generic
+    description: No internal block RAM (only DRAM and init code carrying payload)
+    default: true
+  spi_flash_offset:
+    datatype: int
+    paramtype: generic
+    description: Offset (in bytes) in the SPI flash of the code payload to run
+    default: 10485760
+  log_length:
+    datatype: int
+    paramtype: generic
+    description: Length of the core log buffer in entries (32 bytes each)
+    default: 2048
+  uart_is_16550:
+    datatype: bool
+    paramtype: generic
+    description: Use 16550-compatible UART from OpenCores
+    default: true
+  has_fpu:
+    datatype: bool
+    paramtype: generic
+    description: Include a floating-point unit in the core
+    default: true
+  has_btc:
+    datatype: bool
+    paramtype: generic
+    description: Include a branch target cache in the core
+    default: true
+tool_options:
+  vivado:
+    part: xc7a200tsbg484-1
+filters: []
+flow_options: {}
+hooks: {}
+files:
+- file_type: verilogSource
+  is_include_file: true
+  name: src/microwatt_uart16550_1.5.5-r1/uart_defines.v
+  core: :microwatt:uart16550:1.5.5-r1
+- file_type: verilogSource
+  name: src/microwatt_uart16550_1.5.5-r1/raminfr.v
+  core: :microwatt:uart16550:1.5.5-r1
+- file_type: verilogSource
+  name: src/microwatt_uart16550_1.5.5-r1/uart_receiver.v
+  core: :microwatt:uart16550:1.5.5-r1
+- file_type: verilogSource
+  name: src/microwatt_uart16550_1.5.5-r1/uart_regs.v
+  core: :microwatt:uart16550:1.5.5-r1
+- file_type: verilogSource
+  name: src/microwatt_uart16550_1.5.5-r1/uart_rfifo.v
+  core: :microwatt:uart16550:1.5.5-r1
+- file_type: verilogSource
+  name: src/microwatt_uart16550_1.5.5-r1/uart_sync_flops.v
+  core: :microwatt:uart16550:1.5.5-r1
+- file_type: verilogSource
+  name: src/microwatt_uart16550_1.5.5-r1/uart_tfifo.v
+  core: :microwatt:uart16550:1.5.5-r1
+- file_type: verilogSource
+  name: src/microwatt_uart16550_1.5.5-r1/uart_top.v
+  core: :microwatt:uart16550:1.5.5-r1
+- file_type: verilogSource
+  name: src/microwatt_uart16550_1.5.5-r1/uart_transmitter.v
+  core: :microwatt:uart16550:1.5.5-r1
+- file_type: verilogSource
+  name: src/microwatt_uart16550_1.5.5-r1/uart_wb.v
+  core: :microwatt:uart16550:1.5.5-r1
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/decode_types.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/wishbone_types.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/common.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/fetch1.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/predecode.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/decode1.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/helpers.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/decode2.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/register_file.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/cr_file.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/crhelpers.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/ppc_fx_insns.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/sim_console.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/logical.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/countbits.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/bitsort.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/control.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/execute1.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/fpu.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/loadstore1.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/mmu.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/dcache.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/divider.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/rotator.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/pmu.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/writeback.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/insn_helpers.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/core.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/icache.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/plrufn.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/cache_ram.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/core_debug.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/utils.vhdl
+  core: ::microwatt:0
+- file_type: xdc
+  name: src/microwatt_0/fpga/nexys-video.xdc
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/fpga/clk_gen_plle2.vhd
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/fpga/top-nexys-video.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/wishbone_arbiter.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/wishbone_debug_master.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/wishbone_bram_wrapper.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/soc.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/xics.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/gpio.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/syscon.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/sync_fifo.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/spi_rxtx.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/spi_flash_ctrl.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/git.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/fpga/main_bram.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/fpga/soc_reset.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/fpga/pp_fifo.vhd
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/fpga/pp_soc_uart.vhd
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/fpga/pp_utilities.vhd
+  core: ::microwatt:0
+- file_type: user
+  name: firmware.hex
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/nonrandom.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/dmi_dtm_xilinx.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/xilinx-mult.vhdl
+  core: ::microwatt:0
+- file_type: vhdlSource-2008
+  name: src/microwatt_0/xilinx-mult-32s.vhdl
+  core: ::microwatt:0
+- file_type: verilogSource
+  name: /home/pe1576su/Desktop/slice/microwatt/litedram/extras/../generated/nexys-video/litedram_core.v
+  core: ::microwatt-litedram_nexys_video:0
+- file_type: vhdlSource-2008
+  name: /home/pe1576su/Desktop/slice/microwatt/litedram/extras/../generated/nexys-video/litedram-initmem.vhdl
+  core: ::microwatt-litedram_nexys_video:0
+- file_type: user
+  name: /home/pe1576su/Desktop/slice/microwatt/litedram/extras/../generated/nexys-video/litedram_core.init
+  core: ::microwatt-litedram_nexys_video:0
+- file_type: vhdlSource-2008
+  name: /home/pe1576su/Desktop/slice/microwatt/litedram/extras/../extras/litedram-wrapper-l2.vhdl
+  core: ::microwatt-litedram_nexys_video:0
+- file_type: verilogSource
+  name: /home/pe1576su/Desktop/slice/microwatt/liteeth/generated/nexys-video/liteeth_core.v
+  core: ::microwatt-liteeth_nexys_video:0
+- file_type: verilogSource
+  name: /home/pe1576su/Desktop/slice/microwatt/litesdcard/generated/xilinx.100e6/litesdcard_core.v
+  core: ::microwatt-litesdcard_nexys_video:0
+vpi: []

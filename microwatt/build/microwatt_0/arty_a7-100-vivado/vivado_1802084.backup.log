@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 17 15:01:10 2025
+# Process ID: 1802084
+# Current directory: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado
+# Command line: vivado -notrace -mode batch -source microwatt_0.tcl
+# Log file: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/vivado.log
+# Journal file: /home/pe1576su/Desktop/slice/microwatt/build/microwatt_0/arty_a7-100-vivado/vivado.jou
+#-----------------------------------------------------------
+source microwatt_0.tcl -notrace
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 17 15:01:12 2025...

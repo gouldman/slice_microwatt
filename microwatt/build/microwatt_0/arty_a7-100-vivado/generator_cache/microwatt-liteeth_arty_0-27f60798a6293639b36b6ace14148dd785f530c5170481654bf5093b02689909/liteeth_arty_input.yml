@@ -1,0 +1,5 @@
+files_root: /home/pe1576su/Desktop/slice/microwatt
+gapi: '1.0'
+parameters:
+  board: arty
+vlnv: ::microwatt-liteeth_arty:0
