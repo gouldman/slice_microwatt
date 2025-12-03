@@ -38,6 +38,8 @@ filesets:
       - cache_ram.vhdl
       - core_debug.vhdl
       - utils.vhdl
+      - arbiter.vhdl 
+      - queue.vhdl
     file_type : vhdlSource-2008
 
   soc:
