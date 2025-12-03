@@ -23,7 +23,8 @@ entity core is
         DCACHE_NUM_LINES : natural := 64;
         DCACHE_NUM_WAYS : natural := 2;
         DCACHE_TLB_SET_SIZE : natural := 64;
-        DCACHE_TLB_NUM_WAYS : natural := 2
+        DCACHE_TLB_NUM_WAYS : natural := 2;
+        QUEUE_DEPTH         : natural                        := 4
         );
     port (
         clk          : in std_ulogic;
@@ -57,7 +58,23 @@ entity core is
         msg_out         : out std_ulogic_vector(NCPUS-1 downto 0);
 
         run_out          : out std_ulogic;
-	terminated_out   : out std_logic
+	terminated_out   : out std_logic;
+    -- q_in  : in  Loadstore1ToQueueType;
+        -- q_out : out Loadstore1ToQueueType
+
+        -- Queue interface
+
+        -- Other core loadstore to this core queue
+        write_enable_i : in  std_ulogic;
+        write_type_i   : in  std_ulogic;
+        write_data_i   : in  std_ulogic_vector(63 downto 0);
+        full_o         : out std_ulogic;
+
+        -- This core loadstore to other core queue
+        write_enable_o : out std_ulogic;
+        write_type_o   : out std_ulogic;
+        write_data_o   : out std_ulogic_vector(63 downto 0);
+        full_i         : in  std_ulogic
         );
 end core;
 
@@ -91,12 +108,35 @@ architecture behave of core is
     signal execute2_bypass: bypass_data_t;
     signal execute2_cr_bypass: cr_bypass_data_t;
 
+    -- Arbiter signals
+    signal dcache_to_arbiter : DcacheToLoadstore1Type;
+    signal arbiter_to_dcache : Loadstore1ToDcacheType;
+    signal ls_stall          : std_ulogic;
+    signal q_stall           : std_ulogic;
+
+        -- Queue signals
+    signal queue_to_loadstore1 : QueueToLoadstore1Type;
+    signal loadstore1_to_queue : Loadstore1ToQueueType;
+    signal queue_to_dcache     : Loadstore1ToDcacheType;
+    signal dcache_to_queue     : DcacheToLoadstore1Type;
+
+    signal read_enable : std_ulogic;
+    signal read_data   : std_ulogic_vector(63 downto 0);
+    signal empty       : std_ulogic;
+
+    signal loadstore1_to_mmu : Loadstore1ToMmuType;
+    signal mmu_to_loadstore1 : MmuToLoadstore1Type;
+    signal queue_to_mmu      : Loadstore1ToMmuType;
+    signal mmu_to_queue      : MmuToLoadstore1Type;
+    signal mmu_to_arbiter    : MmuToLoadstore1Type;
+    signal arbiter_to_mmu    : Loadstore1ToMmuType;
+
     -- load store signals
     signal execute1_to_loadstore1: Execute1ToLoadstore1Type;
     signal loadstore1_to_execute1: Loadstore1ToExecute1Type;
     signal loadstore1_to_writeback: Loadstore1ToWritebackType;
-    signal loadstore1_to_mmu: Loadstore1ToMmuType;
-    signal mmu_to_loadstore1: MmuToLoadstore1Type;
+    --signal loadstore1_to_mmu: Loadstore1ToMmuType;
+    --signal mmu_to_loadstore1: MmuToLoadstore1Type;
 
     -- dcache signals
     signal loadstore1_to_dcache: Loadstore1ToDcacheType;
@@ -437,6 +477,51 @@ begin
         fpu_to_execute1 <= FPUToExecute1Init;
         fpu_to_writeback <= FPUToWritebackInit;
     end generate;
+    arbiter : entity work.arbiter
+        port map (
+            clk  => clk,
+            rst  => core_rst,
+            lsdi => loadstore1_to_dcache,
+            lsdo => dcache_to_loadstore1,
+            lsds => ls_stall,
+            qdi  => queue_to_dcache,
+            qdo  => dcache_to_queue,
+            qds  => q_stall,
+            di   => dcache_to_arbiter,
+            do   => arbiter_to_dcache,
+            ds   => dcache_stall_out,
+            lmi  => loadstore1_to_mmu,
+            lmo  => mmu_to_loadstore1,
+            qmi  => queue_to_mmu,
+            qmo  => mmu_to_queue,
+            mi   => mmu_to_arbiter,
+            mo   => arbiter_to_mmu
+        );
+
+    -- Queue Instantiation
+    queue : entity work.queue
+        generic map (
+            QUEUE_DEPTH => QUEUE_DEPTH
+        )
+        port map (
+            clk            => clk,
+            rst            => core_rst,
+            -- l_in    => q_in,
+            -- l_out   => queue_to_loadstore1,
+            write_enable_i => write_enable_i,  -- From loadstore in other core
+            write_type_i   => write_type_i,
+            write_data_i   => write_data_i,
+            full_o         => full_o,
+            read_enable_i  => read_enable,     -- To loadstore in this core
+            read_data_o    => read_data,
+            empty_o        => empty,
+            d_in           => dcache_to_queue,
+            d_out          => queue_to_dcache,
+            d_stall        => q_stall,
+            m_in           => mmu_to_queue,
+            m_out          => queue_to_mmu
+        );
+
 
     loadstore1_0: entity work.loadstore1
         generic map (
@@ -453,6 +538,20 @@ begin
             d_in => dcache_to_loadstore1,
             m_out => loadstore1_to_mmu,
             m_in => mmu_to_loadstore1,
+
+            -- q_in         => queue_to_loadstore1,
+            -- q_out        => q_out,
+            -- Read Queue Interface
+            read_enable_o => read_enable,
+            read_data_i   => read_data,
+            empty_i       => empty,
+
+            -- Write Queue Interface
+            write_enable_o => write_enable_o,
+            write_type_o   => write_type_o,
+            write_data_o   => write_data_o,
+            full_i         => full_i,
+
             dc_stall => dcache_stall_out,
             events => loadstore_events,
             dbg_spr_req => dbg_ls_spr_req,

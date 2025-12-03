@@ -954,6 +954,30 @@ package common is
         srr1    : std_ulogic_vector(15 downto 0);
     end record;
 
+
+
+    ------------------------------------------------------------
+    -- Queue
+    ------------------------------------------------------------
+    type Loadstore1ToQueueType is record
+        read_enable  : std_ulogic;                     -- Read request
+        write_enable : std_ulogic;                     -- Write request
+        data         : std_ulogic_vector(63 downto 0); -- Data to write
+    end record;
+    constant Loadstore1ToQueueInit : Loadstore1ToQueueType := (
+        data   => (others => '0'),
+        others => '0'
+    );
+
+    type QueueToLoadstore1Type is record
+        data         : std_ulogic_vector(63 downto 0); -- Read data
+        empty        : std_ulogic;                     -- Queue empty flag
+        full         : std_ulogic;                     -- Queue full flag
+    end record;
+    ------------------------------------------------------------
+
+
+    
     type WritebackEventType is record
         instr_complete : std_ulogic;
         fp_complete    : std_ulogic;

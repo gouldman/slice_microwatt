@@ -396,7 +396,15 @@ architecture behaviour of decode1 is
         INSN_xor         =>  (ALU,  NONE, OP_COMPUTE,   NONE,       RB,  NONE,        RS,   RA,   LOG, "001", '0', '0', '0', '0', ZERO, '0', NONE, '0', '0', '0', '0', '0', '0', RC,   '0', '0', '0', NONE),
         INSN_xori        =>  (ALU,  NONE, OP_COMPUTE,   NONE,       IMM, CONST_UI,    RS,   RA,   LOG, "001", '0', '0', '0', '0', ZERO, '0', NONE, '0', '0', '0', '0', '0', '0', NONE, '0', '0', '0', NONE),
         INSN_xoris       =>  (ALU,  NONE, OP_COMPUTE,   NONE,       IMM, CONST_UI_HI, RS,   RA,   LOG, "001", '0', '0', '0', '0', ZERO, '0', NONE, '0', '0', '0', '0', '0', '0', NONE, '0', '0', '0', NONE),
-
+-- Queue instructions                       unit  fac   internal      in1         in2  const        in3   out   CR   CR   inv  inv  cry   cry  ldst  BR   sgn  upd  rsrv 32b  sgn  rc    lk   priv sgl  rpt
+        --                                                      op                                                      in   out   A   out  in    out  len        ext                                      pipe
+        to_integer(unsigned(INSN_lfdxq))       =>  (LDST, FPU,  OP_LDQ,       RA_OR_ZERO, RB,  NONE,        NONE, FRT,  '0', '0', '0', '0', ZERO, '0', is8B, '0', '0', '0', '0', '0', '0', NONE, '0', '0', '0', NONE),
+        to_integer(unsigned(INSN_stafdxq))     =>  (LDST, NONE, OP_STAQ,      RA_OR_ZERO, RB,  NONE,        RS,   NONE, '0', '0', '0', '0', ZERO, '0', is8B, '0', '0', '0', '0', '0', '0', NONE, '0', '0', '0', NONE),
+        to_integer(unsigned(INSN_stfdxq))      =>  (LDST, FPU,  OP_STQ,       RA_OR_ZERO, RB,  NONE,        FRS,  NONE, '0', '0', '0', '0', ZERO, '0', is8B, '0', '0', '0', '0', '0', '0', NONE, '0', '0', '0', NONE),
+        to_integer(unsigned(INSN_lfsxq))       =>  (LDST, FPU,  OP_LDQ,       RA_OR_ZERO, RB,  NONE,        NONE, FRT,  '0', '0', '0', '0', ZERO, '0', is4B, '0', '0', '0', '0', '1', '0', NONE, '0', '0', '0', NONE),
+        to_integer(unsigned(INSN_stafsxq))     =>  (LDST, NONE, OP_STAQ,      RA_OR_ZERO, RB,  NONE,        RS,   NONE, '0', '0', '0', '0', ZERO, '0', is4B, '0', '0', '0', '0', '1', '0', NONE, '0', '0', '0', NONE),
+        to_integer(unsigned(INSN_stfsxq))      =>  (LDST, FPU,  OP_STQ,       RA_OR_ZERO, RB,  NONE,        FRS,  NONE, '0', '0', '0', '0', ZERO, '0', is4B, '0', '0', '0', '0', '1', '0', NONE, '0', '0', '0', NONE),
+        --
         others           =>  (ALU,  NONE, OP_ILLEGAL,   NONE,       IMM, NONE,        NONE, NONE, ADD, "000", '0', '0', '0', '0', ZERO, '0', NONE, '0', '0', '0', '0', '0', '0', NONE, '0', '0', '0', NONE)
         );
 
